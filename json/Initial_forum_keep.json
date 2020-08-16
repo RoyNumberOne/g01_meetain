@@ -1,0 +1,62 @@
+[
+    {
+        "forum_keep_mem": "10011",
+        "forum_iskept_post": "200001"
+    },
+    {
+        "forum_keep_mem": "10012",
+        "forum_iskept_post": "200001"
+    },
+    {
+        "forum_keep_mem": "10011",
+        "forum_iskept_post": "200002"
+    },
+    {
+        "forum_keep_mem": "10008",
+        "forum_iskept_post": "200002"
+    },
+    {
+        "forum_keep_mem": "10008",
+        "forum_iskept_post": "200003"
+    },
+    {
+        "forum_keep_mem": "10009",
+        "forum_iskept_post": "200003"
+    },
+    {
+        "forum_keep_mem": "10010",
+        "forum_iskept_post": "200003"
+    },
+    {
+        "forum_keep_mem": "10011",
+        "forum_iskept_post": "200003"
+    },
+    {
+        "forum_keep_mem": "10012",
+        "forum_iskept_post": "200003"
+    },
+    {
+        "forum_keep_mem": "10013",
+        "forum_iskept_post": "200004"
+    },
+    {
+        "forum_keep_mem": "10008",
+        "forum_iskept_post": "200007"
+    },
+    {
+        "forum_keep_mem": "10009",
+        "forum_iskept_post": "200007"
+    },
+    {
+        "forum_keep_mem": "10009",
+        "forum_iskept_post": "200008"
+    },
+    {
+        "forum_keep_mem": "10010",
+        "forum_iskept_post": "200008"
+    },
+    {
+        "forum_keep_mem": "10010",
+        "forum_iskept_post": "200004"
+    }
+]

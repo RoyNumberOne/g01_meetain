@@ -1,0 +1,35 @@
+[
+    {
+        "member_no": "10009",
+        "order_total": "33440",
+        "order_logistics_fee": "0",
+        "order_discount": "1",
+        "order_logistics_deliver": "宅配",
+        "order_logistics_recipient": "Sara",
+        "order_logistics_phone": "034257387",
+        "order_logistics_address": "中大路100號",
+        "order_cashflow": "點數扣款"
+    },
+    {
+        "member_no": "10010",
+        "order_total": "20610",
+        "order_logistics_fee": "0",
+        "order_discount": "0.8",
+        "order_logistics_deliver": "宅配",
+        "order_logistics_recipient": "Amy",
+        "order_logistics_phone": "0919123123",
+        "order_logistics_address": "中大路200號",
+        "order_cashflow": "點數扣款"
+    },
+    {
+        "member_no": "10011",
+        "order_total": "6130",
+        "order_logistics_fee": "0",
+        "order_discount": "0.9",
+        "order_logistics_deliver": "宅配",
+        "order_logistics_recipient": "Handsome",
+        "order_logistics_phone": "0919456456",
+        "order_logistics_address": "中大路300號",
+        "order_cashflow": "點數扣款"
+    }
+]

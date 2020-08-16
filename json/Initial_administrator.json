@@ -1,0 +1,51 @@
+[
+    {
+        "admin_id": "小泓",
+        "admin_name": "黃建泓",
+        "admin_acc": "owenadmin",
+        "admin_psw": "love1234",
+        "admin_mail": "owen0919335293dl4ul@gmail.com"
+    },
+    {
+        "admin_id": "小鈴",
+        "admin_name": "鄭文鈴",
+        "admin_acc": "chengwl",
+        "admin_psw": "chengwlpw",
+        "admin_mail": "ccheng.wl@gmail.com"
+    },
+    {
+        "admin_id": "小庭",
+        "admin_name": "鄒宛庭",
+        "admin_acc": "tibamewanadmin",
+        "admin_psw": "t2000681",
+        "admin_mail": "wting2412@gmail.com"
+    },
+    {
+        "admin_id": "小霖",
+        "admin_name": "黃俊霖",
+        "admin_acc": "Ashiko_admin",
+        "admin_psw": "rmp4u04admin",
+        "admin_mail": "toshihikomit@gmail.com"
+    },
+    {
+        "admin_id": "小臻",
+        "admin_name": "呂珈臻",
+        "admin_acc": "c926228",
+        "admin_psw": "19920920",
+        "admin_mail": "c926228@gmail.com"
+    },
+    {
+        "admin_id": "小嫚",
+        "admin_name": "彭瑄嫚",
+        "admin_acc": "shinhsuan",
+        "admin_psw": "shin0115",
+        "admin_mail": "shinhsuan@gmail.com"
+    },
+    {
+        "admin_id": "小崴",
+        "admin_name": "羅崴",
+        "admin_acc": "roycanfly03",
+        "admin_psw": "roycanfly03",
+        "admin_mail": "roylocanfly@gmail.com"
+    }
+]

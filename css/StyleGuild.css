@@ -1,0 +1,415 @@
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  border: 0;
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: currentColor;
+}
+
+* {
+  font-family: 'Noto Sans TC' !important;
+  color: #222222;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  line-height: 1.6;
+  font-weight: 800;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+}
+
+header nav p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  position: relative;
+}
+
+html, body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+
+header {
+  z-index: 1;
+  width: 100%;
+  height: 400px;
+}
+
+header div.logobox {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  height: 400px;
+  background-color: #2C5E9E;
+}
+
+header div.logobox img#logo {
+  top: 100px;
+  position: absolute;
+  width: 500px;
+  left: calc(( 100% - 500px ) / 2);
+}
+
+main {
+  padding: 50px;
+}
+
+main div.line {
+  display: inline-block;
+  height: 30px;
+  width: 10px;
+  background-color: #FFC400;
+  margin: auto 5px;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+main h2 {
+  display: inline-block;
+}
+
+main div.hr {
+  width: 100%;
+  height: 5px;
+  background-color: #1A95DB;
+  margin: 30px;
+}
+
+main button.btnA_XLwA {
+  width: 190px;
+  height: 45px;
+  border: 1px solid #222222;
+  background-color: white;
+  outline: 0px !important;
+}
+
+main button.btnA_XLwA::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid #222222;
+  border-bottom: 1px solid #222222;
+  left: 8px;
+  top: 8px;
+}
+
+main button.btnA_XLwA p {
+  position: absolute;
+  top: 7px;
+  left: 20px;
+}
+
+main button.btnA_XLwA div.btnArrowXL {
+  position: absolute;
+  left: 150px;
+  top: 13px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px 0 0 9px;
+  border-color: transparent transparent transparent #222222;
+}
+
+main button.btnA_XLwA div.btnArrowXL::before {
+  position: absolute;
+  content: "";
+  left: -11px;
+  top: -8px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px 0 0 9px;
+  border-color: transparent transparent transparent white;
+}
+
+main button.btnA_XLwA div.btnArrowXL::after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 2px;
+  left: -40px;
+  background-color: #222222;
+}
+
+main button.btnA_LwA {
+  width: 95px;
+  height: 45px;
+  border: 1px solid #222222;
+  background-color: white;
+  outline: 0px !important;
+}
+
+main button.btnA_LwA::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid #222222;
+  border-bottom: 1px solid #222222;
+  left: 8px;
+  top: 8px;
+}
+
+main button.btnA_LwA p {
+  position: absolute;
+  top: 7px;
+  left: 3px;
+}
+
+main button.btnA_LwA div.btnArrowL {
+  position: absolute;
+  left: 76px;
+  top: 13px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px 0 0 9px;
+  border-color: transparent transparent transparent #222222;
+}
+
+main button.btnA_LwA div.btnArrowL::before {
+  position: absolute;
+  content: "";
+  left: -11px;
+  top: -8px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px 0 0 9px;
+  border-color: transparent transparent transparent white;
+}
+
+main button.btnA_LwA div.btnArrowL::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 2px;
+  left: -20px;
+  background-color: #222222;
+}
+
+main button.btnA_L {
+  width: 95px;
+  height: 45px;
+  border: 1px solid #222222;
+  background-color: white;
+  outline: 0px !important;
+}
+
+main button.btnA_L::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid #222222;
+  border-bottom: 1px solid #222222;
+  left: 8px;
+  top: 8px;
+}
+
+main button.btnA_L p {
+  position: absolute;
+  top: 7px;
+  left: 8px;
+}
+
+main button.btnA_M {
+  width: 47px;
+  height: 45px;
+  border: 1px solid #222222;
+  background-color: white;
+  outline: 0px !important;
+}
+
+main button.btnA_M::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid #222222;
+  border-bottom: 1px solid #222222;
+  left: 8px;
+  top: 8px;
+}
+
+main button.btnA_M div.btnArrowM {
+  position: absolute;
+  left: 22px;
+  top: 13px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px 0 0 9px;
+  border-color: transparent transparent transparent #222222;
+}
+
+main button.btnA_M div.btnArrowM::before {
+  position: absolute;
+  content: "";
+  left: -11px;
+  top: -8px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px 0 0 9px;
+  border-color: transparent transparent transparent white;
+}
+
+main button.btnA_M div.btnArrowM::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 2px;
+  left: -20px;
+  background-color: #222222;
+}
+
+main button.btnA_S {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #222222;
+  background-color: white;
+  outline: 0px !important;
+}
+
+main button.btnA_S p {
+  position: absolute;
+  top: -3px;
+  left: 0px;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+main button.btnB_XL_blue {
+  width: 190px;
+  height: 45px;
+  background-color: #2C5E9E;
+  border-radius: 15px;
+  outline: 0px !important;
+  color: white;
+}
+
+main button.btnB_XL_yellow {
+  width: 190px;
+  height: 45px;
+  background-color: #FFC400;
+  border-radius: 15px;
+  outline: 0px !important;
+  color: white;
+}
+
+main button.btnB_L_blue {
+  width: 95px;
+  height: 45px;
+  background-color: #2C5E9E;
+  border-radius: 15px;
+  outline: 0px !important;
+  color: white;
+}
+
+main button.btnB_L_yellow {
+  width: 95px;
+  height: 45px;
+  background-color: #FFC400;
+  border-radius: 15px;
+  outline: 0px !important;
+  color: white;
+}
+/*# sourceMappingURL=StyleGuild.css.map */

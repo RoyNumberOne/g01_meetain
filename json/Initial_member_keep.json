@@ -1,0 +1,86 @@
+[
+    {
+        "mem_keep_mem": "10008",
+        "mem_iskept_mem": "10009"
+    },
+    {
+        "mem_keep_mem": "10008",
+        "mem_iskept_mem": "10010"
+    },
+    {
+        "mem_keep_mem": "10008",
+        "mem_iskept_mem": "10011"
+    },
+    {
+        "mem_keep_mem": "10008",
+        "mem_iskept_mem": "10012"
+    },
+    {
+        "mem_keep_mem": "10009",
+        "mem_iskept_mem": "10011"
+    },
+    {
+        "mem_keep_mem": "10009",
+        "mem_iskept_mem": "10012"
+    },
+    {
+        "mem_keep_mem": "10009",
+        "mem_iskept_mem": "10014"
+    },
+    {
+        "mem_keep_mem": "10010",
+        "mem_iskept_mem": "10009"
+    },
+    {
+        "mem_keep_mem": "10011",
+        "mem_iskept_mem": "10008"
+    },
+    {
+        "mem_keep_mem": "10011",
+        "mem_iskept_mem": "10009"
+    },
+    {
+        "mem_keep_mem": "10011",
+        "mem_iskept_mem": "10010"
+    },
+    {
+        "mem_keep_mem": "10011",
+        "mem_iskept_mem": "10012"
+    },
+    {
+        "mem_keep_mem": "10011",
+        "mem_iskept_mem": "10013"
+    },
+    {
+        "mem_keep_mem": "10011",
+        "mem_iskept_mem": "10014"
+    },
+    {
+        "mem_keep_mem": "10012",
+        "mem_iskept_mem": "10009"
+    },
+    {
+        "mem_keep_mem": "10012",
+        "mem_iskept_mem": "10010"
+    },
+    {
+        "mem_keep_mem": "10012",
+        "mem_iskept_mem": "10011"
+    },
+    {
+        "mem_keep_mem": "10013",
+        "mem_iskept_mem": "10009"
+    },
+    {
+        "mem_keep_mem": "10013",
+        "mem_iskept_mem": "10010"
+    },
+    {
+        "mem_keep_mem": "10014",
+        "mem_iskept_mem": "10009"
+    },
+    {
+        "mem_keep_mem": "10014",
+        "mem_iskept_mem": "10010"
+    }
+]

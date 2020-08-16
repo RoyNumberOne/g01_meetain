@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+    // font-family: 'Noto Sans CJK TC';
+    font-family: 'Noto Serif TC', serif;
+}
+body{
+    background-image: url(../MOUNTAIn.png);
+    background-attachment: fixed;
+    background-position: 0;
+    background-size: cover;
+}
+header.header{
+    margin: auto;
+    div.header_place{
+        height: 70px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        margin: 0 auto;
+        color: #fff;
+        overflow:hidden;
+        position: relative;
+        letter-spacing: 5px;
+        &:before{
+            content: '';
+            width: 100%;
+            height: 100%;
+            filter: blur(10px);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            background-image: url(../MOUNTAIn.png);
+            background-attachment: fixed;
+            background-position: 0;
+            background-size: cover;
+        }
+        div.logo{
+            height: 60px;
+            margin: auto 20px;
+            // background-color: #aaa;
+            // position: absolute;
+            // left: 0;
+            // top: 50%;
+            // transform: translateY(-50%);
+            img{
+                padding: 5px;
+                height: 100%;
+            }
+        }
+        nav.nav{
+            margin: auto;
+            ul{
+                display: flex;
+                li{
+                    width: 100px;
+                    margin: 0 50px;
+                    text-align: center;
+                    text-shadow: 2px 2px 2px #aaa;
+
+                }
+            }
+        }
+        div.icon{
+            display: flex;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            i.fas{
+                font-size: 20px;
+                margin: 0 20px;
+            }
+        }
+    }
+}
+p{
+    display: none;
+}
+
+
+
+// 首頁section專用
+// body{
+//     background-image: url(../MOUNTAIn.png);
+//     background-position: 0;
+//     background-size: cover;
+//     background-attachment: fixed;
+//     display: flex;
+// }
+// header.header{
+//     width: 180px;
+//     height: 100vh;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     padding: 10px 0;
+//     overflow:hidden;
+//     color: #fff;
+//     div.header_place{
+//         height: 80%;
+//         margin: auto 0;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//         position: relative;
+//         &:before{
+//             content: '';
+//             width: 180px;
+//             height: 100%;
+//             filter: blur(50px);
+//             position: absolute;
+//             top: 0;
+//             left: 0;
+//             z-index: -1;
+//             background-image: url(../MOUNTAIn.png);
+//             background-attachment: fixed;
+//             background-position: 0;
+//             background-size: cover;
+//         }
+//     }
+//     div.logo{
+//         width: 180px;
+//         img{
+//             width: 100%;
+//             padding: 10px;
+//         }
+//     }
+//     nav.nav{
+        
+//         ul{
+//             text-align: center;
+//             padding: 0 20px;
+//             li{
+//                 margin: 40px 0;
+//                 padding: 10px;
+//                 border-bottom: 1px solid white;
+//                 font-size: 24px;
+//             }
+//         }
+//     }
+//     div.icon{
+//         display: flex;
+//         margin: 10px auto;
+//         .fas{
+//             font-size: 24px;
+//             margin: 0 15px;
+//         }
+//     }
+// }
+// div.wrap{
+//     text-align: center;
+//     width: calc(100% - 180px);
+//     height: 100vh;
+//     display: flex;
+//     p{
+//         margin: auto 0;
+//         height: 50px;
+//         color: #fff;
+//         text-shadow: 2px 2px 2px #000;
+//     }
+// }

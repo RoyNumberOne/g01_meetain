@@ -1,0 +1,130 @@
+[
+    {
+        "degree_category": "1",
+        "mountain_name": "塔曼山",
+        "mountain_latitude": "24.69936",
+        "mountain_longitude": "121.427534",
+        "mountain_area": "north",
+        "mountain_image": "#"
+    },
+    {
+        "degree_category": "2",
+        "mountain_name": "七星山",
+        "mountain_latitude": "25.170152",
+        "mountain_longitude": "121.55406",
+        "mountain_area": "north",
+        "mountain_image": "#"
+    },
+    {
+        "degree_category": "3",
+        "mountain_name": "雪白山",
+        "mountain_latitude": "24.594224",
+        "mountain_longitude": "121.372839",
+        "mountain_area": "north",
+        "mountain_image": "#"
+    },
+    {
+        "degree_category": "4",
+        "mountain_name": "大霸尖山",
+        "mountain_latitude": "24.457938",
+        "mountain_longitude": "121.258331",
+        "mountain_area": "north",
+        "mountain_image": "#"
+    },
+    {
+        "degree_category": "1",
+        "mountain_name": "五步哭山",
+        "mountain_latitude": "24.756961",
+        "mountain_longitude": "121.02266",
+        "mountain_area": "west",
+        "mountain_image": "#"
+    },
+    {
+        "degree_category": "2",
+        "mountain_name": "橫山",
+        "mountain_latitude": "23.889019",
+        "mountain_longitude": "120.627729",
+        "mountain_area": "west",
+        "mountain_image": "#"
+    },
+    {
+        "degree_category": "3",
+        "mountain_name": "石壁山",
+        "mountain_latitude": "23.603658",
+        "mountain_longitude": "120.724919",
+        "mountain_area": "west",
+        "mountain_image": "#"
+    },
+    {
+        "degree_category": "4",
+        "mountain_name": "雪山",
+        "mountain_latitude": "24.383348",
+        "mountain_longitude": "121.231758",
+        "mountain_area": "west",
+        "mountain_image": "#"
+    },
+    {
+        "degree_category": "1",
+        "mountain_name": "紅毛埤",
+        "mountain_latitude": "23.479933",
+        "mountain_longitude": "120.491923",
+        "mountain_area": "south",
+        "mountain_image": "#"
+    },
+    {
+        "degree_category": "2",
+        "mountain_name": "大凍山",
+        "mountain_latitude": "23.500191",
+        "mountain_longitude": "120.712423",
+        "mountain_area": "south",
+        "mountain_image": "#"
+    },
+    {
+        "degree_category": "3",
+        "mountain_name": "北大武山",
+        "mountain_latitude": "22.627459",
+        "mountain_longitude": "120.761389",
+        "mountain_area": "south",
+        "mountain_image": "#"
+    },
+    {
+        "degree_category": "4",
+        "mountain_name": "玉山",
+        "mountain_latitude": "23.469806",
+        "mountain_longitude": "120.957617",
+        "mountain_area": "south",
+        "mountain_image": "#"
+    },
+    {
+        "degree_category": "1",
+        "mountain_name": "五分山",
+        "mountain_latitude": "25.070918",
+        "mountain_longitude": "121.780628",
+        "mountain_area": "east",
+        "mountain_image": "#"
+    },
+    {
+        "degree_category": "2",
+        "mountain_name": "關山",
+        "mountain_latitude": "23.228049",
+        "mountain_longitude": "120.911709",
+        "mountain_area": "east",
+        "mountain_image": "#"
+    },
+    {
+        "degree_category": "3",
+        "mountain_name": "南湖東峰",
+        "mountain_latitude": "24.365526",
+        "mountain_longitude": "121.450928",
+        "mountain_area": "east",
+        "mountain_image": "#"
+    },
+    {
+        "degree_category": "4",
+        "mountain_name": "秀姑巒山",
+        "mountain_latitude": "23.496865",
+        "mountain_longitude": "121.057692",
+        "mountain_area": "east",
+        "mountain_image": "#"
+    }
+]

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel=“stylesheet” href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel=“stylesheet” href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/v4-shims.min.css">
+    <link rel="stylesheet" href="./css/header_owen.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/vue.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+    <script src="./js/fullpage.min.js"></script>
+</head>
+<body>
+
+    <header> 
+
+        <div id="headerbox">
+            <a href="#" class="logo">
+                <img class="logo" src="./images/logo/LOGO_white.png" alt="">
+            </a> 
+
+            <nav class="menuhover">
+                <ul class="menuhover">
+                    <li class="bg bg1"></li>
+                    <li class="bg bg2"></li>
+                    <li class="bg bg3"></li>
+                </ul>
+            </nav>
+
+            <nav class="menu">
+                <ul class="link_list llleft">
+                    <li><a class="tour" href="#"><p>揪團</p></a></li>
+                    <li><a class="forum" href="#"><p>討論區</p></a></li>
+                    <li><a class="product" href="#"><p>商品</p></a></li>
+                </ul>
+                <ul class="link_list llright">
+                    <li><a class="cart" href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                    <li><a class="member" href="#"><i class="fa fa-user"></i></a></li>
+                </ul>
+            </nav>
+
+            <div id="greymask"></div>
+            <div id="hamburgerBG">
+                <div class="ab white"></div>
+                <div class="ab yellow1"></div>
+                <div class="ab yellow2"></div>
+                <div class="ab yellow3"></div>
+            </div>
+            <button class="hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+
+
+
+
+    <script>
+        var $hamburger = $(".hamburger");
+        $hamburger.on("click", function(e) {
+            $hamburger.toggleClass("is-active");
+            $("#hamburgerBG").toggleClass("on");
+            $(".menu").toggleClass("on")
+            $(".link_list").toggleClass("on");
+            $("#greymask").toggleClass("on");
+            setTimeout(function(){
+                $("#greymask").toggleClass("show");
+            },100)
+            setTimeout(function(){
+                $("#hamburgerBG").toggleClass("show");
+            },150)
+            setTimeout(function(){
+                $(".menu").toggleClass("show");
+            },200)
+        });
+        $("#greymask").on("click", function(e) {
+            $hamburger.toggleClass("is-active");
+            $("#hamburgerBG").toggleClass("on");
+            $("nav.menu").toggleClass("on")
+            $(".link_list").toggleClass("on");
+            $("#greymask").toggleClass("on");
+            setTimeout(function(){
+                $("#greymask").toggleClass("show");
+            },100)
+            setTimeout(function(){
+                $("#hamburgerBG").toggleClass("show");
+            },100)
+            setTimeout(function(){
+                $(".menu").toggleClass("show");
+            },200)
+        });
+        $("#hamburgerBG").on("click", function(e) {
+            $hamburger.toggleClass("is-active");
+            $("#hamburgerBG").toggleClass("on");
+            $("nav.menu").toggleClass("on")
+            $(".link_list").toggleClass("on");
+            $("#greymask").toggleClass("on");
+            setTimeout(function(){
+                $("#greymask").toggleClass("show");
+            },100)
+            setTimeout(function(){
+                $("#hamburgerBG").toggleClass("show");
+            },100)
+            setTimeout(function(){
+                $(".menu").toggleClass("show");
+            },200)
+        });
+      </script>
+      <script>
+        $("a.tour").hover(function(){
+            $("div.yellow1").css("opacity","0.9");
+            $("li.bg1").css("opacity","0.9");
+        },function(){
+            $("div.yellow1").css("opacity","0");
+            $("li.bg1").css("opacity","0");
+        });
+        $("a.forum").hover(function(){
+            $("div.yellow2").css("opacity","0.9");
+            $("li.bg2").css("opacity","0.9");
+        },function(){
+            $("div.yellow2").css("opacity","0");
+            $("li.bg2").css("opacity","0");
+        });
+        $("a.product").hover(function(){
+            $("div.yellow3").css("opacity","0.9");
+            $("li.bg3").css("opacity","0.9");
+        },function(){
+            $("div.yellow3").css("opacity","0");
+            $("li.bg3").css("opacity","0");
+        });
+
+        
+      </script>
+</body>
+</html>

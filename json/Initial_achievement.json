@@ -1,0 +1,77 @@
+[
+    {
+        "achievement_category": "開團",
+        "achievement_name": "探險新手",
+        "achievement_require": "1"
+    },
+    {
+        "achievement_category": "開團",
+        "achievement_name": "冒險玩家",
+        "achievement_require": "5"
+    },
+    {
+        "achievement_category": "開團",
+        "achievement_name": "探索高手",
+        "achievement_require": "10"
+    },
+    {
+        "achievement_category": "參團",
+        "achievement_name": "山山來遲",
+        "achievement_require": "1"
+    },
+    {
+        "achievement_category": "參團",
+        "achievement_name": "山五好友",
+        "achievement_require": "10"
+    },
+    {
+        "achievement_category": "參團",
+        "achievement_name": "一山一世",
+        "achievement_require": "30"
+    },
+    {
+        "achievement_category": "揪團",
+        "achievement_name": "岳岳欲試",
+        "achievement_require": "3"
+    },
+    {
+        "achievement_category": "揪團",
+        "achievement_name": "翻山越嶺",
+        "achievement_require": "15"
+    },
+    {
+        "achievement_category": "揪團",
+        "achievement_name": "披星戴岳",
+        "achievement_require": "30"
+    },
+    {
+        "achievement_category": "發文",
+        "achievement_name": "一鳴驚人",
+        "achievement_require": "1"
+    },
+    {
+        "achievement_category": "發文",
+        "achievement_name": "風雲人物",
+        "achievement_require": "5"
+    },
+    {
+        "achievement_category": "發文",
+        "achievement_name": "名震天下",
+        "achievement_require": "10"
+    },
+    {
+        "achievement_category": "登入",
+        "achievement_name": "新手上路",
+        "achievement_require": "1"
+    },
+    {
+        "achievement_category": "登入",
+        "achievement_name": "展露頭角",
+        "achievement_require": "30"
+    },
+    {
+        "achievement_category": "登入",
+        "achievement_name": "山林老師",
+        "achievement_require": "90"
+    }
+]

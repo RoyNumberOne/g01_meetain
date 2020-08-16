@@ -1,0 +1,240 @@
+div.wrap{
+    width: 80%;
+    margin: 0 auto;
+    div.leader{
+        display: flex;
+        div.leader_headtag{
+            // border: 1px solid #000;
+            img{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+        div.leader_info{
+            margin: auto 20px;
+            div.leader_name-badge{
+                display: flex;
+                margin: auto 0;
+                div.leader_name{
+                    width: 100%;
+                }
+                div.leader_badge{
+                    width: 100%;
+                }
+            }
+            div.leader_introduction{
+                color: red;
+            }
+        }
+    }
+    div.public_pic-activity{
+        display: flex;
+        div.public_pic{
+            width: 50%;
+            // height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        div.activity{
+            width: 50%;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            h3.activity_title{
+                margin: 0 0 10px;
+            }
+            div.activity_report{
+                display: flex;
+                justify-content: space-between;
+                // width: 100%;
+                margin: 0 20px;
+                // div.activity_info{
+                //     width: 100%;
+                //     div.activity_date{
+                //         width: 100%;
+                //     }
+                //     div.place{
+                //         width: 100%;
+                //     }
+                //     div.participant_num{
+                //         width: 100%;
+                //     }
+                //     div.mountain_level{
+                //         width: 100%;
+                //     }
+                //     p.activity_brief{
+                //         border: 1px solid #000;
+                //     }
+                // }
+                div.report{
+                    div.report_bt{
+                        background-color: #ccc;
+                        padding: 5px;
+                        border-radius: 5px;
+                    }   
+                }
+            }
+            div.info_icon{
+                display: flex;
+                justify-content: space-evenly;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                padding: 10px 0;
+                div.mountain_icon_part{
+                    div.mountain_icon{
+                        width: 100%;
+                    }
+                    div.mountain_text{
+                        width: 100%;
+                    }
+                }
+                div.participant_icon_part{
+                    div.participant_icon{
+                        width: 100%;
+                    }
+                    div.participant_text{
+                        width: 100%;
+                    }
+                }
+                div.collection_icon_part{
+                    div.collection_icon{
+                        width: 100%;
+                    }
+                    div.collection_text{
+                        width: 100%;
+                    }
+                }
+                div.share_icon_part{
+                    div.share_icon{
+                        width: 100%;
+                    }
+                    div.share_text{
+                        width: 100%;
+                    }
+                }
+            }
+            div.applied_participant{
+                h4{
+                    margin: 10px 0;
+                }
+                div.applied_participant_block{
+                    display: flex;
+                    div.applied_participant_item{
+                        margin: 0 20px;
+                        div.applied_participant_pic{
+                            img{
+                                width: 80px;
+                                height: 80px;
+                                border-radius: 50%;
+                                object-fit: cover;
+                            }
+                        }
+                        div.applied_participant_name-badge{
+                            display: flex;
+                            div.applied_participant_name{
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+            button.apply_bt{
+                margin: 20px auto 0;
+                width: 80%;
+                height: 40px;
+                border-radius: 10px;
+                font-size: 18px;
+            }
+        }
+    }
+    div.related_pic{
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        margin: 30px 0;
+        h3{
+            margin: 10px 0;
+        }
+        div.related_pic_block{
+            display: flex;
+            margin-bottom: 10px;
+            div.related_pic_item{
+                width: 200px;
+                margin: 0 20px 0 0;
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    div.introduction-application_block{
+        div.introduction-application_bt{
+            display: flex;
+            .change:after{
+                content: '';
+                width: 100%;
+                padding-top: 5px;
+                background-color:#fff;
+                position: absolute;
+                bottom: -2px;
+                left: 0;  
+            }
+            .introduction_bt{
+                width: 100px;
+                border: 1px solid #000;
+                border-bottom: none;
+                background-color: #fff;
+                position: relative;
+                border-radius: 5px 5px 0 0;
+                margin-right: 10px;
+                text-align: center;
+                cursor: pointer;
+            }
+            .application_bt{
+                width: 100px;
+                border: 1px solid #000;
+                border-bottom: none;
+                background-color: #fff;
+                position: relative;
+                border-radius: 5px 5px 0 0;
+                text-align: center;
+                cursor: pointer;
+            }
+        }
+        div.introduction-application_info{
+            height: 600px;
+            border: 1px solid #000;
+            padding: 20px;
+            border-radius: 0 10px 10px 10px;
+            .activity_introduction{
+                display: block;
+            }
+            .activity_application{
+                display: none;
+            }
+        }
+    }
+    div.message{
+        .leave_message_block{
+            display: flex;
+            flex-direction: column;
+            textarea{
+                resize: none;
+            }
+            button{
+                width: 100px;
+                margin: 10px 0;
+            }
+        }
+        .message_board_block{
+            width: 80%;
+            height: 100px;
+            border-top: 1px solid #000;
+        }
+    }
+}
