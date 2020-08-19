@@ -14,14 +14,14 @@ time, mark, audio, video {
   border: 0;
   font-family: inherit;
   margin: 0;
-  padding: 0;
+  padding: 0; 
   vertical-align: baseline;
 }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
+  display: block;  
 }
 
 ol, ul {

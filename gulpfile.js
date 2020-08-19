@@ -6,34 +6,46 @@ const fileinclude = require('gulp-file-include');
 const browserSync = require('browser-sync');
 const reload = browserSync.reload;
 const imagemin = require('gulp-imagemin');
+var sourcemaps = require('gulp-sourcemaps');
+const babel = require('gulp-babel');
+const clean = require('gulp-clean-css');
 
-gulp.task('hi', function(){
+gulp.task('test', function(){
     //在這裡做事
     console.log('測試');
 });
 
-gulp.task('copy', function(){
-    return gulp.src('dev/index.html').pipe(gulp.dest('dist'));
+gulp.task('copyJSON', function(){
+    return gulp.src('./dev/json/*.json').pipe(gulp.dest('./dist/json'));
 });
 
+gulp.task('copyJSON', function(){
+    return gulp.src('./dev/json/*.json').pipe(gulp.dest('./dist/json'));
+});
+
+gulp.task('copyImages', function(){
+  return gulp.src(['./dev/images/*.*','./dev/images/**/*.*']).pipe(gulp.dest('./dist/images'));
+});
 
 gulp.task('css', function(){
-    return gulp.src('dev/css/*.css').pipe(cleanCSS({
+    return gulp.src('./dev/css/*.css').pipe(cleanCSS({
         compatibility: 'ie8'
-      })).pipe(gulp.dest('dist/css'))
+      })).pipe(gulp.dest('./dist/css'))
 })
 
 gulp.task('sass', function(){
-    return gulp.src('./dev/sass/*.scss') //來源
+    return gulp.src(['./dev/sass/*.scss','./dev/sass/*.sass' ]) //來源
+    .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError)) //轉譯sass
     .pipe(cleanCSS({
         compatibility: 'ie8'
     })) //壓縮css
-        .pipe(gulp.dest('./dist/css')); //目的地
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('./dist/css')); //目的地
 });
 
 
-gulp.task('all', ['copy' , 'css']); // 同步處理
+// gulp.task('all', ['copy' , 'css']); // 同步處理
 // $ gulp copy css // 順序異步處理
 
 gulp.task('concat', ['sass'], function(){
@@ -45,13 +57,20 @@ gulp.task('concat', ['sass'], function(){
 
 
 gulp.task('fileinclude', function(){
-    return gulp.src(['dev/index.html']) //來源
+    return gulp.src(['dev/*.html']) //來源
     .pipe(fileinclude({
       prefix: '@@',
       basepath: '@file'
     }))
     .pipe(gulp.dest('./dist')); //目的地
 });
+
+
+//監看變動
+// gulp.task('watch', function(){
+//   gulp.watch('./dev/sass/*.scss', ['sass' , 'concat'])
+//   gulp.watch(['./dev/*.html' , './dev/**/*.html'] , ['fileinclude'])
+// })
 
 
 
@@ -64,19 +83,31 @@ gulp.task('default',  function () {
     });
     gulp.watch('./dev/sass/*.scss', ['sass' , 'concat']).on('change' , reload);
     gulp.watch(['./dev/*.html' , './dev/**/*.html'] , ['fileinclude']).on('change' , reload)
+    gulp.watch('./dev/js/*.js' , ['babels']).on('change' , reload)
+    gulp.watch('./dev/json' , ['copyJSON']).on('change' , reload)
+    gulp.watch('./dev/images' , ['copyImages']).on('change' , reload)
   });
 
 
   //壓圖
   gulp.task('img', function () {
-    gulp.src('./images/index/morning/*.*')
+    gulp.src(['./dev/images/*.*','./dev/images/**/*.*'])
       .pipe(imagemin())
-      .pipe(gulp.dest('dist/images'))
+      .pipe(gulp.dest('./dist/images'))
   })
 
+    //es6 -> es5
+    gulp.task('babels', () =>
+      gulp.src('dev/js/*.js')
+        .pipe(babel({
+          presets: ['@babel/env']
+        }))
+        .pipe(gulp.dest('dist/js'))
+      );
 
-//監看變動
-gulp.task('watch', function(){
-    gulp.watch('./dev/sass/*.scss', ['sass' , 'concat'])
-    gulp.watch(['./dev/*.html' , './dev/**/*.html'] , ['fileinclude'])
-})
+
+    //清除檔案
+    gulp.task('clear', function () {
+      return gulp.src('./dist', {read: false ,allowEmpty: true})
+          .pipe(clean());
+      });

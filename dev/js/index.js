@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
-
-    //Navigation
+  
+    //Navigation 
     menu: true,//绑定菜单，设定的相关属性与 anchors 的值对应后，菜单可以控制滚动
     lockAnchors: true,//锁定锚链接不随页面滑动而改变
     anchors:['Page1', 'Page2', 'Page3', 'Page4'],//锚链接，数组中元素对应各个页面的锚链接
@@ -12,7 +12,7 @@ $(document).ready(function() {
     slidesNavigation: true,//有无幻灯片（横向）导航栏
     slidesNavPosition: 'bottom',//幻灯片（横向）导航栏位置
 
-    loopBottom: true,
+    loopBottom: true, 
     loopTop: true,
 
     sectionsColor: ['transparent', 'transparent', 'transparent', 'transparent'],
@@ -22,7 +22,7 @@ $(document).ready(function() {
 // });
 
 
-function checkbg(){
+function checkbg(){ 
         if($("#section1").hasClass("active")){
             $(".scene > img").attr("src","./images/index/morning/sky.png");
             $(".mountainmiddle > img").attr("src","./images/index/morning/s1_mountain2-2.png");
