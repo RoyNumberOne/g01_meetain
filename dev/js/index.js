@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#fullpage').fullpage({
+    $('#fullpage').fullpage({ 
   
     //Navigation 
     menu: true,//绑定菜单，设定的相关属性与 anchors 的值对应后，菜单可以控制滚动
