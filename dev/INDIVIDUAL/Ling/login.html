@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <header>Header</header>
+    <main>
+        <aside>
+            <img src="./images/LOGO_black.png">
+            <h3 class="title">會員登入</h3>
+            <form class="login_form">
+                <input type="text" name="mem_acc" id="mem_acc" placeholder="*帳號"><br>
+                <input type="password" name="mem_psw" id="mem_psw" placeholder="*密碼(8至16碼英數混合)"><br>
+                <input type="submit" id="btnLogin" value="登入"><br>
+                <a href="#" class="create_acc">註冊帳號</a><br>
+                <a href="#" class="forget_psw">忘記密碼?</a>
+            </form>
+            <form class="createAcc_form">
+                <input type="text" name="mem_id" id="mem_id" placeholder="*暱稱"><br>
+                <input type="text" name="mem_name" id="mem_name" placeholder="*姓名"><br>
+                <input type="text" name="mem_mail" id="mem_mail" placeholder="*電子信箱"><br>
+                <input type="text" name="mem_acc" id="mem_acc" placeholder="*帳號"><br>
+                <input type="password" name="mem_psw" id="mem_psw" placeholder="*密碼(8至16碼英數混合)"><br>
+                <input type="submit" id="createAcc" value="註冊"><br>
+                <a href="#" class="login_page">已有帳號?請先登入</a><br>
+            </form>
+            <form class="forget_form">
+                <p>請輸入與您申請的電子郵件地址，<br>輸入完畢後我們將發送新密碼<br>至您註冊過的信箱請前往信箱查看</p>
+                <input type="text" name="mem_mail" id="mem_mail" placeholder="*電子信箱"><br>
+                <input type="submit" id="forget_psw" value="確認送出"><br>
+                <a href="#" class="login_page">已有帳號?請先登入</a>
+            </form>
+        </aside>
+
+        <div class="info_container">
+            <div class="top_info">
+                <h3>會員相關訊息</h3>
+                <p>媒山友官方網站中各項服務(解說申請、課程報名等)，需登入會員後方可使用申請。
+                    為保障您的權益我們採實名制認證需填寫身分證字號，以幫助您保險和安全，會員
+                    資料依個人資料保護法相關規定保存，詳見下方「個人資料保護法聲明」。</p>
+            </div>
+            <div class="bottom_info">
+                <h3>個人資料保護法聲明</h3>
+                <p>保有機關：新竹縣警政署<br>
+                    個人資料蒐集目的：志工解說服務申請、登山申請及登山安全、自然教育中心課程
+                    等服務 (訂位、住宿登記與購票事項、其他地方政府事務 ) 蒐集之個
+                    人資料分類：個人基本資料、登山急難聯絡方式等。 (辨識個人、個人描述、意外或其他事故及有關情形) 個人資料保管期間：會員帳號
+                    申請日至會員帳號刪除日，個人申請資料得自行申請刪除</p>
+            </div>
+        </div>
+        
+    </main>
+
+    <script src="jquery/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // 控制form
+            $(".create_acc").click(function(){
+                $('.createAcc_form').css('display','block');
+                $('.login_form').css('display','none');
+                $('.title').html('註冊帳號');
+            });
+
+            $(".login_page").click(function(){
+                $('.createAcc_form').css('display','none');
+                $('.forget_form').css('display','none');
+                $('.login_form').css('display','block');
+                $('.title').html('會員登入');
+            });
+
+            $(".forget_psw").click(function(){
+                $('.forget_form').css('display','block');
+                $('.login_form').css('display','none');
+                $('.title').html('忘記密碼?');
+            });
+
+            // 判斷格式
+        });
+    </script>
+</body>
+</html>
