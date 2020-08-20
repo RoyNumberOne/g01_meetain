@@ -111,6 +111,7 @@ html, body {
 }
 
 button.btnA_XLwRA {
+  position: relative;
   z-index: 2;
   width: 190px;
   height: 45px;
@@ -222,6 +223,7 @@ button.btnA_XLwRA:hover div::after {
 }
 
 button.btnA_XLwLA {
+  position: relative;
   z-index: 2;
   width: 190px;
   height: 45px;
@@ -334,6 +336,7 @@ button.btnA_XLwLA:hover div::after {
 }
 
 button.btnA_LwRA {
+  position: relative;
   z-index: 2;
   width: 95px;
   height: 45px;
@@ -445,6 +448,7 @@ button.btnA_LwRA:hover div::after {
 }
 
 button.btnA_LwLA {
+  position: relative;
   z-index: 2;
   width: 95px;
   height: 45px;
@@ -557,6 +561,7 @@ button.btnA_LwLA:hover div::after {
 }
 
 button.btnA_L {
+  position: relative;
   z-index: 2;
   width: 95px;
   height: 45px;
@@ -616,6 +621,7 @@ button.btnA_L:hover {
 }
 
 button.btnA_MwRA {
+  position: relative;
   z-index: 2;
   width: 45px;
   height: 45px;
@@ -713,6 +719,7 @@ button.btnA_MwRA:hover div::after {
 }
 
 button.btnA_MwLA {
+  position: relative;
   z-index: 2;
   width: 45px;
   height: 45px;
@@ -811,6 +818,7 @@ button.btnA_MwLA:hover div::after {
 }
 
 button.btnA_S {
+  position: relative;
   margin: 3px;
   display: inline-block;
   z-index: 2;
@@ -868,6 +876,7 @@ button.btnA_S.-active p {
 }
 
 button.btnB_XL_blue {
+  position: relative;
   z-index: 2;
   width: 190px;
   height: 45px;
@@ -928,6 +937,7 @@ button.btnB_XL_blue:hover div.bg::after {
 }
 
 button.btnB_XL_yellow {
+  position: relative;
   z-index: 2;
   width: 190px;
   height: 45px;
@@ -988,6 +998,7 @@ button.btnB_XL_yellow:hover div.bg::after {
 }
 
 button.btnB_L_blue {
+  position: relative;
   z-index: 2;
   width: 95px;
   height: 45px;
@@ -1048,6 +1059,7 @@ button.btnB_L_blue:hover div.bg::after {
 }
 
 button.btnB_L_yellow {
+  position: relative;
   z-index: 2;
   width: 95px;
   height: 45px;

@@ -1,3 +1,4 @@
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -1108,6 +1109,12 @@ button.btnB_L_yellow:hover div.bg::after {
 
 * {
   position: relative;
+}
+
+input {
+  display: block;
+  outline: none;
+  width: 300px;
 }
 
 html, body {
