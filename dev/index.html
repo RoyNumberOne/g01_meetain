@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test</title>
+    <title>&#581; 媒山友</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel=“stylesheet” href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
@@ -11,21 +11,87 @@
     <link rel="stylesheet" href="./css//jquery.fullpage.css">
     <link rel="stylesheet" href="./css/daybox.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/headerIndex.css">
     <script src="./js/jquery.min.js"></script>
     <script src="./js/vue.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
     <script src="./js/jquery.fullpage.js"></script>
-    <style>
-        .section {
-            text-align:center;
-            font-size: 3em;
-            }
-    </style>
+    <script src="./js/index.js" ></script>
 </head>
 <body>
 
-    <header>
+
+    
+    <header> 
+
+        <div id="headerbox">
+            <a href="#" class="logo">
+                <img class="logo" src="./images/logo/LOGO_white.png" alt="">
+            </a> 
+
+            <div id="greymask"></div>
+            <div id="hamburgerBG">
+                <div class="ab white"></div>
+                <div class="ab yellow1"></div>
+                <div class="ab yellow2"></div>
+                <div class="ab yellow3"></div>
+                <div class="ab blue"><p>Copyright © 2020 Mountain Community.</p></div>
+            </div>
+
+            <nav class="menuhover">
+                <ul class="menuhover">
+                    <li class="bg bg1"></li>
+                    <li class="bg bg2"></li>
+                    <li class="bg bg3"></li>
+                </ul>
+            </nav>
+
+            <nav class="menu">
+                <ul class="logo">
+                    <li><a class="menuLogo" href="#"><img class="menuLogo" src="./images/logo/LOGO_black.png" ></a></li>
+                </ul>
+                <ul class="link_list llleft">
+                    <li><a class="tour" href="#"><p>揪團區</p></a></li>
+                    <li><a class="forum" href="#"><p>討論區</p></a></li>
+                    <li><a class="product" href="#"><p>商品區</p></a></li>
+                </ul>
+                <ul class="link_list llmiddle">
+                    <li><a class="member" href="#"><i class="fa fa-user"></i></a></li>
+                    <li><a class="cart" href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                </ul>
+                <ul class="link_list llright">
+                    <li class="b">服務地點<br>
+                        320桃園市中壢區中大路300號<br>
+                        工程二館 資策會大樓<br><br></li>
+                        
+                    <li class="b">服務時間<br>
+                    週一至週五10:00~17:00<br><br></li>
+                        
+                    <li class="b">連絡電話<br>
+                        (03)425-7387<br><br></li>
+                        
+                    <li class="b">服務信箱<br>
+                    tibame@gmail.com</li><br>
+                    <li><a class="linkOut" href="#"> 中央氣象局</a></li>｜
+                    <li><a class="linkOut" href="#"> 登山證申請</a></li>｜
+                    <li><a class="linkOut" href="#"> 網站快速導覽 </a></li>｜
+                    <li><a class="linkOut" href="#"> 服務條款及隱私權政策</a></li>｜
+                    <li><a class="linkOut" href="#"> 會員使用條款</a></li>
+                </ul>
+            </nav>
+
+            <button class="hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+
+        </div>
+
     </header>
+
+
+
     <div class="bg">
         <div class="bgbox scene">
             <img src="./images/index/morning/sky.png" alt="">
@@ -191,107 +257,87 @@
         <h2>我是footer</h2>
     </footer> -->
 
+
+
     <script>
-
-        $(document).ready(function() {
-            $('#fullpage').fullpage({
-
-            //Navigation
-            menu: true,//绑定菜单，设定的相关属性与 anchors 的值对应后，菜单可以控制滚动
-            lockAnchors: true,//锁定锚链接不随页面滑动而改变
-            anchors:['Page1', 'Page2', 'Page3', 'Page4'],//锚链接，数组中元素对应各个页面的锚链接
-            navigation: true,//有无导航栏
-            navigationPosition: 'right',//导航栏位置
-            navigationTooltips: ['首頁', '揪團', '討論', '商品'],//导航栏提示文字，与页面一一对应
-            showActiveTooltip: false,//是否显示当前页面提示文字
-            slidesNavigation: true,//有无幻灯片（横向）导航栏
-            slidesNavPosition: 'bottom',//幻灯片（横向）导航栏位置
-
-            loopBottom: true,
-            loopTop: true,
-
-            sectionsColor: ['transparent', 'transparent', 'transparent', 'transparent'],
-            });
+        var $hamburger = $(".hamburger");
+        $hamburger.on("click", function(e) {
+            $hamburger.toggleClass("is-active");
+            $("#hamburgerBG").toggleClass("on");
+            $(".menu").toggleClass("on")
+            $(".link_list").toggleClass("on");
+            $("#greymask").toggleClass("on");
+            setTimeout(function(){
+                $("#greymask").toggleClass("show");
+            },100)
+            setTimeout(function(){
+                $("#hamburgerBG").toggleClass("show");
+            },150)
+            setTimeout(function(){
+                $(".menu").toggleClass("show");
+            },200)
         });
-        // new fullpage('#fullpage', {
-        // });
-
-
-        function checkbg(){
-                if($("#section1").hasClass("active")){
-                    $(".scene > img").attr("src","./images/index/morning/sky.png");
-                    $(".mountainmiddle > img").attr("src","./images/index/morning/s1_mountain2-2.png");
-                    $(".mountainfirst > img").attr("src","./images/index/morning/mountain1.png");
-                };
-                if($("#section2").hasClass("active")){
-                    $(".scene > img").attr("src","./images/index/noon/sky.png");
-                    $(".mountainmiddle > img").attr("src","./images/index/noon/mountain2.png");
-                    $(".mountainfirst > img").attr("src","./images/index/noon/mountain1.png");
-                };
-                if($("#section3").hasClass("active")){
-                    $(".scene > img").attr("src","./images/index/sunset/sky.png");
-                    $(".mountainmiddle > img").attr("src","./images/index/sunset/mountain2.png");
-                    $(".mountainfirst > img").attr("src","./images/index/sunset/mountain1.png");
-                };
-                if($("#section4").hasClass("active")){
-                    $(".scene > img").attr("src","./images/index/night/sky.png");
-                    $(".mountainmiddle > img").attr("src","./images/index/night/mountain2.png");
-                    $(".mountainfirst > img").attr("src","./images/index/night/mountain1.png");
-                };
-            }
-
-
-        $(document).ready(
-            checkbg()
-        );
-
-        $(window).mousemove(function(evt){
-
-        var pagex =evt.pageX;
-        var pagey =evt.pageY;
-
-        $(".scene img").css("left",`calc(-1000px + 50vw + ${pagex/40}px)`)
-        $(".mountainmiddle img").css("left",`calc(-1000px + 50vw + ${pagex/60}px)`)
-        $(".mountainfirst img").css("left",`calc(-1000px + 50vw + ${pagex/80}px)`)
-
-        checkbg();
-        })
-
-        $(window).scroll(function() {
-            alert(123);
+        $("#greymask").on("click", function(e) {
+            $hamburger.toggleClass("is-active");
+            $("#hamburgerBG").toggleClass("on");
+            $("nav.menu").toggleClass("on")
+            $(".link_list").toggleClass("on");
+            $("#greymask").toggleClass("on");
+            setTimeout(function(){
+                $("#greymask").toggleClass("show");
+            },100)
+            setTimeout(function(){
+                $("#hamburgerBG").toggleClass("show");
+            },100)
+            setTimeout(function(){
+                $(".menu").toggleClass("show");
+            },200)
         });
-
-        $(document).scroll(function(){
-            alert(123);
-        })
-
-        $(window).bind('mousewheel', function(e){
-            if(e.originalEvent.wheelDelta /120 > 0) {
-                checkbg();
-                console.log('scrolling up');
-            }
-            else{
-                checkbg();
-                console.log('scrolling down');
-            }
+        $("#hamburgerBG").on("click", function(e) {
+            $hamburger.toggleClass("is-active");
+            $("#hamburgerBG").toggleClass("on");
+            $("nav.menu").toggleClass("on")
+            $(".link_list").toggleClass("on");
+            $("#greymask").toggleClass("on");
+            setTimeout(function(){
+                $("#greymask").toggleClass("show");
+            },100)
+            setTimeout(function(){
+                $("#hamburgerBG").toggleClass("show");
+            },100)
+            setTimeout(function(){
+                $(".menu").toggleClass("show");
+            },200)
+        });
+      </script>
+      <script>
+        $("a.tour").hover(function(){
+            $("div.yellow1").css("opacity","0.9");
+            $("li.bg1").css("opacity","0.9");
+        },function(){
+            $("div.yellow1").css("opacity","0");
+            $("li.bg1").css("opacity","0");
+        });
+        $("a.forum").hover(function(){
+            $("div.yellow2").css("opacity","0.9");
+            $("li.bg2").css("opacity","0.9");
+        },function(){
+            $("div.yellow2").css("opacity","0");
+            $("li.bg2").css("opacity","0");
+        });
+        $("a.product").hover(function(){
+            $("div.yellow3").css("opacity","0.9");
+            $("li.bg3").css("opacity","0.9");
+        },function(){
+            $("div.yellow3").css("opacity","0");
+            $("li.bg3").css("opacity","0");
         });
 
-        $(document).ready(
-        $("#fp-nav").click(function(){
-            alert(123);
-            checkbg();
-        })
-        );
+        
+      </script>
 
-        $(document).ready(
-        $(document).on('keydown',function(e) {
-            checkbg();
-        }));
 
-    </script>
+
     
 </body>
-<script>
-    
-</script>
 </html>

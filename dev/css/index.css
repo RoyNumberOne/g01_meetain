@@ -1196,6 +1196,10 @@ button.btnB_L_yellow:hover div.bg::after {
   }
 }
 
+.section {
+  text-align: center;
+}
+
 footer {
   z-index: 10;
 }

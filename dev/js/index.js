@@ -55,9 +55,9 @@ $(window).mousemove(function(evt){
 var pagex =evt.pageX;
 var pagey =evt.pageY;
 
-$(".scene img").css("left",`calc(-1000px + 50vw + ${pagex/40}px)`)
-$(".mountainmiddle img").css("left",`calc(-1000px + 50vw + ${pagex/60}px)`)
-$(".mountainfirst img").css("left",`calc(-1000px + 50vw + ${pagex/80}px)`)
+$(".scene img").css("left",`calc(-10vw + ${pagex/30}px)`)
+$(".mountainmiddle img").css("left",`calc(-10vw + ${pagex/55}px)`)
+$(".mountainfirst img").css("left",`calc(-10vw + ${pagex/80}px)`)
 
 checkbg();
 })
