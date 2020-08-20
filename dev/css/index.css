@@ -1092,10 +1092,6 @@ button.btnB_L_yellow:hover div.bg::after {
   text-align: center;
 }
 
-footer {
-  z-index: 10;
-}
-
 div.fp-tableCell {
   color: whitesmoke !important;
 }
