@@ -24,7 +24,7 @@
     50% {
         height: 100px;
         opacity: 0.85;
-    }
+    } 
     80%{
         opacity: 0.5;
         height: 150px;
@@ -51,160 +51,150 @@
     text-align:center;
     }
 
-footer{
-    z-index: 10;
-}
-
-
-div.fp-tableCell {
-    color: whitesmoke !important;
-}
-
-.fp-controlArrow.fp-prev {
-    left: 80px !important;
-}
-.fp-controlArrow.fp-next {
-    right: 80px !important;
-}
-.fp-tooltip.right{
-    opacity: 1;
-    color: #ccc !important;
-}
-// #fp-nav ul li:hover .fp-tooltip, #fp-nav.fp-show-active a.active + .fp-tooltip {
-//     opacity: 1 !important;
-// }
-#fp-nav ul li .fp-tooltip, #fp-nav.fp-show-active a.active + .fp-tooltip {
-    // opacity: 1 !important;
-    width: auto;
-    top: -3px !important;
-}
-
-ul li a span {
-    background: white !important;
-}
-a.active + div.fp-tooltip.right{
-    // opacity: 1 !important;
-    animation: toolliptextshow 2s ease both !important;
-}
-
-div.bg{
-    z-index: -1 !important;
-    position: fixed;
-    opacity: 0.8;
-    top: 0;
-    height: 100vh;
-    overflow: hidden;
-    & div.bgbox{
-        width: 2000px;
-        & img{
-            width: 2000px;
-            left: calc(-1000px + 50vw);
-            bottom: calc(-3vh);
-            position: fixed; 
-            transition: 0.2s all linear;    
-        }
+    div.fp-tableCell {
+        color: whitesmoke !important;
     }
-    // & div.scene{
-    //     // position: absolute;
-    //     & img{
-
-    //     }
+    
+    .fp-controlArrow.fp-prev {
+        left: 80px !important;
+    }
+    .fp-controlArrow.fp-next {
+        right: 80px !important;
+    }
+    .fp-tooltip.right{
+        opacity: 1;
+        color: #ccc !important;
+    }
+    // #fp-nav ul li:hover .fp-tooltip, #fp-nav.fp-show-active a.active + .fp-tooltip {
+    //     opacity: 1 !important;
     // }
-    // & div.mountainmiddle{
-    //     // position: absolute;
-    //     & img{
-            
-    //     }
-    // }
-    // & div.mountainfirst{
-    //     // position: absolute;
-    //     & img{
-            
-    //     }
-    // }
-}
-
-div#section2 {
-    & div.weatherdescbox{
-        position: absolute;
-        left: 10vw;
-        top: 30vh;
-        & h3, p {
-            color: initial;
-            font-size: initial;
-            text-align: left;
-            width: 400px;
-        }
-        & h3 {
-            font-size: 1.5em;
-        }
-    } 
-}
-
-div#section4 {
-    div.meteor {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 0;
+    #fp-nav ul li .fp-tooltip, #fp-nav.fp-show-active a.active + .fp-tooltip {
+        // opacity: 1 !important;
+        width: auto;
+        top: -3px !important;
+    }
+    
+    ul li a span {
+        background: white !important;
+    }
+    a.active + div.fp-tooltip.right{
+        // opacity: 1 !important;
+        animation: toolliptextshow 2s ease both !important;
+    }
+    
+    div.bg{
+        z-index: -1 !important;
+        position: fixed;
+        opacity: 0.8;
         top: 0;
-        // border: 5px solid sandybrown;
-        & .dot {
+        height: 100vh;
+        overflow: hidden;
+        & div.bgbox{
+            width: 2000px;
+            & img{
+                width: 2000px;
+                left: calc(-1000px + 50vw);
+                bottom: calc(-3vh);
+                position: fixed; 
+                transition: 0.2s all linear;    
+            }
+        }
+        // & div.scene{
+        //     // position: absolute;
+        //     & img{
+    
+        //     }
+        // }
+        // & div.mountainmiddle{
+        //     // position: absolute;
+        //     & img{
+                
+        //     }
+        // }
+        // & div.mountainfirst{
+        //     // position: absolute;
+        //     & img{
+                
+        //     }
+        // }
+    }
+    
+    div#section2 {
+        & div.weatherdescbox{
             position: absolute;
-            background-color: whitesmoke;
-            width: 3px;
-            height: 11px;
-            border-radius: 50%;
-        }
-        & .dot1 {
-            left: 15vw;
-            animation: meteorfalls 2s both ease infinite 0.5s;
-            bottom: 90vh;
-        }
-        & .dot2 {
-            left: 22vw;
-            animation: meteorfalls 2.5s both linear infinite -1.5s;
-            bottom: 87vh;
-        }
-        & .dot3 {
-            left: 33vw;
-            animation: meteorfalls 1.6s both linear infinite 1s;
-            bottom: 92vh;
-        }
-        & .dot4 {
-            left: 40vw;
-            animation: meteorfalls 2.1s both ease-out infinite 1.1s;
-            bottom: 79vh;
-        }
-        & .dot5 {
-            left: 43vw;
-            animation: meteorfalls 1.1s both ease infinite 0.2s;
-            bottom: 82vh;
-        }
-        & .dot6 {
-            left: 51vw;
-            animation: meteorfalls 0.7s both linear infinite 0.1s;
-            bottom: 93vh;
-        }
-        & .dot7 {
-            left: 66vw;
-            animation: meteorfalls 2s both ease-in infinite 0.3s;
-            bottom: 82vh;
-        }
-        & .dot8 {
-            left: 80vw;
-            animation: meteorfalls 2.4s both linear infinite 2s;
-            bottom: 90vh;
-        }
-        & .dot9 {
-            left: 89vw;
-            animation: meteorfalls 1.7s both linear infinite 0.7s;
-            bottom: 91vh;
+            left: 10vw;
+            top: 30vh;
+            & h3, p {
+                color: initial;
+                font-size: initial;
+                text-align: left;
+                width: 400px;
+            }
+            & h3 {
+                font-size: 1.5em;
+            }
+        } 
+    }
+    
+    div#section4 {
+        div.meteor {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            // border: 5px solid sandybrown;
+            & .dot {
+                position: absolute;
+                background-color: whitesmoke;
+                width: 3px;
+                height: 11px;
+                border-radius: 50%;
+            }
+            & .dot1 {
+                left: 15vw;
+                animation: meteorfalls 2s both ease infinite 0.5s;
+                bottom: 90vh;
+            }
+            & .dot2 {
+                left: 22vw;
+                animation: meteorfalls 2.5s both linear infinite -1.5s;
+                bottom: 87vh;
+            }
+            & .dot3 {
+                left: 33vw;
+                animation: meteorfalls 1.6s both linear infinite 1s;
+                bottom: 92vh;
+            }
+            & .dot4 {
+                left: 40vw;
+                animation: meteorfalls 2.1s both ease-out infinite 1.1s;
+                bottom: 79vh;
+            }
+            & .dot5 {
+                left: 43vw;
+                animation: meteorfalls 1.1s both ease infinite 0.2s;
+                bottom: 82vh;
+            }
+            & .dot6 {
+                left: 51vw;
+                animation: meteorfalls 0.7s both linear infinite 0.1s;
+                bottom: 93vh;
+            }
+            & .dot7 {
+                left: 66vw;
+                animation: meteorfalls 2s both ease-in infinite 0.3s;
+                bottom: 82vh;
+            }
+            & .dot8 {
+                left: 80vw;
+                animation: meteorfalls 2.4s both linear infinite 2s;
+                bottom: 90vh;
+            }
+            & .dot9 {
+                left: 89vw;
+                animation: meteorfalls 1.7s both linear infinite 0.7s;
+                bottom: 91vh;
+            }
         }
     }
-}
-
-// debug
-    // div#section1, div#section2, div#section3 {
-    //     display: none;
-    // }

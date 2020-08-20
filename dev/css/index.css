@@ -1,3 +1,4 @@
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -43,7 +44,8 @@ table {
 }
 
 *, *::before, *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 button {
@@ -104,16 +106,19 @@ html, body {
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 button.btnA_XLwRA {
+  position: relative;
   z-index: 2;
   width: 190px;
   height: 45px;
   border: 1px solid #222222;
   background-color: white;
   outline: 0px !important;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
@@ -127,6 +132,7 @@ button.btnA_XLwRA::after {
   border-bottom: 1px solid #222222;
   left: 8px;
   top: 8px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
@@ -134,6 +140,7 @@ button.btnA_XLwRA p {
   position: absolute;
   top: 7px;
   left: 20px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
@@ -145,6 +152,7 @@ button.btnA_XLwRA div.btnArrowXL {
   height: 0;
   border-style: solid;
   border-width: 9px 0 0 9px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
   border-color: transparent transparent transparent #222222;
 }
@@ -158,6 +166,7 @@ button.btnA_XLwRA div.btnArrowXL::before {
   height: 0;
   border-style: solid;
   border-width: 9px 0 0 9px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
   border-color: transparent transparent transparent white;
 }
@@ -168,6 +177,7 @@ button.btnA_XLwRA div.btnArrowXL::after {
   width: 40px;
   height: 2px;
   left: -40px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
   background-color: #222222;
 }
@@ -183,12 +193,14 @@ button.btnA_XLwRA:hover::after {
   border-bottom: 0px;
   left: 0px;
   top: 0px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
 button.btnA_XLwRA:hover p {
   color: white;
-  transform: translate(5px, 5px);
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
 }
 
 button.btnA_XLwRA:hover {
@@ -197,7 +209,8 @@ button.btnA_XLwRA:hover {
 }
 
 button.btnA_XLwRA:hover div {
-  transform: translate(5px, 5px);
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
   border-color: transparent transparent transparent white;
 }
 
@@ -210,12 +223,14 @@ button.btnA_XLwRA:hover div::after {
 }
 
 button.btnA_XLwLA {
+  position: relative;
   z-index: 2;
   width: 190px;
   height: 45px;
   border: 1px solid #222222;
   background-color: white;
   outline: 0px !important;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
@@ -229,6 +244,7 @@ button.btnA_XLwLA::after {
   border-bottom: 1px solid #222222;
   left: 8px;
   top: 8px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
@@ -236,6 +252,7 @@ button.btnA_XLwLA p {
   position: absolute;
   top: 7px;
   left: 95px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
@@ -247,6 +264,7 @@ button.btnA_XLwLA div.btnArrowXL {
   height: 0;
   border-style: solid;
   border-width: 0 0 9px 9px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
   border-color: transparent transparent #222222 transparent;
 }
@@ -260,6 +278,7 @@ button.btnA_XLwLA div.btnArrowXL::before {
   height: 0;
   border-style: solid;
   border-width: 0 0 9px 9px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
   border-color: transparent transparent white transparent;
 }
@@ -271,6 +290,7 @@ button.btnA_XLwLA div.btnArrowXL::after {
   height: 2px;
   left: -9px;
   top: 9px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
   background-color: #222222;
 }
@@ -286,12 +306,14 @@ button.btnA_XLwLA:hover::after {
   border-bottom: 0px;
   left: 0px;
   top: 0px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
 button.btnA_XLwLA:hover p {
   color: white;
-  transform: translate(5px, 5px);
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
 }
 
 button.btnA_XLwLA:hover {
@@ -300,7 +322,8 @@ button.btnA_XLwLA:hover {
 }
 
 button.btnA_XLwLA:hover div {
-  transform: translate(5px, 5px);
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
   border-color: transparent transparent white transparent;
 }
 
@@ -313,12 +336,14 @@ button.btnA_XLwLA:hover div::after {
 }
 
 button.btnA_LwRA {
+  position: relative;
   z-index: 2;
   width: 95px;
   height: 45px;
   border: 1px solid #222222;
   background-color: white;
   outline: 0px !important;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
@@ -332,6 +357,7 @@ button.btnA_LwRA::after {
   border-bottom: 1px solid #222222;
   left: 8px;
   top: 8px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
@@ -339,6 +365,7 @@ button.btnA_LwRA p {
   position: absolute;
   top: 7px;
   left: 3px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
@@ -350,6 +377,7 @@ button.btnA_LwRA div.btnArrowL {
   height: 0;
   border-style: solid;
   border-width: 9px 0 0 9px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
   border-color: transparent transparent transparent #222222;
 }
@@ -363,6 +391,7 @@ button.btnA_LwRA div.btnArrowL::before {
   height: 0;
   border-style: solid;
   border-width: 9px 0 0 9px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
   border-color: transparent transparent transparent white;
 }
@@ -373,6 +402,7 @@ button.btnA_LwRA div.btnArrowL::after {
   width: 22px;
   height: 2px;
   left: -22px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
   background-color: #222222;
 }
@@ -388,12 +418,14 @@ button.btnA_LwRA:hover::after {
   border-bottom: 0px;
   left: 0px;
   top: 0px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
 button.btnA_LwRA:hover p {
   color: white;
-  transform: translate(5px, 5px);
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
 }
 
 button.btnA_LwRA:hover {
@@ -402,7 +434,8 @@ button.btnA_LwRA:hover {
 }
 
 button.btnA_LwRA:hover div {
-  transform: translate(5px, 5px);
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
   border-color: transparent transparent transparent white;
 }
 
@@ -415,12 +448,14 @@ button.btnA_LwRA:hover div::after {
 }
 
 button.btnA_LwLA {
+  position: relative;
   z-index: 2;
   width: 95px;
   height: 45px;
   border: 1px solid #222222;
   background-color: white;
   outline: 0px !important;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
@@ -434,6 +469,7 @@ button.btnA_LwLA::after {
   border-bottom: 1px solid #222222;
   left: 8px;
   top: 8px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
@@ -441,6 +477,7 @@ button.btnA_LwLA p {
   position: absolute;
   top: 7px;
   left: 33px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
@@ -452,6 +489,7 @@ button.btnA_LwLA div.btnArrowL {
   height: 0;
   border-style: solid;
   border-width: 0 0 9px 9px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
   border-color: transparent transparent #222222 transparent;
 }
@@ -465,6 +503,7 @@ button.btnA_LwLA div.btnArrowL::before {
   height: 0;
   border-style: solid;
   border-width: 0 0 9px 9px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
   border-color: transparent transparent white transparent;
 }
@@ -476,6 +515,7 @@ button.btnA_LwLA div.btnArrowL::after {
   height: 2px;
   left: -8.5px;
   top: 8px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
   background-color: #222222;
 }
@@ -491,12 +531,14 @@ button.btnA_LwLA:hover::after {
   border-bottom: 0px;
   left: 0px;
   top: 0px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
 button.btnA_LwLA:hover p {
   color: white;
-  transform: translate(5px, 5px);
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
 }
 
 button.btnA_LwLA:hover {
@@ -505,7 +547,8 @@ button.btnA_LwLA:hover {
 }
 
 button.btnA_LwLA:hover div {
-  transform: translate(5px, 5px);
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
   border-color: transparent transparent white transparent;
 }
 
@@ -518,12 +561,14 @@ button.btnA_LwLA:hover div::after {
 }
 
 button.btnA_L {
+  position: relative;
   z-index: 2;
   width: 95px;
   height: 45px;
   border: 1px solid #222222;
   background-color: white;
   outline: 0px !important;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
@@ -537,6 +582,7 @@ button.btnA_L::after {
   border-bottom: 1px solid #222222;
   left: 8px;
   top: 8px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
@@ -544,6 +590,7 @@ button.btnA_L p {
   position: absolute;
   top: 7px;
   left: 7px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
@@ -558,12 +605,14 @@ button.btnA_L:hover::after {
   border-bottom: 0px;
   left: 0px;
   top: 0px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
 button.btnA_L:hover p {
   color: white;
-  transform: translate(5px, 5px);
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
 }
 
 button.btnA_L:hover {
@@ -572,12 +621,14 @@ button.btnA_L:hover {
 }
 
 button.btnA_MwRA {
+  position: relative;
   z-index: 2;
   width: 45px;
   height: 45px;
   border: 1px solid #222222;
   background-color: white;
   outline: 0px !important;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
@@ -591,6 +642,7 @@ button.btnA_MwRA::after {
   border-bottom: 1px solid #222222;
   left: 8px;
   top: 8px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
@@ -602,6 +654,7 @@ button.btnA_MwRA div.btnArrowM {
   height: 0;
   border-style: solid;
   border-width: 9px 0 0 9px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
   border-color: transparent transparent transparent #222222;
 }
@@ -615,6 +668,7 @@ button.btnA_MwRA div.btnArrowM::before {
   height: 0;
   border-style: solid;
   border-width: 9px 0 0 9px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
   border-color: transparent transparent transparent white;
 }
@@ -625,6 +679,7 @@ button.btnA_MwRA div.btnArrowM::after {
   width: 22px;
   height: 2px;
   left: -22px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
   background-color: #222222;
 }
@@ -640,6 +695,7 @@ button.btnA_MwRA:hover::after {
   border-bottom: 0px;
   left: 0px;
   top: 0px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
@@ -649,7 +705,8 @@ button.btnA_MwRA:hover {
 }
 
 button.btnA_MwRA:hover div {
-  transform: translate(5px, 5px);
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
   border-color: transparent transparent transparent white;
 }
 
@@ -662,12 +719,14 @@ button.btnA_MwRA:hover div::after {
 }
 
 button.btnA_MwLA {
+  position: relative;
   z-index: 2;
   width: 45px;
   height: 45px;
   border: 1px solid #222222;
   background-color: white;
   outline: 0px !important;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
@@ -681,6 +740,7 @@ button.btnA_MwLA::after {
   border-bottom: 1px solid #222222;
   left: 8px;
   top: 8px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
@@ -692,6 +752,7 @@ button.btnA_MwLA div.btnArrowM {
   height: 0;
   border-style: solid;
   border-width: 0 0 9px 9px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
   border-color: transparent transparent #222222 transparent;
 }
@@ -705,6 +766,7 @@ button.btnA_MwLA div.btnArrowM::before {
   height: 0;
   border-style: solid;
   border-width: 0 0 9px 9px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
   border-color: transparent transparent white transparent;
 }
@@ -716,6 +778,7 @@ button.btnA_MwLA div.btnArrowM::after {
   height: 2px;
   left: -9px;
   top: 8px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
   background-color: #222222;
 }
@@ -731,6 +794,7 @@ button.btnA_MwLA:hover::after {
   border-bottom: 0px;
   left: 0px;
   top: 0px;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
@@ -740,7 +804,8 @@ button.btnA_MwLA:hover {
 }
 
 button.btnA_MwLA:hover div {
-  transform: translate(5px, 5px);
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
   border-color: transparent transparent white transparent;
 }
 
@@ -753,6 +818,7 @@ button.btnA_MwLA:hover div::after {
 }
 
 button.btnA_S {
+  position: relative;
   margin: 3px;
   display: inline-block;
   z-index: 2;
@@ -770,6 +836,7 @@ button.btnA_S::after {
   position: absolute;
   left: 0;
   top: 100%;
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
@@ -777,7 +844,9 @@ button.btnA_S p {
   z-index: 2;
   font-size: 10px;
   font-weight: 500;
-  transform: translate(-2px, 0px);
+  -webkit-transform: translate(-2px, 0px);
+          transform: translate(-2px, 0px);
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
@@ -797,6 +866,7 @@ button.btnA_S.-active::after {
   background-color: #FFC400;
   position: absolute;
   top: calc(100% - 3px);
+  -webkit-transition: 0s;
   transition: 0s;
 }
 
@@ -806,6 +876,7 @@ button.btnA_S.-active p {
 }
 
 button.btnB_XL_blue {
+  position: relative;
   z-index: 2;
   width: 190px;
   height: 45px;
@@ -826,6 +897,7 @@ button.btnB_XL_blue::after {
 button.btnB_XL_blue p {
   z-index: 1;
   color: white;
+  -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
 
@@ -850,7 +922,9 @@ button.btnB_XL_blue div.bg::after {
   width: 130%;
   height: 100%;
   background-color: white;
-  transform: skewX(15deg);
+  -webkit-transform: skewX(15deg);
+          transform: skewX(15deg);
+  -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
 
@@ -863,6 +937,7 @@ button.btnB_XL_blue:hover div.bg::after {
 }
 
 button.btnB_XL_yellow {
+  position: relative;
   z-index: 2;
   width: 190px;
   height: 45px;
@@ -883,6 +958,7 @@ button.btnB_XL_yellow::after {
 button.btnB_XL_yellow p {
   z-index: 1;
   color: white;
+  -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
 
@@ -907,7 +983,9 @@ button.btnB_XL_yellow div.bg::after {
   width: 130%;
   height: 100%;
   background-color: white;
-  transform: skewX(15deg);
+  -webkit-transform: skewX(15deg);
+          transform: skewX(15deg);
+  -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
 
@@ -920,6 +998,7 @@ button.btnB_XL_yellow:hover div.bg::after {
 }
 
 button.btnB_L_blue {
+  position: relative;
   z-index: 2;
   width: 95px;
   height: 45px;
@@ -940,6 +1019,7 @@ button.btnB_L_blue::after {
 button.btnB_L_blue p {
   z-index: 1;
   color: white;
+  -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
 
@@ -964,7 +1044,9 @@ button.btnB_L_blue div.bg::after {
   width: 130%;
   height: 100%;
   background-color: white;
-  transform: skewX(15deg);
+  -webkit-transform: skewX(15deg);
+          transform: skewX(15deg);
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
@@ -977,6 +1059,7 @@ button.btnB_L_blue:hover div.bg::after {
 }
 
 button.btnB_L_yellow {
+  position: relative;
   z-index: 2;
   width: 95px;
   height: 45px;
@@ -997,6 +1080,7 @@ button.btnB_L_yellow::after {
 button.btnB_L_yellow p {
   z-index: 1;
   color: white;
+  -webkit-transition: 0.3s2all ease-in-out;
   transition: 0.3s2all ease-in-out;
 }
 
@@ -1021,7 +1105,9 @@ button.btnB_L_yellow div.bg::after {
   width: 130%;
   height: 100%;
   background-color: white;
-  transform: skewX(15deg);
+  -webkit-transform: skewX(15deg);
+          transform: skewX(15deg);
+  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
 
@@ -1033,66 +1119,16 @@ button.btnB_L_yellow:hover div.bg::after {
   left: 0%;
 }
 
-* {
-  position: relative;
-}
-
-html, body {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  height: auto;
-  background-color: #eaf1f4;
-}
-
-header {
-  z-index: 25;
-  width: 100%;
-  height: 200px;
-}
-
-header div.logobox {
-  top: 0;
-  left: 0;
-  width: 100%;
-  position: fixed;
-  height: 200px;
-  background-color: #2C5E9E;
-}
-
-header div.logobox img#logo {
-  top: 25px;
-  position: absolute;
-  width: 400px;
-  left: calc(( 100% - 400px ) / 2);
-}
-
-main {
-  padding: 50px;
-}
-
-main div.line {
-  display: inline-block;
-  height: 30px;
-  width: 10px;
-  background-color: #FFC400;
-  margin: auto 5px;
-  transform: translateY(3px);
-}
-
-main h2, main .fp-tooltip.left {
-  display: inline-block;
-}
-
-main div.hr {
-  width: 100%;
-  height: 5px;
-  background-color: #1A95DB;
-  margin: 30px;
-}
-
-main button {
-  margin-bottom: 20px;
+@-webkit-keyframes toolliptextshow {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes toolliptextshow {
@@ -1107,11 +1143,12 @@ main button {
   }
 }
 
-@keyframes meteorfalls {
+@-webkit-keyframes meteorfalls {
   0% {
     opacity: 0;
     height: 11px;
-    transform: skewX(-15deg) translateY(0px);
+    -webkit-transform: skewX(-15deg) translateY(0px);
+            transform: skewX(-15deg) translateY(0px);
   }
   15% {
     opacity: 0.5;
@@ -1128,21 +1165,52 @@ main button {
   90% {
     opacity: 0;
     height: 11px;
-    transform: skewX(-15deg) translateY(220px);
+    -webkit-transform: skewX(-15deg) translateY(220px);
+            transform: skewX(-15deg) translateY(220px);
   }
   100% {
     opacity: 0;
     height: 11px;
-    transform: skewX(-15deg) translateY(0px);
+    -webkit-transform: skewX(-15deg) translateY(0px);
+            transform: skewX(-15deg) translateY(0px);
+  }
+}
+
+@keyframes meteorfalls {
+  0% {
+    opacity: 0;
+    height: 11px;
+    -webkit-transform: skewX(-15deg) translateY(0px);
+            transform: skewX(-15deg) translateY(0px);
+  }
+  15% {
+    opacity: 0.5;
+    height: 20px;
+  }
+  50% {
+    height: 100px;
+    opacity: 0.85;
+  }
+  80% {
+    opacity: 0.5;
+    height: 150px;
+  }
+  90% {
+    opacity: 0;
+    height: 11px;
+    -webkit-transform: skewX(-15deg) translateY(220px);
+            transform: skewX(-15deg) translateY(220px);
+  }
+  100% {
+    opacity: 0;
+    height: 11px;
+    -webkit-transform: skewX(-15deg) translateY(0px);
+            transform: skewX(-15deg) translateY(0px);
   }
 }
 
 .section {
   text-align: center;
-}
-
-footer {
-  z-index: 10;
 }
 
 div.fp-tableCell {
@@ -1159,8 +1227,7 @@ div.fp-tableCell {
 
 .fp-tooltip.right {
   opacity: 1;
-  color: #F3F3F3 !important;
-  transform: translateY(-2px);
+  color: #ccc !important;
 }
 
 #fp-nav ul li .fp-tooltip, #fp-nav.fp-show-active a.active + .fp-tooltip {
@@ -1172,8 +1239,9 @@ ul li a span {
   background: white !important;
 }
 
-a.active + div.fp-tooltip.left {
-  animation: toolliptextshow 2s ease both !important;
+a.active + div.fp-tooltip.right {
+  -webkit-animation: toolliptextshow 2s ease both !important;
+          animation: toolliptextshow 2s ease both !important;
 }
 
 div.bg {
@@ -1194,6 +1262,7 @@ div.bg div.bgbox img {
   left: calc(-1000px + 50vw);
   bottom: calc(-3vh);
   position: fixed;
+  -webkit-transition: 0.2s all linear;
   transition: 0.2s all linear;
 }
 
@@ -1232,55 +1301,64 @@ div#section4 div.meteor .dot {
 
 div#section4 div.meteor .dot1 {
   left: 15vw;
-  animation: meteorfalls 2s both ease infinite 0.5s;
+  -webkit-animation: meteorfalls 2s both ease infinite 0.5s;
+          animation: meteorfalls 2s both ease infinite 0.5s;
   bottom: 90vh;
 }
 
 div#section4 div.meteor .dot2 {
   left: 22vw;
-  animation: meteorfalls 2.5s both linear infinite -1.5s;
+  -webkit-animation: meteorfalls 2.5s both linear infinite -1.5s;
+          animation: meteorfalls 2.5s both linear infinite -1.5s;
   bottom: 87vh;
 }
 
 div#section4 div.meteor .dot3 {
   left: 33vw;
-  animation: meteorfalls 1.6s both linear infinite 1s;
+  -webkit-animation: meteorfalls 1.6s both linear infinite 1s;
+          animation: meteorfalls 1.6s both linear infinite 1s;
   bottom: 92vh;
 }
 
 div#section4 div.meteor .dot4 {
   left: 40vw;
-  animation: meteorfalls 2.1s both ease-out infinite 1.1s;
+  -webkit-animation: meteorfalls 2.1s both ease-out infinite 1.1s;
+          animation: meteorfalls 2.1s both ease-out infinite 1.1s;
   bottom: 79vh;
 }
 
 div#section4 div.meteor .dot5 {
   left: 43vw;
-  animation: meteorfalls 1.1s both ease infinite 0.2s;
+  -webkit-animation: meteorfalls 1.1s both ease infinite 0.2s;
+          animation: meteorfalls 1.1s both ease infinite 0.2s;
   bottom: 82vh;
 }
 
 div#section4 div.meteor .dot6 {
   left: 51vw;
-  animation: meteorfalls 0.7s both linear infinite 0.1s;
+  -webkit-animation: meteorfalls 0.7s both linear infinite 0.1s;
+          animation: meteorfalls 0.7s both linear infinite 0.1s;
   bottom: 93vh;
 }
 
 div#section4 div.meteor .dot7 {
   left: 66vw;
-  animation: meteorfalls 2s both ease-in infinite 0.3s;
+  -webkit-animation: meteorfalls 2s both ease-in infinite 0.3s;
+          animation: meteorfalls 2s both ease-in infinite 0.3s;
   bottom: 82vh;
 }
 
 div#section4 div.meteor .dot8 {
   left: 80vw;
-  animation: meteorfalls 2.4s both linear infinite 2s;
+  -webkit-animation: meteorfalls 2.4s both linear infinite 2s;
+          animation: meteorfalls 2.4s both linear infinite 2s;
   bottom: 90vh;
 }
 
 div#section4 div.meteor .dot9 {
   left: 89vw;
-  animation: meteorfalls 1.7s both linear infinite 0.7s;
+  -webkit-animation: meteorfalls 1.7s both linear infinite 0.7s;
+          animation: meteorfalls 1.7s both linear infinite 0.7s;
   bottom: 91vh;
 }
 /*# sourceMappingURL=index.css.map */
