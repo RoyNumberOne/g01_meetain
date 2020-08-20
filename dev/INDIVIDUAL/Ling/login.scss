@@ -1,0 +1,124 @@
+@import 'var';
+
+header{
+    background-color: #153A64;
+    height: 100px;
+    max-width: 1200px;
+}
+
+main{
+    max-width: 1200px;
+    margin: 150px auto;
+    display: flex;
+}
+
+aside{
+    border: 1px solid #707070;
+    text-align: center;
+    padding: 30px;
+    img{
+        width: 220px;
+        margin: 80px 30px;
+    }
+    h3{
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: $h3-font-size;
+        font-weight: $h3-font-weight;
+        line-height: $h3-line-height;
+        letter-spacing: $h3-letter-spacing;
+        margin-bottom: 20px;
+    }
+    form.createAcc_form{
+        display: none;
+    }
+    input#mem_acc, #mem_id, #mem_name, #mem_mail{
+        width: 250px;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+    input#mem_psw{
+        width: 250px;
+        height: 30px;
+        margin-bottom: 30px;
+    }
+    input#btnLogin{
+        margin-bottom: 10px;
+        width: map-get($button-size-w, 'L');
+        height: $button-size-h;
+        color: white;
+        background-color: map-get($button-color, 'blue');
+    }
+    input#createAcc{
+        width: map-get($button-size-w, 'L');
+        height: $button-size-h;
+        color:white;
+        background-color: map-get($button-color, 'blue');
+        margin-bottom: 10px;
+    }
+    a{
+        text-decoration: none;
+        font-size: 10px;
+    }
+    .forget_form{
+        display: none;
+    }
+    p{
+        font-size: 12px;
+        font-weight: $p-font-weight;
+        line-height: $p-line-height;
+        letter-spacing: $p-letter-spacing;
+        margin-bottom: 20px;
+    }
+    input#forget_psw{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: map-get($button-size-w , 'L');
+        height: $button-size-h;
+        background-color: map-get($button-color , 'blue');
+        color:white;
+    }
+}
+
+.info_container{
+    width: 600px;
+    .top_info{
+        border: 1px solid #707070;
+        margin-bottom: 50px;
+        padding: 50px;
+        border-radius: $border-radius;
+        h3{
+            text-align: center;
+            font-size: $h3-font-size;
+            font-weight: $h3-font-weight;
+            line-height: $h3-line-height;
+            letter-spacing: $h3-letter-spacing;
+            margin-bottom: 20px;
+        }
+        P{
+            font-size: $p-font-size;
+            font-weight: $p-font-weight;
+            line-height: $p-line-height;
+            letter-spacing: $p-letter-spacing;
+        }
+    }
+    .bottom_info{
+        border: 1px solid #707070;
+        padding: 50px;
+        border-radius: $border-radius;
+        h3{
+            text-align: center;
+            font-size: $h3-font-size;
+            font-weight: $h3-font-weight;
+            line-height: $h3-line-height;
+            letter-spacing: $h3-letter-spacing;
+            margin-bottom: 20px;
+        }
+        P{
+            font-size: $p-font-size;
+            font-weight: $p-font-weight;
+            line-height: $p-line-height;
+            letter-spacing: $p-letter-spacing;
+        }
+    }
+}

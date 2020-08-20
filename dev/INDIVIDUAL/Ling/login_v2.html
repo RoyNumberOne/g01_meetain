@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel=“stylesheet” href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel=“stylesheet” href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/v4-shims.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/login_v2.css">
+</head>
+<body>
+    <header>
+		<div id="headerbox">
+			<a href="#" class="logo">
+				<img class="logo" src="./images/logo/LOGO_white.png" alt="">
+			</a> 
+
+			<nav class="menuhover">
+				<ul class="menuhover">
+					<li class="bg bg1"></li>
+					<li class="bg bg2"></li>
+					<li class="bg bg3"></li>
+				</ul>
+			</nav>
+
+			<nav class="menu">
+				<ul class="link_list llleft">
+					<li><a class="tour" href="#"><p>揪團區</p></a></li>
+					<li><a class="forum" href="#"><p>討論區</p></a></li>
+					<li><a class="product" href="#"><p>商品區</p></a></li>
+				</ul>
+				<ul class="link_list llright">
+					<li><a class="cart" href="#"><i class="fa fa-shopping-cart"></i></a></li>
+					<li><a class="member" href="#"><i class="fa fa-user"></i></a></li>
+				</ul>
+			</nav>
+
+			<div id="greymask"></div>
+			<div id="hamburgerBG">
+				<div class="ab white"></div>
+				<div class="ab yellow1"></div>
+				<div class="ab yellow2"></div>
+				<div class="ab yellow3"></div>
+			</div>
+			<button class="hamburger hamburger--collapse" type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+
+		</div>
+	</header>
+    <main>
+        <!-- <div class="container right-panel-active"> -->
+			<!-- Sign In -->
+			<!-- <div class="container__form container--signin">
+				<form action="#" class="form" id="form1">
+					<h2 class="form__title">會員登入</h2>
+					<input type="text" name="mem_acc" id="mem_acc" placeholder="帳號" /><br>
+					<input type="password" name="mem_psw" id="mem_psw" placeholder="密碼" /><br>
+					<a href="#" class="link">Forgot your password?</a><br>
+					<input type="submit" class="submit" value="會員登入" />
+				</form>
+			</div> -->
+
+			<!-- Sign Up -->
+			<!-- <div class="container__form container--signup">
+				<form action="#" class="form" id="form2">
+					<h2 class="form__title">註冊帳號</h2>
+					<input type="text" name="mem_id" id="mem_id" placeholder="暱稱" /><br>
+					<input type="text" name="mem_name" id="mem_name" placeholder="姓名" /><br>
+					<input type="text" name="mem_mail" id="mem_mail" placeholder="電子信箱" /><br>
+					<input type="text" name="mem_acc" id="mem_acc" placeholder="帳號" /><br>
+					<input type="password" name="mem_psw" id="mem_psw" placeholder="密碼" /><br>
+					<input type="password" name="mem_psw" placeholder="確認密碼"><br>
+					<input type="submit" class="submit" value="註冊帳號" />
+				</form>
+			</div> -->
+
+			<!-- Overlay -->
+			<!-- <div class="container__overlay">
+				<div class="overlay">
+					<div class="overlay__panel overlay--left">
+						<button class="btn" id="signUp">Sign Up</button>
+					</div>
+					<div class="overlay__panel overlay--right">
+						<div class="top_info">
+							<h3>會員相關訊息</h3>
+							<p>媒山友官方網站中各項服務(解說申請、課程報名等)，需登入會員後方可使用申請。
+								為保障您的權益我們採實名制認證需填寫身分證字號，以幫助您保險和安全，會員
+								資料依個人資料保護法相關規定保存，詳見下方「個人資料保護法聲明」。</p>
+						</div>
+						<div class="bottom_info">
+							<h3>個人資料保護法聲明</h3>
+							<p>保有機關：新竹縣警政署<br>
+								個人資料蒐集目的：志工解說服務申請、登山申請及登山安全、自然教育中心課程
+								等服務 (訂位、住宿登記與購票事項、其他地方政府事務 ) 蒐集之個
+								人資料分類：個人基本資料、登山急難聯絡方式等。 (辨識個人、個人描述、意外或其他事故及有關情形) 個人資料保管期間：會員帳號
+								申請日至會員帳號刪除日，個人申請資料得自行申請刪除</p>
+						</div>
+						<button class="btn" id="signIn">Sign In</button>
+					</div>
+				</div>
+			</div>
+		</div> -->
+
+		<!-- 手機板 -->
+		<div class="mobile">
+			<div class="mobile_logo">
+				<img src="./images/LOGO_black.png">
+			</div>
+			<div class="mobile_login">
+				<form>
+					<h3>會員登入</h3>
+					<p>帳號</p>
+					<input type="text" name="mobileLogin_acc" id="mobileLogin_acc"/>
+					<p>密碼</p>
+					<input type="password" name="mobileLogin_psw" id="mobileLogin_psw"/>
+					<p class="forApply">暱稱</p>
+					<input type="text" name="mobileLogin_id" id="mobileLogin_id"/>
+					<p class="forApply">姓名</p>
+					<input type="password" name="mobileLogin_name" id="mobileLogin_name"/>
+					<p class="forApply">信箱</p>
+					<input type="email" name="mobileLogin_mail" id="mobileLogin_mail"/>
+					<input type="submit" value="登入">
+					<a href="#" class="clickMe_app">沒有帳號?點我註冊</a>
+				</form>
+			</div>
+		</div>
+
+        
+    </main>
+
+    <script src="jquery/jquery-3.5.1.min.js"></script>
+    <script>
+        const signInBtn = document.getElementById("signIn");
+        const signUpBtn = document.getElementById("signUp");
+        const fistForm = document.getElementById("form1");
+        const secondForm = document.getElementById("form2");
+        const container = document.querySelector(".container");
+
+        signUpBtn.addEventListener("click", () => {
+		container.classList.remove("right-panel-active");
+		});
+
+		signInBtn.addEventListener("click", () => {
+			container.classList.add("right-panel-active");
+		});
+
+		fistForm.addEventListener("submit", (e) => e.preventDefault());
+		secondForm.addEventListener("submit", (e) => e.preventDefault());
+	</script>
+	
+	<script>
+		$(document).ready(function(){
+			$('clickMe_app').click(function(){
+				
+			});
+		});
+	</script>
+</body>
+</html>
