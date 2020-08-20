@@ -1,3 +1,4 @@
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -110,6 +111,7 @@ html, body {
 }
 
 button.btnA_XLwRA {
+  position: relative;
   z-index: 2;
   width: 190px;
   height: 45px;
@@ -221,6 +223,7 @@ button.btnA_XLwRA:hover div::after {
 }
 
 button.btnA_XLwLA {
+  position: relative;
   z-index: 2;
   width: 190px;
   height: 45px;
@@ -333,6 +336,7 @@ button.btnA_XLwLA:hover div::after {
 }
 
 button.btnA_LwRA {
+  position: relative;
   z-index: 2;
   width: 95px;
   height: 45px;
@@ -444,6 +448,7 @@ button.btnA_LwRA:hover div::after {
 }
 
 button.btnA_LwLA {
+  position: relative;
   z-index: 2;
   width: 95px;
   height: 45px;
@@ -556,6 +561,7 @@ button.btnA_LwLA:hover div::after {
 }
 
 button.btnA_L {
+  position: relative;
   z-index: 2;
   width: 95px;
   height: 45px;
@@ -615,6 +621,7 @@ button.btnA_L:hover {
 }
 
 button.btnA_MwRA {
+  position: relative;
   z-index: 2;
   width: 45px;
   height: 45px;
@@ -712,6 +719,7 @@ button.btnA_MwRA:hover div::after {
 }
 
 button.btnA_MwLA {
+  position: relative;
   z-index: 2;
   width: 45px;
   height: 45px;
@@ -810,6 +818,7 @@ button.btnA_MwLA:hover div::after {
 }
 
 button.btnA_S {
+  position: relative;
   margin: 3px;
   display: inline-block;
   z-index: 2;
@@ -867,6 +876,7 @@ button.btnA_S.-active p {
 }
 
 button.btnB_XL_blue {
+  position: relative;
   z-index: 2;
   width: 190px;
   height: 45px;
@@ -927,6 +937,7 @@ button.btnB_XL_blue:hover div.bg::after {
 }
 
 button.btnB_XL_yellow {
+  position: relative;
   z-index: 2;
   width: 190px;
   height: 45px;
@@ -987,6 +998,7 @@ button.btnB_XL_yellow:hover div.bg::after {
 }
 
 button.btnB_L_blue {
+  position: relative;
   z-index: 2;
   width: 95px;
   height: 45px;
@@ -1047,6 +1059,7 @@ button.btnB_L_blue:hover div.bg::after {
 }
 
 button.btnB_L_yellow {
+  position: relative;
   z-index: 2;
   width: 95px;
   height: 45px;
@@ -2457,6 +2470,10 @@ button.btnB_L_yellow:hover div.bg::after {
 }
 
 header {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   position: fixed;
   z-index: 25;
   top: 0;
@@ -2465,18 +2482,12 @@ header {
 
 header * {
   position: relative;
-}
-
-header #headerbox a.logo {
-  left: calc( 50% - 150px);
-  margin-top: 60px;
-}
-
-header #headerbox a.logo img {
-  width: 300px;
+  text-decoration: none !important;
 }
 
 header #headerbox nav.menu {
+  position: relative;
+  margin-top: 100px;
   display: none;
   opacity: 0;
   width: 800px;
@@ -2496,23 +2507,24 @@ header #headerbox nav.menu ul li p {
 }
 
 header #headerbox nav.menu ul.logo {
-  top: 30px;
-  left: 30vw;
+  top: 340px;
+  left: 32vw;
 }
 
 header #headerbox nav.menu ul.logo li a img {
-  width: 400px;
+  width: 230px;
 }
 
 header #headerbox nav.menu ul.llleft {
   top: 200px;
-  left: calc(40vw - 90px);
+  left: calc(50vw);
   width: 180px;
 }
 
 header #headerbox nav.menu ul.llleft li a p {
   font-size: 50px !important;
-  margin-bottom: 65px;
+  margin-bottom: 15px;
+  z-index: 2;
 }
 
 header #headerbox nav.menu ul.llleft :nth-child(1) {
@@ -2530,32 +2542,57 @@ header #headerbox nav.menu ul.llleft :nth-child(3) {
           transform: translateX(40px);
 }
 
-header #headerbox nav.menu ul.llmiddle {
-  top: 200px;
-  left: 51vw;
-  width: 180px;
+header #headerbox nav.menu ul.ybg {
+  position: absolute;
+  left: 52vw;
+  top: 300px;
 }
 
-header #headerbox nav.menu ul.llmiddle li a.member {
-  left: 50px;
-  top: 170px;
+header #headerbox nav.menu ul.ybg div {
+  opacity: 0;
+  z-index: 1;
+  width: 220px;
+  height: 70px;
+  background-color: #FFC400;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+header #headerbox nav.menu ul.ybg :nth-child(1) {
+  -webkit-transform: skew(8deg) translate(-35px, -46px);
+          transform: skew(8deg) translate(-35px, -46px);
+}
+
+header #headerbox nav.menu ul.ybg :nth-child(2) {
+  -webkit-transform: skew(8deg) translate(-5px, -21px);
+          transform: skew(8deg) translate(-5px, -21px);
+}
+
+header #headerbox nav.menu ul.ybg :nth-child(3) {
+  -webkit-transform: skew(8deg) translate(25px, 4px);
+          transform: skew(8deg) translate(25px, 4px);
+}
+
+header #headerbox nav.menu ul.llmiddle {
+  top: 519px;
+  left: 58vw;
+  width: 180px;
 }
 
 header #headerbox nav.menu ul.llmiddle li a.member svg {
   position: absolute;
-  -webkit-transform: scale(4);
-          transform: scale(4);
+  -webkit-transform: scale(3);
+          transform: scale(3);
 }
 
 header #headerbox nav.menu ul.llmiddle li a.cart {
   left: 90px;
-  top: 325px;
 }
 
 header #headerbox nav.menu ul.llmiddle li a.cart svg {
   position: absolute;
-  -webkit-transform: scale(4);
-          transform: scale(4);
+  -webkit-transform: scale(3);
+          transform: scale(3);
 }
 
 header #headerbox nav.menu ul.llmiddle li a path {
@@ -2564,7 +2601,7 @@ header #headerbox nav.menu ul.llmiddle li a path {
 
 header #headerbox nav.menu ul.llright {
   top: 200px;
-  left: 70vw;
+  left: 74vw;
   width: 310px;
 }
 
@@ -2614,7 +2651,7 @@ header #headerbox .hamburger {
   top: calc(50vh - 25px);
   width: 60px;
   height: 50px;
-  right: 5px;
+  right: 15px;
   outline: none !important;
 }
 
@@ -2633,10 +2670,10 @@ header #headerbox .hamburger .hamburger-inner, header #headerbox .hamburger .ham
 header #headerbox div#greymask {
   display: none;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  top: -10vh;
+  left: -10vw;
+  width: 120vw;
+  height: 120vh;
   background-color: rgba(34, 34, 34, 0);
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
@@ -2653,9 +2690,9 @@ header #headerbox div#greymask.show {
 header #headerbox div#hamburgerBG {
   display: none;
   opacity: 0;
-  position: absolute;
+  position: fixed;
   width: 80%;
-  min-width: 1140px;
+  min-width: 1152px;
   height: 100vh;
   right: 0;
   top: 0;
@@ -2675,7 +2712,7 @@ header #headerbox div#hamburgerBG div.white {
   width: 100%;
   height: 100%;
   min-height: 986px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   -webkit-transform: skew(16deg) translateX(150px);
           transform: skew(16deg) translateX(150px);
 }

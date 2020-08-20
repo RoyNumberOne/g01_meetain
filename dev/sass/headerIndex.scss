@@ -1,25 +1,21 @@
 @import 'common';
 @import 'hamburgers';
 header {
+    user-select: none;
     position: fixed;
     z-index: 25;
     top: 0;
     left: 0;
     & * {
         position: relative;
+        text-decoration:none !important;
         // border: 2px solid greenyellow ;
     }
     // border: 2px solid black;
     & #headerbox {
-        & a.logo{
-            left: calc( 50% - 150px);
-            margin-top: 60px;
-            & img{
-                width: 300px;
-                // left: 50%;
-            }
-        }
         & nav.menu{
+            position: relative;
+            margin-top: 100px;
             display: none;
             opacity: 0;
             width: 800px;
@@ -34,20 +30,21 @@ header {
                 }
             }
             & ul.logo {
-                top: 30px;
-                left: 30vw;
+                top: 340px;
+                left: 32vw;
                 & li a img {
                         // position: absolute;
-                        width: 400px;
+                        width: 230px;
                     }
             }
             & ul.llleft {
                 top: 200px;
-                left: calc(40vw - 90px);
+                left: calc(50vw);
                 width: 180px;
                 & li a p{
                     font-size: 50px !important;
-                    margin-bottom: 65px;
+                    margin-bottom: 15px;
+                    z-index: 2;
                 }
                 & :nth-child(1){
                     transform: translateX(-30px);
@@ -60,24 +57,50 @@ header {
                 }
 
             }
+
+            & ul.ybg {
+                position: absolute;
+                left: 52vw;
+                top: 300px;
+                & div{
+                        // position: absolute;
+                        opacity: 0;
+                        z-index: 1;
+                        // transform: translate(-30px , -50px);
+                        width: 220px;
+                        height: 70px;
+                        background-color: $mt_yellow;
+                        transition: 0.2s all ease-in-out;
+                    }
+
+                    & :nth-child(1){
+                        transform: skew(8deg) translate(-35px,-46px);
+                    }
+                    & :nth-child(2){
+                        transform: skew(8deg) translate(-5px,-21px);
+                    }
+                    & :nth-child(3){
+                        transform: skew(8deg) translate(25px,4px);
+                    }
+            }
             & ul.llmiddle {
-                top: 200px;
-                left: 51vw;
+                top: 519px;
+                left: 58vw;
                 width: 180px;
                 & li a.member{
-                    left: 50px;
-                    top: 170px;
+                    // left: 50px;
+                    // top: 170px;
                     & svg {
                         position: absolute;
-                        transform: scale(4);
+                        transform: scale(3);
                     }
                 }
                 & li a.cart{
                     left: 90px;
-                    top: 325px;
+                    // top: 325px;
                     & svg {
                         position: absolute;
-                        transform: scale(4);
+                        transform: scale(3);
                     }
                 }
                 & li a path{
@@ -86,7 +109,7 @@ header {
             }
             & ul.llright {
                 top: 200px;
-                left: 70vw;
+                left: 74vw;
                 width: 310px;
                 & li{
                     display: inline-block;
@@ -122,7 +145,7 @@ header {
             top: calc(50vh - 25px);
             width: 60px;
             height: 50px;
-            right: 5px;
+            right: 15px;
             outline: none !important;
             &.is-active .hamburger-box .hamburger-inner{
                 background-color: $mt_blue2;
@@ -135,12 +158,13 @@ header {
             }
         }
         div#greymask{
+            // border: 2px solid red;
             display: none;
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
+            top: -10vh;
+            left: -10vw;
+            width: 120vw;
+            height: 120vh;
             background-color: rgba($mt_black,0);
             transition: 0.2s all;
             &.on{
@@ -153,9 +177,9 @@ header {
         div#hamburgerBG{
             display: none;
             opacity: 0;
-            position: absolute;
+            position: fixed;
             width: 80%;
-            min-width: 1140px;
+            min-width: 1152px;
             height: 100vh;
             right: 0;
             top: 0;
@@ -171,7 +195,7 @@ header {
                 width: 100%;
                 height: 100%;
                 min-height: 986px;
-                background-color: rgb(255, 255, 255);
+                background-color: rgba(255, 255, 255,0.8);
                 transform: skew(16deg) translateX(150px);
             }
             & div.yellow1{

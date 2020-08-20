@@ -25,35 +25,29 @@
     <header> 
 
         <div id="headerbox">
-            <a href="#" class="logo">
-                <img class="logo" src="./images/logo/LOGO_white.png" alt="">
-            </a> 
 
             <div id="greymask"></div>
             <div id="hamburgerBG">
                 <div class="ab white"></div>
-                <div class="ab yellow1"></div>
-                <div class="ab yellow2"></div>
-                <div class="ab yellow3"></div>
+
                 <div class="ab blue"><p>Copyright © 2020 Mountain Community.</p></div>
             </div>
 
-            <nav class="menuhover">
-                <ul class="menuhover">
-                    <li class="bg bg1"></li>
-                    <li class="bg bg2"></li>
-                    <li class="bg bg3"></li>
-                </ul>
-            </nav>
+
 
             <nav class="menu">
                 <ul class="logo">
                     <li><a class="menuLogo" href="#"><img class="menuLogo" src="./images/logo/LOGO_black.png" ></a></li>
                 </ul>
+                <ul class=ybg>
+                    <li class="y1"><div></div></li>
+                    <li class="y2"><div></div></li>
+                    <li class="y3"><div></div></li>
+                </ul>
                 <ul class="link_list llleft">
-                    <li><a class="tour" href="#"><p>揪團區</p></a></li>
-                    <li><a class="forum" href="#"><p>討論區</p></a></li>
-                    <li><a class="product" href="#"><p>商品區</p></a></li>
+                    <li><a class="tour" href="#"><div class="ybg y1"></div><p>揪團區</p></a></li>
+                    <li><a class="forum" href="#"><div class="ybg y2"></div><p>討論區</p></a></li>
+                    <li><a class="product" href="#"><div class="ybg y3"></div><p>商品區</p></a></li>
                 </ul>
                 <ul class="link_list llmiddle">
                     <li><a class="member" href="#"><i class="fa fa-user"></i></a></li>
@@ -310,32 +304,24 @@
             },200)
         });
       </script>
+
       <script>
-        $("a.tour").hover(function(){
-            $("div.yellow1").css("opacity","0.9");
-            $("li.bg1").css("opacity","0.9");
-        },function(){
-            $("div.yellow1").css("opacity","0");
-            $("li.bg1").css("opacity","0");
-        });
-        $("a.forum").hover(function(){
-            $("div.yellow2").css("opacity","0.9");
-            $("li.bg2").css("opacity","0.9");
-        },function(){
-            $("div.yellow2").css("opacity","0");
-            $("li.bg2").css("opacity","0");
-        });
-        $("a.product").hover(function(){
-            $("div.yellow3").css("opacity","0.9");
-            $("li.bg3").css("opacity","0.9");
-        },function(){
-            $("div.yellow3").css("opacity","0");
-            $("li.bg3").css("opacity","0");
-        });
-
-        
+          $("a.tour").hover(function(){
+                $("li.y1 div").css("opacity","0.9");
+            },function(){
+                $("li.y1 div").css("opacity","0");
+            });
+          $("a.forum").hover(function(){
+                $("li.y2 div").css("opacity","0.9");
+            },function(){
+                $("li.y2 div").css("opacity","0");
+            });
+          $("a.product").hover(function(){
+                $("li.y3 div").css("opacity","0.9");
+            },function(){
+                $("li.y3 div").css("opacity","0");
+            });
       </script>
-
 
 
     
