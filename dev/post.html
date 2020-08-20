@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[討論區]發文頁面</title>
+    <link rel="stylesheet" href="./css/post.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+    <header> 
+        <div id="headerbox">
+            header
+    </header>
+
+    <div id="banner">
+        <img src="#" alt="">
+    </div>
+
+    <main id="post">
+        <div id="post-block">
+            <div class="ntittle">
+                <h2>發表新主題</h2>
+            </div>
+
+            <div class="forum_post">
+                <form id="form-table" action="">
+                    <div class="text">
+                        <span>新增類別</span>
+                    </div>
+
+                    <div class="block">
+                        <select class="custom_select">
+                            <option>全部</option>
+                            <option>爬山心得</option>
+                            <option>裝備資訊</option>
+                            <option>新手專區</option>
+                            <option>登山知識</option>
+                        </select>
+                    </div>
+
+                    <div class="text">
+                        <span>輸入標題</span>
+                    </div>
+
+                    <div class="block">
+                        <input type="text" placeholder="(最多可上傳20個字)">
+                    </div>
+
+                    <div class="text">
+                        <span>封面圖片</span>
+                    </div>
+
+                    <div class="block">
+                        <div class="update-img">
+                            <span>+上傳封面圖片</span>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <span>內文</span>
+                    </div>
+
+                    <div class="block">
+                        <textarea name="#" id="forum_post_innertext" cols="30" rows="10" placeholder="我想要說...."></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- -------------------------GO TOP------------------------- -->
+    <a href="#" id="gotop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- -------------------------aside link--------------------------->
+    <div id="aside-link">
+        <div class="aside-com-btn">
+            <a href="#" target="_blank"><img src="./img/want2.png" alt=""></a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer_logo_block">
+            <img src="./img/LOGO_white.png" alt="">
+            <div class="copyright">Copyright © 2020 Mountain Community.</div>
+        </div>
+        <div class="footer_info">
+            <div class="sevrves_place-serves_tel">
+                <div class="place">
+                    <div>服務地點</div>
+                    <div>桃園市中壢區中大路300號</div>
+                    <div>工程二館 資策會大樓</div>
+                </div>
+                <div class="tel">
+                    <div>連絡電話</div>
+                    <div>(03)425-7387</div>
+                </div>
+            </div>
+            <div class="serves_time-serves_email">
+                <div class="time">
+                    <div>服務時間</div>
+                    <div>週一至週五10:00~17:00</div>
+                </div>
+                <div class="email">
+                    <div>服務信箱</div>
+                    <div>tibame@gmail.com</div>
+                </div>
+            </div>
+            <div class="epaper-footer_link">
+                <div class="epaper">
+                    <div class="etitle">輸入信箱訂閱電子報</div>
+                    <div class="einput">
+                        <input type="text" placeholder="Email address">
+                        <div class="e_bt">SUBSCRIBE</e_bt>
+                    </div>
+                </div>
+                <div class="link">
+                    <div class="linkup">
+                        <div><a href="https://www.cwb.gov.tw/V8/C/" target="_blank" style="color: white">中央氣象局</a></div>
+                        <div><a href="https://npm.cpami.gov.tw/" target="_blank">登山證申請</a></div>
+                        <div><a href="" target="_blank">網站快速導覽</a></div>
+                    </div>
+                    <div class="linkdown">
+                        <div><a href="" target="_blank">服務條款及隱私權政策</a></div>
+                        <div><a href="" target="_blank">會員使用條款</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/fontawesome/all.js"></script>
+    <script src="./js/AOS-MASTER/aos.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            /* 按下GoTop按鈕時的事件 */
+            $('#gotop').click(function(){
+                $('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
+                return false;
+            });
+            
+            /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+            $(window).scroll(function() {
+                if ( $(this).scrollTop() > 400){
+                    $('#gotop').fadeIn();
+                } else {
+                    $('#gotop').fadeOut();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
