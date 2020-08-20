@@ -2487,7 +2487,7 @@ header * {
 
 header #headerbox nav.menu {
   position: relative;
-  margin-top: 100px;
+  margin-top: 7vh;
   display: none;
   opacity: 0;
   width: 800px;
