@@ -1,4 +1,5 @@
-// ===============reset===============html, body, div, span, applet, object, iframe,
+// ===============reset===============
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -125,7 +126,8 @@ html , body {
 
 // ==============button==============
 button.btnA_XLwRA{
-  z-index: 2;
+    position: relative;
+    z-index: 2;
   width: 190px;
   height: 45px;
   border: 1px solid $mt_black;
@@ -220,7 +222,8 @@ button.btnA_XLwRA{
 
 
 button.btnA_XLwLA{
-  z-index: 2;
+    position: relative;
+    z-index: 2;
   width: 190px;
   height: 45px;
   border: 1px solid $mt_black;
@@ -315,7 +318,8 @@ button.btnA_XLwLA{
 }
 
 button.btnA_LwRA{
-  z-index: 2;
+    position: relative;
+    z-index: 2;
   width: 95px;
   height: 45px;
   border: 1px solid $mt_black;
@@ -408,7 +412,8 @@ button.btnA_LwRA{
   }
 }
 button.btnA_LwLA{
-  z-index: 2;
+    position: relative;
+    z-index: 2;
   width: 95px;
   height: 45px;
   border: 1px solid $mt_black;
@@ -503,7 +508,8 @@ button.btnA_LwLA{
 }
 
 button.btnA_L{
-  z-index: 2;
+    position: relative;
+    z-index: 2;
   width: 95px;
   height: 45px;
   border: 1px solid $mt_black;
@@ -552,7 +558,8 @@ button.btnA_L{
 } 
 
 button.btnA_MwRA{
-  z-index: 2;
+    position: relative;
+    z-index: 2;
   width: 45px;
   height: 45px;
   border: 1px solid $mt_black;
@@ -637,7 +644,8 @@ button.btnA_MwRA{
 
 
 button.btnA_MwLA{
-  z-index: 2;
+    position: relative;
+    z-index: 2;
   width: 45px;
   height: 45px;
   border: 1px solid $mt_black;
@@ -722,7 +730,8 @@ button.btnA_MwLA{
 }
 
 button.btnA_S{
-  margin: 3px;
+    position: relative;
+    margin: 3px;
   display: inline-block;
   z-index: 2;
   width: 22px;
@@ -783,7 +792,8 @@ button.btnA_S{
 
 
 button.btnB_XL_blue{
-  z-index: 2;
+    position: relative;
+    z-index: 2;
   width: 190px;
   height: 45px;
   // border: 4px solid $mt_blue2;
@@ -839,7 +849,8 @@ button.btnB_XL_blue{
 
 
 button.btnB_XL_yellow{
-  z-index: 2;
+    position: relative;
+    z-index: 2;
   width: 190px;
   height: 45px;
   // border: 4px solid $mt_blue2;
@@ -893,7 +904,8 @@ button.btnB_XL_yellow{
 
 
 button.btnB_L_blue{
-  z-index: 2;
+    position: relative;
+    z-index: 2;
   width: 95px;
   height: 45px;
   outline: 0px !important;
@@ -947,7 +959,8 @@ button.btnB_L_blue{
 
 
 button.btnB_L_yellow{
-  z-index: 2;
+    position: relative;
+    z-index: 2;
   width: 95px;
   height: 45px;
   outline: 0px !important;
