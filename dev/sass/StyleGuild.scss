@@ -5,6 +5,12 @@
     // border: 2px solid black; 
 }
 
+input {
+    display: block;
+    outline: none;
+    width: 300px;
+}
+
 html,body {
     position: relative;
     margin: 0;
