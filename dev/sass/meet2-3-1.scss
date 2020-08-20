@@ -1,0 +1,58 @@
+@import "Reset";
+
+$color1: #153A64;
+$color2: #2C5E9E;
+$color3: #FFC400;
+$color4: #EAF1F4;
+
+$textColor1: #555555;
+
+* {
+    font-family: 'Noto Sans TC', sans-serif !important;
+    color: $textColor1;
+}
+/////字體/////
+//h2 頁面標題
+@mixin pageTittle($color) {
+    font-size: 30px;
+    font-weight: 600;
+    color: $color;
+    display: table;
+    margin:50px auto;
+    position: relative;
+    &::after{
+        content:"";
+        width: 100%;
+        padding-top: 5px;
+        border-radius: 10px;
+        background-color:$color3;
+        position: absolute;
+        left:0; bottom: 0;
+    }
+}
+//h3 內文標題
+@mixin contentTittle($color) {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    line-height: 1.6;
+    font-weight: 600;
+    color: $color;
+}
+//p 內文內容
+@mixin contentText($color) {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    color: $color;
+}
+//span 日期地點難度tag
+@mixin tagLocationDateDegree($color) {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+    color: $color;
+}
+
+

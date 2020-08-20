@@ -1,0 +1,306 @@
+// @import "Reset";
+@import "common";
+
+$color1: #153A64;
+$color2: #2C5E9E;
+$color3: #FFC400;
+$color4: #EAF1F4;
+
+$textColor1: #555555; 
+
+* {
+    font-family: 'Noto Sans TC', sans-serif !important;
+    color: $textColor1;
+}
+/////字體/////
+//h2 頁面標題
+@mixin pageTittle {
+    font-size: 30px;
+    font-weight: 600; 
+    display: table; 
+    margin:50px auto;
+    position: relative;
+    &::after{
+        content:"";
+        width: 100%;
+        padding-top: 5px;
+        border-radius: 10px;
+        background-color:$color3;
+        position: absolute;
+        left:0; bottom: 0;
+    }
+}
+//h3 內文標題
+@mixin contentTittle {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    line-height: 1.6;
+    font-weight: 600;
+}
+//p 內文內容
+@mixin contentText {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 1px;
+}
+//span 日期地點難度tag
+@mixin tagLocationDateDegree {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.4px;
+}
+
+/////按鈕/////
+//尺寸-大
+@mixin btnSizeL {
+    width: 190px;
+}
+//尺寸-中
+@mixin btnSizeM {
+    width: 95px;
+}
+//按鈕款式Ａ
+@mixin btnA {
+    margin: 20px;
+    padding: 0;
+    border: 1px solid #757575;
+    color: #757575;
+    line-height: 45px;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    &::after{
+        content: "";
+        width: 100%;
+        padding-top: 45px;
+        border-right: 1px solid #757575;
+        border-bottom: 1px solid #757575;
+        position: absolute;
+        bottom:-5px;
+        left: 5px;
+    }
+}
+
+//被div裁型的圖片
+@mixin imgs {
+    width: 100%;
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+}
+
+#meet2-2{
+    border: 1px solid blue;
+    margin: auto;
+    width: 1200px;
+    // button{
+    //     @include btnA;
+    //     @include btnSizeM;
+    // }
+    h2{
+        @include pageTittle;
+    }
+    .step{
+        ul{
+            text-align: center;
+            li{
+                display: inline-block;
+                margin-right: 200px;
+                @include contentTittle;
+                position: relative;
+                &::before{
+                    width: 70px;
+                    line-height: 70px;
+                    text-align: center;
+                    color: $color3;
+                    border: 1px solid $color3;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: -90px; top:-50%;
+                }
+                &::after{
+                    content: ".....";
+                    font-size: 30px;
+                    letter-spacing: 10px;
+                    color: $textColor1;
+                    position: absolute;
+                    top: -50%; right:-110px;
+                }
+                &:first-child{
+                    margin-left: 90px;
+                }
+                &:last-child{
+                    margin-right: 0px;
+                }
+            }
+            li.-on{
+                color: $color3;
+                &::before{
+                    color: #fff;
+                    background-color: $color3;
+                }
+            }
+            li.step_icon1{
+                &::before{
+                    content: "1";
+                }
+            }
+            li.step_icon2{
+                &::before{
+                    content: "2";
+                }
+            }
+            li.step_icon3{
+                &::before{
+                    content: "3";
+                }
+            }
+            
+
+        }
+    }
+    .tour_build_form{
+        border: 1px solid $textColor1;
+        border-radius: 30px;
+        margin-top: 50px;
+        padding: 30px;
+        @include contentText;
+        .btn_box{
+            align-self: flex-end;
+        }
+        .tour_build_step1{ //步驟一
+            border: 1px solid rgb(167, 50, 50);
+            // display: flex;
+            display: none;
+            flex-direction: row;
+            justify-content: space-between;
+            input,select,.degree_category{
+                width: 100%;
+                background-color: $color4 ;
+                border:none;
+                height: 40px;
+                border-radius: 10px;
+            }
+            section{
+                width: 50%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .mountain_image{
+                    width: 70%;
+                    padding-top: 70%;
+                    margin: auto;
+                    background-color: #555;
+                }
+                .tour_info1{
+                    // border: 1px solid rgb(182, 27, 161);
+                    width: 60%;
+                    display: flex;
+                    flex-direction: column;
+                    .tour_number{
+                        select{
+                            width: 30%;
+                        }
+                    }
+                }
+                
+            }
+           
+        }
+        .tour_build_step2{ //步驟二
+            border: 1px solid rgb(34, 163, 180);
+            // display: flex;
+            display: none;
+            justify-content: space-between;
+            .tour_info2{
+                // border: 1px solid #000;
+                width: 60%;
+                display: flex;
+                justify-content: space-between;
+                
+                >div{
+                    // border: 1px solid rgb(72, 23, 185);
+                    width: 50%;
+                    padding-right: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    .tour_equip{ //建議裝備
+                        margin-bottom: 30px;
+                        >div{
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
+                        label{
+                            width: 50%;
+                            margin: 5px 0;
+                            p{
+                                display: inline-block;
+                                line-height: 40px;
+                                background-color: $color4;
+                                border-radius: 10px;
+                                padding: 0 5px;
+                            }
+                        }
+                    }
+                    .notice{//注意事項
+                        flex-grow:2;
+                        display: flex;
+                        flex-direction: column;
+                        textarea{
+                            flex-grow:2;
+                        }
+                    }
+                }
+                >label{
+                    width: 50%;
+                    textarea{
+                        height: 470px;
+                    }
+                }
+                textarea{
+                    background-color: $color4;
+                    border-radius: 10px;
+                    border: none;  
+                    width: 100%;
+                    resize : none;
+                }
+
+            }
+        }
+        .tour_build_step3{ //步驟三
+            border: 1px solid rgb(50, 167, 50);
+            // display: flex;
+            display: none;
+            flex-direction: row;
+            justify-content: space-between;
+            .tour_info3{
+                border: 1px solid #000;
+                width: 60%;
+                display: flex;
+                justify-content: space-between;
+                .tour_image{
+                    flex-grow: 2;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    >div{
+                        width: 30%;
+                        padding-top: 30%;
+                        background-color: #555;
+                        margin: 5px;
+                    }
+                }
+            }
+            
+        }
+        section.-on{
+            display: flex;
+        }
+    }
+}
+
+
+
