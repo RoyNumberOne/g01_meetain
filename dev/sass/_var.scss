@@ -1,0 +1,37 @@
+*{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+// 按鈕規範
+// 陣列需用map-get($變數,數值);
+$button-size-w:(
+    'L': 190px,
+    'M': 95px, 
+    'S': 47px
+);
+
+$button-size-h:45px;
+
+$button-color:(
+    'blue': #2C5E9E,
+    'yellow': #FFC400
+);
+
+// h2頁面標題:
+$h2-font-size: 30px;
+$h2-font-weight: 600;
+
+// h3內文標題:
+$h3-font-size: 20px;
+$h3-font-weight: 800;
+$h3-line-height: 1.6rem;
+$h3-letter-spacing: 1.5px;
+
+// p內文內容:
+$p-font-size: 16px;
+$p-font-weight: 400;
+$p-line-height: 1.6rem;
+$p-letter-spacing: 1px;
+
+//其他
+$border-radius: 30px;
