@@ -382,11 +382,11 @@ div#hamburgerBG{
                 transform: translateX(40px);
                 position: absolute !important;
                 
-                & a.cart svg{
+                & a.member svg{
                     position: absolute;
                     top: 0;
                 }
-                & a.member svg{
+                & a.cart svg{
                     position: absolute;
                     left: 130px;
                     top: 1px;
@@ -470,11 +470,11 @@ div#hamburgerBG{
                 transform: translateX(40px);
                 position: absolute !important;
                 
-                & a.cart svg{
+                & a.member svg{
                     position: absolute;
                     top: 0;
                 }
-                & a.member svg{
+                & a.cart svg{
                     position: absolute;
                     left: 130px;
                     top: 1px;
@@ -511,7 +511,7 @@ div#hamburgerBG{
 @media screen and (max-width: 575px){
     //100%
     a.logo img {
-        transform: translateX(30px);
+        transform: scale(0.75);
     }
     a{
         svg path {
@@ -561,11 +561,11 @@ div#hamburgerBG{
                 top: 350px;
                 transform: translateX(-10px);
                 position: absolute !important;
-                & a.cart svg{
+                & a.member svg{
                     position: absolute;
                     top: 0;
                 }
-                & a.member svg{
+                & a.cart svg{
                     position: absolute;
                     left: 90px;
                     top: 1px;
@@ -583,6 +583,7 @@ div#hamburgerBG{
         }
         & .hamburger{
             display: block;
+            right: 2px !important;
         }
 
         div#hamburgerBG{

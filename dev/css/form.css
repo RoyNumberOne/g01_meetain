@@ -1,6 +1,7 @@
 @charset "UTF-8";
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: 'Roboto', Helvetica , "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei",Arial,sans-serif;
@@ -30,6 +31,8 @@ header {
   max-width: 100%;
   border: 2px solid gold;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -53,6 +56,8 @@ main {
 }
 
 .news_list .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid black;
 }
@@ -85,8 +90,13 @@ main {
 }
 
 .search-block .outline {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .search-block .item_btns {
@@ -142,8 +152,12 @@ main {
 }
 
 .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 20px;
 }
 
@@ -191,11 +205,17 @@ main {
 }
 
 .card .slider-text {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 200px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   width: 100%;
 }
@@ -210,11 +230,18 @@ main {
 }
 
 #forum-tittle {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   text-align: center;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background: #153A64;
   color: white;
   line-height: 50px;
@@ -241,10 +268,14 @@ main {
 }
 
 #forum-list .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   text-align: center;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #f6f6f6;
   margin-top: 0.5%;
 }
@@ -285,12 +316,17 @@ main {
 }
 
 #forum-list #poster-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-top: 5%;
 }
 
 #forum-list #poster-block .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 40%;
   text-align: center;
@@ -304,11 +340,15 @@ main {
 }
 
 #forum-list #poster-block .remessage {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: auto;
 }
 
 #forum-list #poster-block .like {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: auto;
 }
@@ -383,8 +423,11 @@ aside .hot-title .color-bottom01 {
 }
 
 #hot-travel-asideblock .travel-card .card-list .pop-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
 }
 
 #hot-travel-asideblock .travel-card .card-list .pop-title h3:nth-child(1) {
@@ -396,16 +439,23 @@ aside .hot-title .color-bottom01 {
 }
 
 #hot-travel-asideblock .travel-card .card-list .pop-content-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
 }
 
 #hot-travel-asideblock .travel-card .card-list .pop-content-block .pop-user {
   width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 12px;
   margin: auto;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #hot-travel-asideblock .travel-card .card-list .pop-content-block .pop-user .pop-user-img {
@@ -420,6 +470,8 @@ aside .hot-title .color-bottom01 {
 }
 
 #hot-travel-asideblock .travel-card .card-list .pop-content-block .pop-place {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 12px;
   padding: 5px 0px;
@@ -433,6 +485,8 @@ aside .hot-title .color-bottom01 {
 }
 
 #hot-travel-asideblock .travel-card .card-list .pop-content-block .pop-easy {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 12px;
   padding: 5px 0px;
@@ -444,6 +498,8 @@ aside .hot-title .color-bottom01 {
 }
 
 #hot-travel-asideblock .travel-card .card-list .pop-content-block .pop-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 12px;
   padding: 5px 0px;
@@ -456,9 +512,15 @@ aside .hot-title .color-bottom01 {
 }
 
 #tag .hot-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 300px;
 }
 
@@ -487,9 +549,11 @@ aside .hot-title .color-bottom01 {
   color: #fff;
   background-color: #153a64;
   line-height: 50px;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   text-align: center;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 #aside-link {

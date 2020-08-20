@@ -32,9 +32,15 @@
 #meet2-0 .hotMeet > div {
   border: 1px solid #000;
   margin-bottom: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #meet2-0 .hotMeet > div .hotMeetTop3 {
@@ -46,8 +52,11 @@
 
 #meet2-0 .hotMeet > div .hotMeetTop3 .section1 {
   margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #meet2-0 .hotMeet > div .hotMeetTop3 .section1 .hotMeetImg1 {
@@ -63,7 +72,8 @@
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 #meet2-0 .hotMeet > div .hotMeetTop3 .section1 .hotMeetTextCont {
@@ -74,8 +84,12 @@
 }
 
 #meet2-0 .hotMeet > div .hotMeetTop3 .section1 .hotMeetTextCont .tittleLike {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #meet2-0 .hotMeet > div .hotMeetTop3 .section1 .hotMeetTextCont .tittleLike h3 {
@@ -104,8 +118,12 @@
 }
 
 #meet2-0 .hotMeet > div .hotMeetTop3 .section1 .hotMeetTextCont .infoOrganiser {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #meet2-0 .hotMeet > div .hotMeetTop3 .section1 .hotMeetTextCont .infoOrganiser .info {
@@ -136,7 +154,8 @@
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 #meet2-0 .hotMeet > div .hotMeetTop3 .section1 .hotMeetTextCont .infoOrganiser .organiser .memberInfo {
@@ -179,9 +198,15 @@
 }
 
 #meet2-0 .hotMeet > div .hotMeetTop3 .section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #meet2-0 .hotMeet > div .hotMeetTop3 .section2 .hotMeetImgs {
@@ -200,7 +225,8 @@
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 #meet2-0 .hotMeet > div .hotMeetTop3 .section2 button {
@@ -274,8 +300,12 @@
 
 #meet2-0 .newMeet .changeTypeBtn {
   border: 1px solid orange;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin-bottom: 30px;
 }
 
@@ -371,7 +401,8 @@
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 #meet2-0 .newMeet .newMeetActivity .item .organiser .memberInfo {
@@ -409,9 +440,13 @@
 }
 
 #meet2-0 .newMeet .newMeetActivity.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #meet2-0 .newMeet .newMeetActivity.card .item {
@@ -432,8 +467,12 @@
 }
 
 #meet2-0 .newMeet .newMeetActivity.list .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 30px auto;
 }
 
@@ -448,15 +487,28 @@
 }
 
 #meet2-0 .newMeet .newMeetActivity.list .item .organiser {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #meet2-0 .newMeet .newMeetActivity.list .item .organiser .memberInfo .certification {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #meet2-0 .newMeet .newMeetActivity.list .item .organiser .memberInfo .certification .certificationIcon {
@@ -464,7 +516,10 @@
 }
 
 #meet2-0 .newMeet .newMeetActivity.list .item .organiser .memberInfo .memberBadge {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 /*# sourceMappingURL=meet2-0.css.map */

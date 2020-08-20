@@ -1,6 +1,8 @@
 div.wrap {
   max-width: 1152px;
   margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -19,7 +21,8 @@ div.wrap .category .show_now img {
   display: block;
   height: 100%;
   margin: auto;
-  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 div.wrap .category .show_now .show_hover {
@@ -29,6 +32,7 @@ div.wrap .category .show_now .show_hover {
   width: 100%;
   height: 100%;
   opacity: 0;
+  -webkit-transition: all .5s 0s ease;
   transition: all .5s 0s ease;
   background-size: 100% 100%;
 }
@@ -41,14 +45,24 @@ div.wrap .category .show_now .show_hover:hover {
 div.wrap .category .show_now .show_hover .p_title {
   height: 100%;
   font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 div.wrap .category .category_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #fff;
   margin-top: -30px;
 }
@@ -69,6 +83,7 @@ div.wrap .category .category_list .bag .show_hover {
   width: 100%;
   height: 100%;
   opacity: 0;
+  -webkit-transition: all .5s 0s ease;
   transition: all .5s 0s ease;
   background-size: 100% 100%;
 }
@@ -82,9 +97,15 @@ div.wrap .category .category_list .bag .show_hover:hover {
 div.wrap .category .category_list .bag .show_hover .p_title {
   height: 100%;
   font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 div.wrap .category .category_list .clothes {
@@ -103,6 +124,7 @@ div.wrap .category .category_list .clothes .show_hover {
   width: 100%;
   height: 100%;
   opacity: 0;
+  -webkit-transition: all .5s 0s ease;
   transition: all .5s 0s ease;
   background-size: 100% 100%;
 }
@@ -116,9 +138,15 @@ div.wrap .category .category_list .clothes .show_hover:hover {
 div.wrap .category .category_list .clothes .show_hover .p_title {
   height: 100%;
   font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 div.wrap .category .category_list .shoes {
@@ -137,6 +165,7 @@ div.wrap .category .category_list .shoes .show_hover {
   width: 100%;
   height: 100%;
   opacity: 0;
+  -webkit-transition: all .5s 0s ease;
   transition: all .5s 0s ease;
   background-size: 100% 100%;
 }
@@ -150,9 +179,15 @@ div.wrap .category .category_list .shoes .show_hover:hover {
 div.wrap .category .category_list .shoes .show_hover .p_title {
   height: 100%;
   font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 div.wrap .category .category_list .tent {
@@ -171,6 +206,7 @@ div.wrap .category .category_list .tent .show_hover {
   width: 100%;
   height: 100%;
   opacity: 0;
+  -webkit-transition: all .5s 0s ease;
   transition: all .5s 0s ease;
   background-size: 100% 100%;
 }
@@ -184,9 +220,15 @@ div.wrap .category .category_list .tent .show_hover:hover {
 div.wrap .category .category_list .tent .show_hover .p_title {
   height: 100%;
   font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 div.wrap .category .category_list .others {
@@ -205,6 +247,7 @@ div.wrap .category .category_list .others .show_hover {
   width: 100%;
   height: 100%;
   opacity: 0;
+  -webkit-transition: all .5s 0s ease;
   transition: all .5s 0s ease;
   background-size: 100% 100%;
 }
@@ -218,21 +261,34 @@ div.wrap .category .category_list .others .show_hover:hover {
 div.wrap .category .category_list .others .show_hover .p_title {
   height: 100%;
   font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 div.wrap .product_block {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
   position: relative;
 }
 
 div.wrap .product_block .items_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 div.wrap .product_block .items_block .item_top {
@@ -243,11 +299,13 @@ div.wrap .product_block .items_block .item_top {
 div.wrap .product_block .items_block .item_top img {
   height: 100%;
   cursor: pointer;
-  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 div.wrap .product_block .items_block .item_top :hover {
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 div.wrap .product_block .items_block .item_bom {
@@ -258,11 +316,13 @@ div.wrap .product_block .items_block .item_bom {
 div.wrap .product_block .items_block .item_bom img {
   height: 100%;
   cursor: pointer;
-  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 div.wrap .product_block .items_block .item_bom :hover {
-  transform: scale(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 div.wrap .product_block .items_block .it_bg1 {
