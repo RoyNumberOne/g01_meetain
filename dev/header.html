@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel=“stylesheet” href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel=“stylesheet” href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/v4-shims.min.css">
-    <link rel="stylesheet" href="./css/header_owen.css">
+    <link rel="stylesheet" href="./css/header.css">
     <script src="./js/jquery.min.js"></script>
     <script src="./js/vue.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
-    <script src="./js/fullpage.min.js"></script>
 </head>
 <body>
 
@@ -35,15 +34,20 @@
 
             <nav class="menu">
                 <ul class="link_list llleft">
-                    <li><a class="tour" href="#"><p>揪團</p></a></li>
+                    <li><a class="tour" href="#"><p>揪團區</p></a></li>
                     <li><a class="forum" href="#"><p>討論區</p></a></li>
-                    <li><a class="product" href="#"><p>商品</p></a></li>
+                    <li><a class="product" href="#"><p>商品區</p></a></li>
                 </ul>
                 <ul class="link_list llright">
                     <li><a class="cart" href="#"><i class="fa fa-shopping-cart"></i></a></li>
                     <li><a class="member" href="#"><i class="fa fa-user"></i></a></li>
                 </ul>
             </nav>
+            <div id="imagebox">
+                <img id="picTour" src="./images/header/tour.png" alt="">
+                <img id="picForum" src="./images/header/forum.png" alt="">
+                <img id="picProduct" src="./images/header/product.png" alt="">
+            </div>
 
             <div id="greymask"></div>
             <div id="hamburgerBG">
@@ -123,26 +127,30 @@
         $("a.tour").hover(function(){
             $("div.yellow1").css("opacity","0.9");
             $("li.bg1").css("opacity","0.9");
+            $("#picTour").css("top","-25px");
         },function(){
             $("div.yellow1").css("opacity","0");
             $("li.bg1").css("opacity","0");
+            $("#picTour").css("top","100%");
         });
         $("a.forum").hover(function(){
             $("div.yellow2").css("opacity","0.9");
             $("li.bg2").css("opacity","0.9");
+            $("#picForum").css("top","-25px");
         },function(){
             $("div.yellow2").css("opacity","0");
             $("li.bg2").css("opacity","0");
+            $("#picForum").css("top","100%");
         });
         $("a.product").hover(function(){
             $("div.yellow3").css("opacity","0.9");
             $("li.bg3").css("opacity","0.9");
+            $("#picProduct").css("top","-25px");
         },function(){
             $("div.yellow3").css("opacity","0");
             $("li.bg3").css("opacity","0");
+            $("#picProduct").css("top","100%");
         });
-
-        
       </script>
 </body>
 </html>

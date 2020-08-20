@@ -2,7 +2,13 @@
 
 * {
     position: relative;
-    // border: 2px solid black;
+    // border: 2px solid black; 
+}
+
+input {
+    display: block;
+    outline: none;
+    width: 300px;
 }
 
 html,body {
@@ -10,24 +16,25 @@ html,body {
     margin: 0;
     padding: 0;
     height: auto;
+    background-color: rgba($mt_grey2,1);
 }
 
-header {
-    z-index: 1;
+header { 
+    z-index: 25;
     width: 100%;
-    height: 400px;
+    height: 200px;
     & div.logobox{
         top: 0;
         left: 0;
         width: 100%;
         position: fixed;
-        height: 400px;
+        height: 200px;
         background-color: $mt_blue2;
         & img#logo{
-            top: 100px;
+            top: 25px;
             position: absolute;
-            width: 500px ;
-            left: calc(( 100% - 500px ) / 2 );
+            width: 400px ;
+            left: calc(( 100% - 400px ) / 2 );
         }
     } 
 }
@@ -41,241 +48,17 @@ main {
         margin: auto 5px;
         transform: translateY(3px);
     }
-    & h2 {
+    & h2 { 
         display: inline-block;
     }
     div.hr{
-        width: 100%;
+        width: 100%; 
         height: 5px;
         background-color: $mt_blue1;
         margin: 30px;
     }
-    button.btnA_XLwA{
-        width: 190px;
-        height: 45px;
-        border: 1px solid $mt_black;
-        background-color: white;
-        outline: 0px !important;
-        &::after{
-            z-index: -1;
-            position: absolute;
-            content: "";
-            width: 100%;
-            height: 100%;
-            border-right: 1px solid $mt_black;
-            border-bottom: 1px solid $mt_black;
-            left: 8px;
-            top: 8px;
-        }
-        & p {
-            position: absolute;
-            top: 7px;
-            left: 20px;
-        }
-        & div.btnArrowXL{
-            position: absolute;
-            left: 150px;
-            top: 13px;
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 9px 0 0 9px;
-            border-color: transparent transparent transparent $mt_black;
-            // overflow: hidden;
-            &::before{
-                position: absolute;
-                content: "";
-                left: -11px;
-                top: -8px;
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 9px 0 0 9px;
-                border-color: transparent transparent transparent white;
-            }
-            &::after{
-                position: absolute;
-                content: "";
-                width: 40px;
-                height: 2px;
-                left: -40px;
-                background-color: $mt_black;
-            }
-        }   
-    }
-
-    button.btnA_LwA{
-        width: 95px;
-        height: 45px;
-        border: 1px solid $mt_black;
-        background-color: white;
-        outline: 0px !important;
-        &::after{
-            z-index: -1;
-            position: absolute;
-            content: "";
-            width: 100%;
-            height: 100%;
-            border-right: 1px solid $mt_black;
-            border-bottom: 1px solid $mt_black;
-            left: 8px;
-            top: 8px;
-        }
-        & p {
-            position: absolute;
-            top: 7px;
-            left: 3px;
-        }
-        & div.btnArrowL{
-            position: absolute;
-            left: 76px;
-            top: 13px;
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 9px 0 0 9px;
-            border-color: transparent transparent transparent $mt_black;
-            // overflow: hidden;
-            &::before{
-                position: absolute;
-                content: "";
-                left: -11px;
-                top: -8px;
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 9px 0 0 9px;
-                border-color: transparent transparent transparent white;
-            }
-            &::after{
-                position: absolute;
-                content: "";
-                width: 20px;
-                height: 2px;
-                left: -20px;
-                background-color: $mt_black;
-            }
-        }   
-    }
-
-    button.btnA_L{
-        width: 95px;
-        height: 45px;
-        border: 1px solid $mt_black;
-        background-color: white;
-        outline: 0px !important;
-        &::after{
-            z-index: -1;
-            position: absolute;
-            content: "";
-            width: 100%;
-            height: 100%;
-            border-right: 1px solid $mt_black;
-            border-bottom: 1px solid $mt_black;
-            left: 8px;
-            top: 8px;
-        }
-        & p {
-            position: absolute;
-            top: 7px;
-            left: 8px;
-        }
-    }
-
-    button.btnA_M{
-        width: 47px;
-        height: 45px;
-        border: 1px solid $mt_black;
-        background-color: white;
-        outline: 0px !important;
-        &::after{
-            z-index: -1;
-            position: absolute;
-            content: "";
-            width: 100%;
-            height: 100%;
-            border-right: 1px solid $mt_black;
-            border-bottom: 1px solid $mt_black;
-            left: 8px;
-            top: 8px;
-        }
-        & div.btnArrowM{
-            position: absolute;
-            left: 22px;
-            top: 13px;
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 9px 0 0 9px;
-            border-color: transparent transparent transparent $mt_black;
-            // overflow: hidden;
-            &::before{
-                position: absolute;
-                content: "";
-                left: -11px;
-                top: -8px;
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 9px 0 0 9px;
-                border-color: transparent transparent transparent white;
-            }
-            &::after{
-                position: absolute;
-                content: "";
-                width: 20px;
-                height: 2px;
-                left: -20px;
-                background-color: $mt_black;
-            }
-        }   
-    }
-
-    button.btnA_S{
-        width: 15px;
-        height: 15px;
-        border: 1px solid $mt_black;
-        background-color: white;
-        outline: 0px !important;
-        & p {
-            position: absolute;
-            top: -3px;
-            left: 0px;
-            font-size: 10px;
-            font-weight: 500;
-        }
-    }
-    button.btnB_XL_blue{
-        width: 190px;
-        height: 45px;
-        background-color: $mt_blue2;
-        border-radius: 15px;
-        outline: 0px !important;
-        color: white;
-    }
-    button.btnB_XL_yellow{
-        width: 190px;
-        height: 45px;
-        background-color: $mt_yellow;
-        border-radius: 15px;
-        outline: 0px !important;
-        color: white;
-    }
-    button.btnB_L_blue{
-        width: 95px;
-        height: 45px;
-        background-color: $mt_blue2;
-        border-radius: 15px;
-        outline: 0px !important;
-        color: white;
-    }
-    button.btnB_L_yellow{
-        width: 95px;
-        height: 45px;
-        background-color: $mt_yellow;
-        border-radius: 15px;
-        outline: 0px !important;
-        color: white;
+    button{
+        margin-bottom: 20px;
     }
 
 }

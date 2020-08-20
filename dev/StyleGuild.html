@@ -6,19 +6,20 @@
     <title>Style Guild Line</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel=“stylesheet” href=“https://use.fontawesome.com/releases/v5.13.0/css/all.css”>
-    <link rel=“stylesheet” href=“https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css”>
+    <link rel=“stylesheet” href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel=“stylesheet” href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/v4-shims.min.css">
     <link rel="stylesheet" href="./css/StyleGuild.css">
     <script src="./js/jquery.min.js"></script>
     <script src="./js/vue.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/fullpage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+    <script src="./js/jquery.fullpage.js"></script>
 </head>
 <body>
     <header>
         <div class="logobox">
-            <img id="logo" src="./images/logo/LOGO_white.png" alt="">
+            <img id="logo" src="./images/logo/LOGO_white.png" alt=""> 
         </div>
     </header>
     <main>
@@ -41,24 +42,95 @@
         <h2>按鈕</h2>
         <br><br>
         <div class="container">
-            <button class="btnA_XLwA"><p>按鈕範例</p><div class="btnArrowXL"></div></button>
-            <br><br>
-            <button class="btnA_LwA"><p>範例鈕</p><div class="btnArrowL"></div></button>
-            <br><br>
-            <button class="btnA_L"><p>按鈕範例</p></button>
-            <br><br>
-            <button class="btnA_M"><div class="btnArrowM"></button>
-            <br><br>
-            <button class="btnA_S"><p>01</p></button>
-            <br><br>
-            <button class="btnB_XL_blue">按鈕</button>
-            <br><br>
-            <button class="btnB_XL_yellow">範例</button>
-            <br><br>
-            <button class="btnB_L_blue">按鈕</button>
-            <br><br>
-            <button class="btnB_L_yellow">範例</button>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>btnA_XLwRA</p>
+                    <button class="btnA_XLwRA"><p>按鈕範例</p><div class="btnArrowXL"></div></button>
+                    <br><br>
+                    <p>btnA_LwRA</p>
+                    <button class="btnA_LwRA"><p>範例鈕</p><div class="btnArrowL"></div></button>
+                    <br><br>
+                    <p>btnA_L</p>
+                    <button class="btnA_L"><p>按鈕範例</p></button>
+                    <br><br>
+                    <p>btnA_MwRA</p>
+                    <button class="btnA_MwRA"><div class="btnArrowM"></button>
+                    <br><br>
+                    <p>btnA_S</p>
+                    <button class="btnA_S pgprev"><p style="transform: translate(-5px , 0px); transition: 0s;">&#10229</p></button>
+                    <button class="btnA_S pg -active"><p>01</p></button>
+                    <button class="btnA_S pg"><p>02</p></button>
+                    <button class="btnA_S pg"><p>03</p></button>
+                    <button class="btnA_S pg"><p>04</p></button>
+                    <button class="btnA_S pg"><p>05</p></button>
+                    <button class="btnA_S pgnext"><p style="transform: translate(-5px , 0px); transition: 0s;">&#10230</p></button>
+                    <br><br><br><br>
+                    <p>btnB_XL_blue</p>
+                    <button class="btnB_XL_blue"><p>按鈕</p><div class="bg"></div></button>
+                    <br><br>
+                    <p>btnB_L_blue</p>
+                    <button class="btnB_L_blue"><p>按鈕</p><div class="bg"></div></button>
+                </div>
+
+                <div class="col-md-6">
+                    <p>btnA_XLwLA</p>
+                    <button class="btnA_XLwLA"><p>按鈕範例</p><div class="btnArrowXL"></div></button>
+                    <br><br>
+                    <p>btnA_LwLA</p>
+                    <button class="btnA_LwLA"><p>範例鈕</p><div class="btnArrowL"></div></button>
+                    <br><br>
+                    <p style="visibility: hidden;">button class="btnA_L"</p>
+                    <button style="visibility: hidden;" class="btnA_L"><p>按鈕範例</p></button>
+                    <br><br>
+                    <p>btnA_MwLA</p>
+                    <button class="btnA_MwLA"><div class="btnArrowM"></button>
+                    <br><br>
+                    <p style="visibility: hidden;">button class="btnA_S"</p>
+                    <button style="visibility: hidden;" class="btnA_S"><p>01</p></button>
+                    <br><br><br><br>
+                    <p>btnB_XL_yellow</p>
+                    <button class="btnB_XL_yellow"><p>範例</p><div class="bg"></div></button>
+                    <br><br>
+                    <p>btnB_L_yellow</p>
+                    <button class="btnB_L_yellow"><p>範例</p><div class="bg"></div></button>
+                </div>
+            </div>
         </div>
     </main>
+
+    <script>
+        function checkpg(){
+            if ($(".pgprev").next().hasClass("-active")) {
+                $(".pgprev").css("visibility","hidden");
+            }   else {
+                $(".pgprev").css("visibility","visible");
+            }
+            if ($(".pgnext").prev().hasClass("-active")) {
+                $(".pgnext").css("visibility","hidden");
+            }   else{
+                $(".pgnext").css("visibility","visible");
+            }
+        }
+        checkpg();
+        $(".pg").click(function(){
+            $(this).parent().children().removeClass("-active");
+            $(this).addClass("-active");
+            checkpg();
+        });
+        $(".pgprev").click(function(){
+            if (!$(".pgprev").next().hasClass("-active")) {
+                $(".-active").prev().addClass("-active");
+                $(".-active").next(".-active").removeClass("-active");
+            }
+            checkpg();
+        });
+        $(".pgnext").click(function(){
+            if (!$(".pgnext").prev().hasClass("-active")) {
+                $(".-active").next().addClass("-active");
+                $(".-active").prev(".-active").removeClass("-active");
+            }
+            checkpg();
+        });
+    </script>
 </body>
 </html>
