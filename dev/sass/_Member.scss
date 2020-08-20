@@ -1,0 +1,422 @@
+
+
+
+
+body{
+    margin: 0;
+}
+
+main {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 26%;
+    width: auto;
+    margin: 0 auto;
+    .top{
+        width: 100%;
+        height: 300px;
+
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        .banner{
+            background-image: url(../images/Member/top_banner.jpg);
+            background-size: cover;
+            background-position: 0 25%;
+
+            grid-area: 1/1/4/4;
+            //rs/cs/re/ce
+        }
+        .AvatarFrame{
+            // justify-content: center;
+            width: 200px;
+            height: 200px;
+            // border: 1px solid white;
+            border-radius: 99em;
+            border: 3px solid white;
+            // background-color: #cdcdcd;
+            margin: 0px auto;
+            transform: translate(0%,25%);
+            grid-area: 3/2/4/3;
+            position: relative;
+            .frame{
+                img{
+                    width: 110%;
+                    position: absolute;
+                    left: -5%;
+                    top: -5%;
+                }
+            }
+            .memAvatar{
+                width: 100%;
+                height: 100%;
+                border-radius: 99em;
+                background-image: url(../images/Member/memAvatar_test.jpg);
+                background-size: cover; //靜態呈現用
+            }
+        }
+        
+    }
+
+    .middle{
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        .memName{
+            text-align: left;
+            grid-area: 2/2/3/3;
+            height: auto;
+            margin: 0px auto;
+            padding-top: 15px;
+            }
+            h2{
+                margin: auto;
+                text-align: center;
+                font-size: 30px;
+            }
+        }
+        .medal{
+            grid-area: 3/2/4/3;
+            list-style: none;
+            display: flex;
+            padding: 2px;
+            margin: 0 ;
+            justify-content: center;
+            li{
+                margin: 5px;
+                width: 25px;
+                img{width: 100%;}
+            }
+        }
+        .profile{
+            width: 200px;
+            grid-area: 3/3/4/4;
+            height: fit-content;
+            text-decoration: none;
+            background-color: #ffffff;
+            border: 4px solid #ffffff;
+            border-radius: 5px;
+            box-shadow:3px 2px 3px 2px #cccccc;
+            align-self: center;
+            justify-self: flex-end;
+
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: 1fr;
+            .profile_icon{
+                width: 20px;
+                margin: 0 auto;
+                padding: 4px;
+                background-color: #ffffff;
+                grid-area: 1/1/2/2;
+                img{width: 100%;}
+            }
+            .modify{
+                text-align: center;
+                padding: 5px;
+                font-weight: 800;
+                border-radius: 0 5px 5px 0;
+                color: #ffffff;
+                background-color: #1A95DB;
+                grid-area: 1/2/2/6;
+            }
+        }
+
+    .content{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10%;
+        .content_box{
+            width: 1200px;
+            height: 100%;   //最後要刪除高度---------------------
+
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: repeat(24,1fr);
+            .aside_nav{
+                width: 120px;
+                background-color: #153A64;
+                grid-area: 1/1/25/2;
+                display: grid;
+                button{
+                    background-color: #153A64;
+                    width: 80px;
+                    height: 80px;
+                    margin: auto;
+                    color: #ffffff;
+                    border-radius: 20px;
+                    outline: none;
+                    font-size: 40px;
+                    p{
+                        font-size: 20px;
+                    }
+                    
+                }
+                button:first-child{
+                    background-color: orange;
+                }
+            }
+            .swiper_media575{
+                position: fixed;
+                bottom: 0;
+                z-index: 999;
+                .swiper-container {
+                    width: 100%;
+                    height: 100px;
+                    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+                    color: #fff;
+                    text-align: center;
+                    .swiper-wrapper{
+                        .swiper-slide{
+                            background-color: #153A64;
+                            display: grid;
+                            grid-template-columns: repeat(3,1fr);
+                            grid-template-rows: repeat(3,1fr);
+                            border-right: 1px solid gray;
+                            button{
+                                width: 80px;
+                                height: 80px;
+                                grid-area: 2/2/3/3;
+                                border-radius: 10px;
+                                color: #fff;
+                                font-size: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+            .CB_title{
+                width: 108%;
+                height: 60px;
+                justify-self: flex-end;
+                background-color: #153A64;
+                grid-area: 1/3/2/13;
+                h2{
+                    margin: 1%;
+                    font-size: 30px;
+                    letter-spacing: 10px;
+                    color: #ffffff;
+                }
+            }
+            .C_info{
+                width: 108%;
+                justify-self: flex-end;
+                background-color: #ffffff;
+                grid-area: 2/3/25/13;
+                margin-top: 2%;
+            }
+        }
+    }
+}
+
+
+// ===========media screen===========
+
+@media screen and (min-width: 1440px) {
+    // 請用1366
+        // max-width: 1366px
+    main{
+        .content{
+            .swiper_media575{
+                display: none;
+                .swiper-container{
+                    .swiper-wrapper{
+                        .swiper-slide{
+                            button{
+                                    i{}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+      }
+@media screen and (min-width: 1200px) and (max-width: 1439px){
+    // 請用1152
+        // max-width: 1152px
+    main{
+        .content{
+            .swiper_media575{
+                display: none;
+                .swiper-container{
+                    .swiper-wrapper{
+                        .swiper-slide{
+                            button{
+                                    i{}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+      }
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    // 請用960
+        // max-width: 960px
+    main{
+        .content{
+            .swiper_media575{
+                display: none;
+                .swiper-container{
+                    .swiper-wrapper{
+                        .swiper-slide{
+                            button{
+                                    i{}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+      }
+@media screen and (min-width: 768px) and (max-width: 991px){
+    // 請用720
+        // max-width: 720px
+    main{
+        .content{
+            .swiper_media575{
+                display: none;
+                .swiper-container{
+                    .swiper-wrapper{
+                        .swiper-slide{
+                            button{
+                                    i{}
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+  // 請用540
+      // max-width: 540px
+    main{
+        .top{
+            .AvatarFrame{
+                grid-area: 3/1/4/2;
+                width: 130px;
+                height: 130px;
+                transform: translate(5%,50%);
+            }
+        }
+        .middle{
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(2,1fr);
+            .memName{
+                grid-area: 1/2/2/6;
+            }
+            .medal{
+                grid-area: 2/2/3/6;
+                li{
+                    width: 35px;
+                }
+            }
+            .profile{
+                display: none;
+            }
+        }
+        .content{
+            .content_box{
+                grid-template-columns: repeat(5,1fr);
+                grid-template-rows: repeat(2,1fr);
+                .aside_nav{
+                    width: 100%;
+                    grid-area: 1/1/2/6;
+                    display: none;
+                    button{
+                        border-radius: 0px;
+                    }
+                }
+                .swiper_media575{
+                    display: grid;
+                    .swiper-container{
+                        .swiper-wrapper{
+                            .swiper-slide{
+                                button{
+                                    i{}
+                                }
+                            }
+                        }
+                    }
+                }
+                .CB_title{
+                    display: none;
+                }
+                .C_info{
+                    grid-area: 1/1/3/6;
+                    // background-color: #555555;
+                }
+            }
+        }
+    }
+    footer{margin-bottom: 100px;}
+}
+@media screen and (max-width: 575px){
+    main{
+        .top{
+            .AvatarFrame{
+                grid-area: 3/1/4/2;
+                width: 130px;
+                height: 130px;
+                transform: translate(5%,50%);
+            }
+        }
+        .middle{
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(2,1fr);
+            .memName{
+                grid-area: 1/2/2/6;
+            }
+            .medal{
+                grid-area: 2/2/3/6;
+                li{
+                    width: 35px;
+                }
+            }
+            .profile{
+                display: none;
+            }
+        }
+        .content{
+            .content_box{
+                grid-template-columns: repeat(5,1fr);
+                grid-template-rows: repeat(2,1fr);
+                .aside_nav{
+                    width: 100%;
+                    grid-area: 1/1/2/6;
+                    display: none;
+                    button{
+                        border-radius: 0px;
+                    }
+                }
+                .swiper_media575{
+                    display: grid;
+                    .swiper-container{
+                        .swiper-wrapper{
+                            .swiper-slide{
+                                button{
+                                    i{}
+                                }
+                            }
+                        }
+                    }
+                }
+                .CB_title{
+                    display: none;
+                }
+                .C_info{
+                    grid-area: 1/1/3/6;
+                    // background-color: #555555;
+                }
+            }
+        }
+    }
+    footer{margin-bottom: 100px;}
+}
