@@ -51,12 +51,7 @@ div.wrap{
                 .pre{
                     display: flex;
                     align-items: center;
-                    &:hover{
-                        transform: scale(1.2);
-                        cursor: pointer;
-                    }
-                    // .pre_text{
-                    // }
+                    cursor: pointer;
                     .pre_pic{
                         height: 100px;
                         img{
@@ -67,18 +62,13 @@ div.wrap{
                 .next{
                     display: flex;
                     align-items: center;
-                    &:hover{
-                        transform: scale(1.2);
-                        cursor: pointer;
-                    }
+                    cursor: pointer;
                     .next_pic{
                         height: 100px;
                         img{
                             height: 100%;
                         }
                     }
-                    // .next_text{
-                    // }
                 }
             }
         }

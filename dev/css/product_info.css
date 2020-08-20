@@ -65,10 +65,6 @@ div.wrap .product_block .left .move {
 div.wrap .product_block .left .move .pre {
   display: flex;
   align-items: center;
-}
-
-div.wrap .product_block .left .move .pre:hover {
-  transform: scale(1.2);
   cursor: pointer;
 }
 
@@ -83,10 +79,6 @@ div.wrap .product_block .left .move .pre .pre_pic img {
 div.wrap .product_block .left .move .next {
   display: flex;
   align-items: center;
-}
-
-div.wrap .product_block .left .move .next:hover {
-  transform: scale(1.2);
   cursor: pointer;
 }
 
