@@ -1,0 +1,308 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', Helvetica , "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei",Arial,sans-serif;
+}
+
+* a:visited {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  border: 2px solid brown;
+  text-align: center;
+}
+
+#banner {
+  width: 100%;
+  text-align: center;
+  border: 3px solid hotpink;
+  margin-bottom: 2%;
+}
+
+#comment {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#comment-block {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.ntittle {
+  padding: 8px 30px;
+  background-color: #153A64;
+}
+
+.ntittle h2 {
+  color: white;
+}
+
+.original-poster-block {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+
+.original-poster-block .poster {
+  width: 30%;
+  display: flex;
+}
+
+.original-poster-block .poster .original {
+  padding: 5px 50px;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+.original-poster-block .poster-name {
+  line-height: 20px;
+  margin-left: 8px;
+}
+
+.original-poster-block .poster-time {
+  width: 50%;
+  margin: auto;
+}
+
+.original-poster-block .poster-report {
+  margin: auto;
+  display: flex;
+}
+
+.original-poster-block .report {
+  margin: auto 10px;
+}
+
+.original-poster-block .likes {
+  margin: auto 5px;
+}
+
+#innertext-block {
+  width: 1040px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#innertext-block .write-top {
+  text-align: center;
+  line-height: 50px;
+}
+
+#innertext-block p {
+  line-height: 40px;
+}
+
+#innertext-block .post-image {
+  margin-top: 3%;
+}
+
+#innertext-block .post-image img {
+  width: 100%;
+}
+
+.post-poster-block01 {
+  display: flex;
+  margin: 3% auto;
+  width: 1040px;
+  max-width: 100%;
+}
+
+.post-poster-block01 .poster-infor {
+  margin: 1% 1.5%;
+}
+
+.post-poster-block01 .poster-infor .userpic {
+  max-width: 100%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.post-poster-block01 .poster-infor .poster-name {
+  text-align: center;
+}
+
+.post-text {
+  width: 100%;
+  margin: 0 2%;
+}
+
+.post-text .triangle1-text {
+  padding: 20px;
+}
+
+.post-text .poster-say {
+  display: flex;
+  justify-content: space-between;
+  line-height: 30px;
+}
+
+.post-text .innertext {
+  line-height: 42px;
+}
+
+.grid {
+  height: 10px;
+}
+
+.triangle1 {
+  width: 100%;
+  background-color: #F0F0F0;
+  border-radius: 10px;
+  position: relative;
+  margin: 3% 0;
+}
+
+.triangle1::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  border-color: transparent;
+  border-width: 25px;
+  border-style: solid;
+  border-right-color: #F0F0F0;
+  left: -50px;
+}
+
+.post-poster-block02 {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 3% auto;
+  width: 1040px;
+  max-width: 100%;
+}
+
+.poster-infor2 {
+  margin: 1% 1.5%;
+}
+
+.poster-infor2 .userpic2 {
+  max-width: 100%;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.poster-infor2 .poster-name2 {
+  text-align: center;
+}
+
+.triangle2 {
+  width: 100%;
+  background-color: #F0F0F0;
+  border-radius: 10px;
+  position: relative;
+  margin: 3% 0;
+}
+
+.triangle2 .triangle-text {
+  padding: 20px;
+}
+
+.triangle2::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  border-color: transparent;
+  border-width: 25px;
+  border-style: solid;
+  border-left-color: #F0F0F0;
+  right: -50px;
+}
+
+.text-arera-block {
+  display: flex;
+}
+
+.area-tittle {
+  width: 20%;
+  margin-left: auto;
+}
+
+.area-tittle p {
+  text-align: end;
+  padding: 0 30px;
+}
+
+.area {
+  width: 80%;
+}
+
+.area textarea {
+  resize: none;
+}
+
+.product-block {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.product-img {
+  width: 20%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-img img {
+  width: 100%;
+}
+
+#aside-link {
+  display: block;
+  position: fixed;
+  right: 1px;
+  bottom: 300px;
+  height: auto;
+  z-index: 4;
+}
+
+.aside-com-btn {
+  display: block;
+  position: absolute;
+  right: 0px;
+  bottom: 20px;
+  height: auto;
+  width: 100px;
+}
+
+.aside-com-btn img {
+  width: 100%;
+  margin: 3px 0px;
+}
+
+/* ----------------------GO TOP---------------------- */
+#gotop a {
+  text-decoration: none;
+}
+
+#gotop {
+  position: fixed;
+  z-index: 90;
+  right: 20px;
+  bottom: 31px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  background-color: #153a64;
+  line-height: 50px;
+  transition: all 0.5s;
+  text-align: center;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+/*# sourceMappingURL=comment.css.map */
