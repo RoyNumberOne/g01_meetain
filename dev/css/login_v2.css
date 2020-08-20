@@ -22,16 +22,13 @@ header {
 }
 
 main {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background-color: var(--white);
   background: url("https://www.thoughtco.com/thmb/EKnmgoAr_X4TrIpxBiPYu9lao9U=/2000x1333/filters:fill(auto,1)/GettyImages-468963673-5ad40ad2fa6bcc0036add08a.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: -ms-grid;
   display: grid;
   height: 100vh;
   place-items: center;
@@ -40,8 +37,7 @@ main {
 .container {
   background-color: var(--white);
   border-radius: var(--button-radius);
-  -webkit-box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25), 0 0.7rem 0.7rem rgba(0, 0, 0, 0.22);
-          box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25), 0 0.7rem 0.7rem rgba(0, 0, 0, 0.22);
+  box-shadow: 0 0.9rem 1.7rem rgba(0, 0, 0, 0.25), 0 0.7rem 0.7rem rgba(0, 0, 0, 0.22);
   height: var(--max-height);
   max-width: var(--max-width);
   overflow: hidden;
@@ -53,7 +49,6 @@ main {
   height: 100%;
   position: absolute;
   top: 0;
-  -webkit-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
 }
 
@@ -112,11 +107,9 @@ main {
 }
 
 .container.right-panel-active .container--signin {
-  -webkit-animation: show 0.6s;
-          animation: show 0.6s;
+  animation: show 0.6s;
   opacity: 1;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  transform: translateX(100%);
   z-index: 5;
 }
 
@@ -126,10 +119,7 @@ main {
   overflow: hidden;
   position: absolute;
   top: 0;
-  -webkit-transition: -webkit-transform 0.6s ease-in-out;
-  transition: -webkit-transform 0.6s ease-in-out;
   transition: transform 0.6s ease-in-out;
-  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
   width: 50%;
   z-index: 100;
 }
@@ -144,59 +134,39 @@ main {
   height: 100%;
   left: -100%;
   position: relative;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transition: -webkit-transform 0.6s ease-in-out;
-  transition: -webkit-transform 0.6s ease-in-out;
+  transform: translateX(0);
   transition: transform 0.6s ease-in-out;
-  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
   width: 200%;
 }
 
 .container__overlay .overlay__panel {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: center;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   height: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   position: absolute;
   text-align: center;
   top: 0;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  -webkit-transition: -webkit-transform 0.6s ease-in-out;
-  transition: -webkit-transform 0.6s ease-in-out;
+  transform: translateX(0);
   transition: transform 0.6s ease-in-out;
-  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
   width: 50%;
   background-color: rgba(255, 255, 255, 0.4);
 }
 
 .container__overlay .overlay--left {
-  -webkit-transform: translateX(-20%);
-          transform: translateX(-20%);
+  transform: translateX(-20%);
 }
 
 .container__overlay .overlay--right {
   right: 0;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
 }
 
 .container__overlay .overlay--right .top_info {
   background-color: white;
   opacity: .8;
-  -webkit-box-shadow: 0px 0px 10px #153A64;
-          box-shadow: 0px 0px 10px #153A64;
+  box-shadow: 0px 0px 10px #153A64;
   border-radius: var(--button-radius);
   margin-top: 20px;
   padding: 10px;
@@ -216,8 +186,7 @@ main {
 .container__overlay .overlay--right .bottom_info {
   background-color: white;
   opacity: .8;
-  -webkit-box-shadow: 0px 0px 10px #153A64;
-          box-shadow: 0px 0px 10px #153A64;
+  box-shadow: 0px 0px 10px #153A64;
   border-radius: var(--button-radius);
   margin: 10px 0;
   padding: 10px;
@@ -236,7 +205,6 @@ main {
 
 .container__overlay .btn {
   background-color: var(--blue);
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--blue)), color-stop(74%, var(--lightblue)));
   background-image: linear-gradient(90deg, var(--blue) 0%, var(--lightblue) 74%);
   border-radius: 20px;
   border: 1px solid var(--blue);
@@ -247,42 +215,30 @@ main {
   letter-spacing: 0.1rem;
   padding: 0.9rem 4rem;
   text-transform: uppercase;
-  -webkit-transition: -webkit-transform 80ms ease-in;
-  transition: -webkit-transform 80ms ease-in;
   transition: transform 80ms ease-in;
-  transition: transform 80ms ease-in, -webkit-transform 80ms ease-in;
 }
 
 .container.right-panel-active .container__overlay {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  transform: translateX(-100%);
 }
 
 .container.right-panel-active .overlay {
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
+  transform: translateX(50%);
 }
 
 .container.right-panel-active .overlay--left {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 .container.right-panel-active .overlay--right {
-  -webkit-transform: translateX(20%);
-          transform: translateX(20%);
+  transform: translateX(20%);
 }
 
 .mobile {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: var(--button-radius);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 300px;
 }
 
@@ -296,12 +252,7 @@ main {
 }
 
 .mobile form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 /*# sourceMappingURL=login_v2.css.map */
