@@ -1,0 +1,470 @@
+* {
+  font-family: 'Noto Sans TC', sans-serif !important;
+  color: #555555;
+}
+
+#meet2-0 .hotMeet {
+  border: 1px solid red;
+  width: 80%;
+  margin: auto;
+}
+
+#meet2-0 .hotMeet h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #555555;
+  display: table;
+  margin: 50px auto;
+  position: relative;
+}
+
+#meet2-0 .hotMeet h2::after {
+  content: "";
+  width: 100%;
+  padding-top: 5px;
+  border-radius: 10px;
+  background-color: #FFC400;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#meet2-0 .hotMeet > div {
+  border: 1px solid #000;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#meet2-0 .hotMeet > div .hotMeetTop3 {
+  border: 1px solid orange;
+  display: inline-block;
+  padding: 10px;
+  width: 600px;
+}
+
+#meet2-0 .hotMeet > div .hotMeetTop3 .section1 {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#meet2-0 .hotMeet > div .hotMeetTop3 .section1 .hotMeetImg1 {
+  vertical-align: middle;
+  background-color: #555555;
+  width: 40%;
+  padding-top: 40%;
+  display: inline-block;
+}
+
+#meet2-0 .hotMeet > div .hotMeetTop3 .section1 .hotMeetImg1 img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+#meet2-0 .hotMeet > div .hotMeetTop3 .section1 .hotMeetTextCont {
+  vertical-align: middle;
+  border: 1px solid #000;
+  display: inline-block;
+  width: calc(100% - 260px);
+}
+
+#meet2-0 .hotMeet > div .hotMeetTop3 .section1 .hotMeetTextCont .tittleLike {
+  display: flex;
+  justify-content: space-between;
+}
+
+#meet2-0 .hotMeet > div .hotMeetTop3 .section1 .hotMeetTextCont .tittleLike h3 {
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  line-height: 1.6;
+  font-weight: 600;
+  color: #555555;
+  display: -webkit-inline-box;
+  -webkit-line-clamp: 2;
+  /*!autoprefixer:off*/
+  -webkit-box-orient: vertical;
+  /*autoprefixer:on*/
+  overflow: hidden;
+  width: 90%;
+  vertical-align: middle;
+}
+
+#meet2-0 .hotMeet > div .hotMeetTop3 .section1 .hotMeetTextCont .tittleLike .heartIcon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#meet2-0 .hotMeet > div .hotMeetTop3 .section1 .hotMeetTextCont .tittleLike .heartIcon i {
+  font-size: 25px;
+}
+
+#meet2-0 .hotMeet > div .hotMeetTop3 .section1 .hotMeetTextCont .infoOrganiser {
+  display: flex;
+  justify-content: space-between;
+}
+
+#meet2-0 .hotMeet > div .hotMeetTop3 .section1 .hotMeetTextCont .infoOrganiser .info {
+  border: 1px solid pink;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #555555;
+}
+
+#meet2-0 .hotMeet > div .hotMeetTop3 .section1 .hotMeetTextCont .infoOrganiser .organiser {
+  border: 1px solid #0F0;
+  width: 180px;
+  display: inline-block;
+}
+
+#meet2-0 .hotMeet > div .hotMeetTop3 .section1 .hotMeetTextCont .infoOrganiser .organiser .memberImg {
+  display: inline-block;
+  background-color: #555;
+  width: 65px;
+  padding-top: 65px;
+}
+
+#meet2-0 .hotMeet > div .hotMeetTop3 .section1 .hotMeetTextCont .infoOrganiser .organiser .memberImg img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+#meet2-0 .hotMeet > div .hotMeetTop3 .section1 .hotMeetTextCont .infoOrganiser .organiser .memberInfo {
+  display: inline-block;
+}
+
+#meet2-0 .hotMeet > div .hotMeetTop3 .section1 .hotMeetTextCont .infoOrganiser .organiser .memberInfo .certification .certificationIcon {
+  background-color: #555;
+  display: inline-block;
+  width: 10px;
+  padding-top: 10px;
+}
+
+#meet2-0 .hotMeet > div .hotMeetTop3 .section1 .hotMeetTextCont .infoOrganiser .organiser .memberInfo .memberId {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1.5px;
+}
+
+#meet2-0 .hotMeet > div .hotMeetTop3 .section1 .hotMeetTextCont .infoOrganiser .organiser .memberInfo .memberBadge .memberBadgeIcon {
+  background-color: #555;
+  display: inline-block;
+  width: 25px;
+  padding-top: 25px;
+}
+
+#meet2-0 .hotMeet > div .hotMeetTop3 .section1 .hotMeetTextCont .meetContent .textContent {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  color: #555555;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /*!autoprefixer:off*/
+  -webkit-box-orient: vertical;
+  /*autoprefixer:on*/
+  overflow: hidden;
+}
+
+#meet2-0 .hotMeet > div .hotMeetTop3 .section2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#meet2-0 .hotMeet > div .hotMeetTop3 .section2 .hotMeetImgs {
+  display: inline-block;
+}
+
+#meet2-0 .hotMeet > div .hotMeetTop3 .section2 .hotMeetImgs div {
+  width: 100px;
+  padding-top: 100px;
+  display: inline-block;
+  background-color: #555555;
+}
+
+#meet2-0 .hotMeet > div .hotMeetTop3 .section2 .hotMeetImgs div img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+#meet2-0 .hotMeet > div .hotMeetTop3 .section2 button {
+  margin: 20px;
+  padding: 0;
+  border: 1px solid #757575;
+  color: #757575;
+  line-height: 45px;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  width: 95px;
+}
+
+#meet2-0 .hotMeet > div .hotMeetTop3 .section2 button::after {
+  content: "";
+  width: 100%;
+  padding-top: 45px;
+  border-right: 1px solid #757575;
+  border-bottom: 1px solid #757575;
+  position: absolute;
+  bottom: -5px;
+  left: 5px;
+}
+
+#meet2-0 .hotMeet > div .hotMeetTop3 .section2 button img {
+  width: 24.5px;
+}
+
+#meet2-0 .hotMeet > div .top2 {
+  background-color: yellowgreen;
+  margin-bottom: -50px;
+}
+
+#meet2-0 .hotMeet > div .top3 {
+  margin-top: -40px;
+  margin-left: 20px;
+}
+
+#meet2-0 .hotMeet > div .meetVideo {
+  width: 500px;
+  height: 300px;
+  background-color: #555;
+}
+
+#meet2-0 .newMeet {
+  border: 1px solid red;
+  width: 80%;
+  margin: auto;
+}
+
+#meet2-0 .newMeet h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #555555;
+  display: table;
+  margin: 50px auto;
+  position: relative;
+}
+
+#meet2-0 .newMeet h2::after {
+  content: "";
+  width: 100%;
+  padding-top: 5px;
+  border-radius: 10px;
+  background-color: #FFC400;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#meet2-0 .newMeet .changeTypeBtn {
+  border: 1px solid orange;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+#meet2-0 .newMeet .changeTypeBtn button {
+  border: 1px solid red;
+  margin: 5px;
+}
+
+#meet2-0 .newMeet .changeTypeBtn button.-on {
+  background-color: yellowgreen;
+}
+
+#meet2-0 .newMeet .newMeetActivity {
+  border: 1px solid #000;
+  padding: 15px;
+}
+
+#meet2-0 .newMeet .newMeetActivity .item {
+  border: 1px solid blue;
+  padding: 15px;
+}
+
+#meet2-0 .newMeet .newMeetActivity .item .newImg {
+  background-color: #555;
+}
+
+#meet2-0 .newMeet .newMeetActivity .item .newMeetTextCont {
+  border: 1px solid #000;
+}
+
+#meet2-0 .newMeet .newMeetActivity .item .newMeetTextCont .tittleLike h3 {
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  line-height: 1.6;
+  font-weight: 600;
+  color: #555555;
+  display: -webkit-inline-box;
+  -webkit-line-clamp: 2;
+  /*!autoprefixer:off*/
+  -webkit-box-orient: vertical;
+  /*autoprefixer:on*/
+  overflow: hidden;
+  width: 90%;
+  vertical-align: middle;
+}
+
+#meet2-0 .newMeet .newMeetActivity .item .newMeetTextCont .tittleLike .heartIcon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#meet2-0 .newMeet .newMeetActivity .item .newMeetTextCont .tittleLike .heartIcon i {
+  font-size: 25px;
+}
+
+#meet2-0 .newMeet .newMeetActivity .item .newMeetTextCont .info {
+  border: 1px solid pink;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  color: #555555;
+}
+
+#meet2-0 .newMeet .newMeetActivity .item .newMeetTextCont .meetContent .textContent {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  color: #555555;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /*!autoprefixer:off*/
+  -webkit-box-orient: vertical;
+  /*autoprefixer:on*/
+  overflow: hidden;
+}
+
+#meet2-0 .newMeet .newMeetActivity .item .organiser {
+  border: 1px solid #0F0;
+}
+
+#meet2-0 .newMeet .newMeetActivity .item .organiser .memberImg {
+  display: inline-block;
+  background-color: #555;
+  width: 65px;
+  padding-top: 65px;
+}
+
+#meet2-0 .newMeet .newMeetActivity .item .organiser .memberImg img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+#meet2-0 .newMeet .newMeetActivity .item .organiser .memberInfo {
+  display: inline-block;
+}
+
+#meet2-0 .newMeet .newMeetActivity .item .organiser .memberInfo .certification {
+  background-color: blue;
+}
+
+#meet2-0 .newMeet .newMeetActivity .item .organiser .memberInfo .certification .certificationIcon {
+  background-color: #555;
+  display: inline-block;
+  width: 10px;
+  padding-top: 10px;
+}
+
+#meet2-0 .newMeet .newMeetActivity .item .organiser .memberInfo .memberId {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 1.5px;
+  border: 1px solid #000;
+}
+
+#meet2-0 .newMeet .newMeetActivity .item .organiser .memberInfo .memberBadge {
+  background-color: blue;
+}
+
+#meet2-0 .newMeet .newMeetActivity .item .organiser .memberInfo .memberBadge .memberBadgeIcon {
+  background-color: #555;
+  display: inline-block;
+  width: 25px;
+  padding-top: 25px;
+}
+
+#meet2-0 .newMeet .newMeetActivity.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#meet2-0 .newMeet .newMeetActivity.card .item {
+  width: 350px;
+  margin-top: 100px;
+  display: inline-block;
+}
+
+#meet2-0 .newMeet .newMeetActivity.card .item .newImg {
+  width: 100%;
+  padding-top: 100%;
+  margin: -70px auto auto auto;
+}
+
+#meet2-0 .newMeet .newMeetActivity.card .item .organiser {
+  width: 180px;
+  display: inline-block;
+}
+
+#meet2-0 .newMeet .newMeetActivity.list .item {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+
+#meet2-0 .newMeet .newMeetActivity.list .item .newImg {
+  width: 25%;
+  display: inline-block;
+}
+
+#meet2-0 .newMeet .newMeetActivity.list .item .newMeetTextCont {
+  width: 60%;
+  display: inline-block;
+}
+
+#meet2-0 .newMeet .newMeetActivity.list .item .organiser {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#meet2-0 .newMeet .newMeetActivity.list .item .organiser .memberInfo .certification {
+  display: flex;
+  justify-content: center;
+}
+
+#meet2-0 .newMeet .newMeetActivity.list .item .organiser .memberInfo .certification .certificationIcon {
+  margin: 5px;
+}
+
+#meet2-0 .newMeet .newMeetActivity.list .item .organiser .memberInfo .memberBadge {
+  display: flex;
+  justify-content: space-around;
+}
+/*# sourceMappingURL=meet2-0.css.map */

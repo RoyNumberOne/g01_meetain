@@ -1046,18 +1046,251 @@ button.btnB_L_yellow:hover div.bg::after {
   left: 0%;
 }
 
-p#test {
-  position: absolute;
-  color: #227698;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 170px;
+* {
+  font-family: 'Noto Sans TC', sans-serif !important;
+  color: #555555;
 }
 
-body {
-  background-color: #444;
-  height: 100vh;
-  width: 100vw;
+#meet2-2 {
+  border: 1px solid blue;
+  margin: auto;
+  width: 1200px;
 }
-/*# sourceMappingURL=sample.css.map */
+
+#meet2-2 h2 {
+  font-size: 30px;
+  font-weight: 600;
+  display: table;
+  margin: 50px auto;
+  position: relative;
+}
+
+#meet2-2 h2::after {
+  content: "";
+  width: 100%;
+  padding-top: 5px;
+  border-radius: 10px;
+  background-color: #FFC400;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#meet2-2 .step ul {
+  text-align: center;
+}
+
+#meet2-2 .step ul li {
+  display: inline-block;
+  margin-right: 200px;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  line-height: 1.6;
+  font-weight: 600;
+  position: relative;
+}
+
+#meet2-2 .step ul li::before {
+  width: 70px;
+  line-height: 70px;
+  text-align: center;
+  color: #FFC400;
+  border: 1px solid #FFC400;
+  border-radius: 50%;
+  position: absolute;
+  left: -90px;
+  top: -50%;
+}
+
+#meet2-2 .step ul li::after {
+  content: ".....";
+  font-size: 30px;
+  letter-spacing: 10px;
+  color: #555555;
+  position: absolute;
+  top: -50%;
+  right: -110px;
+}
+
+#meet2-2 .step ul li:first-child {
+  margin-left: 90px;
+}
+
+#meet2-2 .step ul li:last-child {
+  margin-right: 0px;
+}
+
+#meet2-2 .step ul li.-on {
+  color: #FFC400;
+}
+
+#meet2-2 .step ul li.-on::before {
+  color: #fff;
+  background-color: #FFC400;
+}
+
+#meet2-2 .step ul li.step_icon1::before {
+  content: "1";
+}
+
+#meet2-2 .step ul li.step_icon2::before {
+  content: "2";
+}
+
+#meet2-2 .step ul li.step_icon3::before {
+  content: "3";
+}
+
+#meet2-2 .tour_build_form {
+  border: 1px solid #555555;
+  border-radius: 30px;
+  margin-top: 50px;
+  padding: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+#meet2-2 .tour_build_form .btn_box {
+  align-self: flex-end;
+}
+
+#meet2-2 .tour_build_form .tour_build_step1 {
+  border: 1px solid #a73232;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#meet2-2 .tour_build_form .tour_build_step1 input, #meet2-2 .tour_build_form .tour_build_step1 select, #meet2-2 .tour_build_form .tour_build_step1 .degree_category {
+  width: 100%;
+  background-color: #EAF1F4;
+  border: none;
+  height: 40px;
+  border-radius: 10px;
+}
+
+#meet2-2 .tour_build_form .tour_build_step1 section {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#meet2-2 .tour_build_form .tour_build_step1 section .mountain_image {
+  width: 70%;
+  padding-top: 70%;
+  margin: auto;
+  background-color: #555;
+}
+
+#meet2-2 .tour_build_form .tour_build_step1 section .tour_info1 {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+#meet2-2 .tour_build_form .tour_build_step1 section .tour_info1 .tour_number select {
+  width: 30%;
+}
+
+#meet2-2 .tour_build_form .tour_build_step2 {
+  border: 1px solid #22a3b4;
+  display: none;
+  justify-content: space-between;
+}
+
+#meet2-2 .tour_build_form .tour_build_step2 .tour_info2 {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#meet2-2 .tour_build_form .tour_build_step2 .tour_info2 > div {
+  width: 50%;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#meet2-2 .tour_build_form .tour_build_step2 .tour_info2 > div .tour_equip {
+  margin-bottom: 30px;
+}
+
+#meet2-2 .tour_build_form .tour_build_step2 .tour_info2 > div .tour_equip > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#meet2-2 .tour_build_form .tour_build_step2 .tour_info2 > div .tour_equip label {
+  width: 50%;
+  margin: 5px 0;
+}
+
+#meet2-2 .tour_build_form .tour_build_step2 .tour_info2 > div .tour_equip label p {
+  display: inline-block;
+  line-height: 40px;
+  background-color: #EAF1F4;
+  border-radius: 10px;
+  padding: 0 5px;
+}
+
+#meet2-2 .tour_build_form .tour_build_step2 .tour_info2 > div .notice {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+#meet2-2 .tour_build_form .tour_build_step2 .tour_info2 > div .notice textarea {
+  flex-grow: 2;
+}
+
+#meet2-2 .tour_build_form .tour_build_step2 .tour_info2 > label {
+  width: 50%;
+}
+
+#meet2-2 .tour_build_form .tour_build_step2 .tour_info2 > label textarea {
+  height: 470px;
+}
+
+#meet2-2 .tour_build_form .tour_build_step2 .tour_info2 textarea {
+  background-color: #EAF1F4;
+  border-radius: 10px;
+  border: none;
+  width: 100%;
+  resize: none;
+}
+
+#meet2-2 .tour_build_form .tour_build_step3 {
+  border: 1px solid #32a732;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#meet2-2 .tour_build_form .tour_build_step3 .tour_info3 {
+  border: 1px solid #000;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#meet2-2 .tour_build_form .tour_build_step3 .tour_info3 .tour_image {
+  flex-grow: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#meet2-2 .tour_build_form .tour_build_step3 .tour_info3 .tour_image > div {
+  width: 30%;
+  padding-top: 30%;
+  background-color: #555;
+  margin: 5px;
+}
+
+#meet2-2 .tour_build_form section.-on {
+  display: flex;
+}
+/*# sourceMappingURL=meet2-2.css.map */
