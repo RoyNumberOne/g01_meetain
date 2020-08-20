@@ -1,0 +1,64 @@
+#Memachievement {
+    margin: 0;
+    h2{ margin: 1%;}
+    p{  
+        margin: 1%;
+        margin-bottom: 30px;
+    }
+
+    .Achievement_list{
+        max-width: 1000px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(4,1fr);
+        div{
+            margin: 0 auto;
+            text-align: center;
+            img{
+                width: 120px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+
+
+
+// ===========media screen===========
+
+@media screen and (min-width: 1440px) {
+    // 請用1366
+        // max-width: 1366px
+
+}
+@media screen and (min-width: 1200px) and (max-width: 1439px){
+    // 請用1152
+        // max-width: 1152px
+
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    // 請用960
+        // max-width: 960px
+
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    // 請用720
+        // max-width: 720px
+
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    // 請用540
+        // max-width: 540px
+
+}
+@media screen and (max-width: 575px){
+    #MemAchievement{
+        width: 100%;
+        .Achievement_list{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(12,1fr);
+        }
+    }
+}

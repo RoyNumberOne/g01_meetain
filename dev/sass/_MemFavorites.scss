@@ -1,0 +1,269 @@
+//會員頁收藏卡片樣式
+@mixin memberLikeCards_A {
+    width: 270px;
+    border-radius: 20px 20px 30px 30px;
+    height: 400px; //暫時先給
+    margin: auto;
+    margin-top: 15%;
+    background-color: #dddddd;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
+    .page_img{
+        background-color: #666666;
+        border-radius: 20px 20px 0 0;
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: repeat(6,1fr);
+        text-align: center;
+        .label{
+            line-height: 30px;
+            height: 30px;
+            color: #ffffff;
+            background-color: orange;
+            grid-area: 1/1/2/5;
+            border-radius:10px;
+            transform: translate(10%,30%);
+        }
+        .delete{
+            grid-area: 1/12/2/13;
+            font-size: 12px;
+            color: gray;
+            border: 1px solid gray;
+            background-color: #ffffff;
+            font-weight: 800;
+            width: 24px;
+            height: 24px;
+            border-radius: 99em;
+            transform: translate(25%,-25%);
+        }
+    }
+    .page_info{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        margin: 5%;
+        text-align: left;
+        .title{
+            font-size: 28px;
+        }
+    }
+}
+
+@mixin memberLikeCards_B {
+    width: 270px;
+    border-radius: 20px 20px 30px 30px;
+    height: 400px; //暫時先給
+    margin: auto;
+    margin-top: 15%;
+    background-color: #dddddd;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
+    .page_img{
+        background-color: #666666;
+        border-radius: 20px 20px 0 0;
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: repeat(6,1fr);
+        text-align: center;
+        .label{
+            line-height: 30px;
+            height: 30px;
+            color: #ffffff;
+            background-color: green;
+            grid-area: 1/1/2/5;
+            border-radius:10px;
+            transform: translate(10%,30%);
+        }
+        .delete{
+            grid-area: 1/12/2/13;
+            font-size: 12px;
+            color: gray;
+            border: 1px solid gray;
+            background-color: #ffffff;
+            font-weight: 800;
+            width: 24px;
+            height: 24px;
+            border-radius: 99em;
+            transform: translate(25%,-25%);
+        }
+    }
+    .page_info{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        margin: 5%;
+        text-align: left;
+        .title{
+            font-size: 28px;
+        }
+    }
+}
+
+@mixin memberLikeCards_C {
+    width: 270px;
+    border-radius: 20px 20px 30px 30px;
+    height: 400px; //暫時先給
+    margin: auto;
+    margin-top: 15%;
+    background-color: #dddddd;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
+    .page_img{
+        background-color: #666666;
+        border-radius: 20px 20px 0 0;
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: repeat(6,1fr);
+        text-align: center;
+        .label{
+            line-height: 30px;
+            height: 30px;
+            color: #ffffff;
+            background-color: purple;
+            grid-area: 1/1/2/5;
+            border-radius:10px;
+            transform: translate(10%,30%);
+        }
+        .delete{
+            grid-area: 1/12/2/13;
+            font-size: 12px;
+            color: gray;
+            border: 1px solid gray;
+            background-color: #ffffff;
+            font-weight: 800;
+            width: 24px;
+            height: 24px;
+            border-radius: 99em;
+            transform: translate(25%,-25%);
+        }
+    }
+    .page_info{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        margin: 5%;
+        text-align: left;
+        .title{
+            font-size: 28px;
+        }
+    }
+}
+
+
+#MemFavorites{
+    margin: 0;
+    .classify_list{
+        margin: 0 auto;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(2,1fr);
+        .classify{
+            font-size: large;
+            border: 1px solid black;
+            padding: 10px;
+            margin-right: 15px;
+            display: inline-block;
+            color: black;
+        }
+        .post_classify{
+            grid-area: 2/4/3/5;
+        }
+        .travel_classify{
+            grid-area: 2/5/3/6;
+        }
+        .product_classify{
+            grid-area: 2/6/3/7;
+        }
+        .red{
+            background-color: #153A64;
+            color:#fff;
+        }
+    }
+    .post_list{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        .page{
+            @include memberLikeCards_A;
+        }
+    }
+    .travel_list{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        .page{
+            @include memberLikeCards_B;
+        }
+    }
+    .product_list{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        .page{
+            @include memberLikeCards_C;
+        }
+    }
+}
+
+
+
+
+// ===========media screen===========
+
+@media screen and (min-width: 1440px) {
+    // 請用1366
+        // max-width: 1366px
+
+}
+@media screen and (min-width: 1200px) and (max-width: 1439px){
+    // 請用1152
+        // max-width: 1152px
+
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    // 請用960
+        // max-width: 960px
+
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    // 請用720
+        // max-width: 720px
+
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    // 請用540
+        // max-width: 540px
+
+}
+@media screen and (max-width: 575px){
+    #MemFavorites{
+        .classify_list{
+            width: 100%;
+            display: inline-block;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            .classify{
+                margin-right: 0px;
+            }
+            .post_classify{
+                grid-area: 2/1/3/2;
+            }
+            .travel_classify{
+                grid-area: 2/2/3/3;
+            }
+            .product_classify{
+                grid-area: 2/3/3/4;
+            }
+        }
+        .post_list,.travel_list,.product_list{
+            margin: 0;
+            width: 100%;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(6,1fr);
+        }
+    }
+}

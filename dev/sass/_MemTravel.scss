@@ -1,0 +1,80 @@
+#MemTravel{
+    margin: 0;
+    .classify_list{
+        margin: 0 auto;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(2,1fr);
+        .classify{
+            font-size: large;
+            border: 1px solid black;
+            padding: 10px;
+            margin-right: 15px;
+            display: inline-block;
+            color: black;
+        }
+        .myself_classify{
+            grid-area: 2/5/3/6;
+        }
+        .other_classify{
+            grid-area: 2/6/3/7;
+        }
+        .red{
+            background-color: #153A64;
+            color:#fff;
+        }
+    }
+    .myself_list{
+        width: 100%;
+        transform: translateY(5%);
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(7,1fr);
+        .page{
+            width: 100%;
+            height: 150px;
+            border: 1px solid black;
+            margin-bottom: 1%;
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: repeat(1,1fr);
+            .img_box{
+                grid-area: 1/1/2/2;
+                background-color: gray;
+                margin: 5%;
+            }
+            .text_box{
+                grid-area: 1/2/2/5;
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: repeat(3,1fr);
+                margin: 5%;
+                .text_title{
+                    grid-area: 1/1/2/2;
+                    font-size: 24px;
+                }
+                p{
+                    grid-area: 3/1/4/2;
+                }
+            }
+            .info_box{
+                grid-area: 1/5/2/6;
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: repeat(3,1fr);
+                margin: 5%;
+            }
+            .date_box{
+                grid-area: 1/6/2/7;
+                background-color: green;
+            }
+        }
+    }
+    .travel_list{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        .page{        }
+    }
+}
