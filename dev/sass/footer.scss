@@ -1,10 +1,6 @@
 *{
     box-sizing: border-box;
     text-decoration: none;
-    a:visited{
-        color: #fff;
-        
-    }
     font-family: 'Noto Sans TC', sans-serif !important;
 }
 
@@ -28,7 +24,10 @@ footer.footer{
     .footer_info{
         width: 50%;
         display: flex;
-        color: #fff;
+        // color: #fff;
+        .f_color1{
+            color: #fff;
+        }
         .sevrves_place-serves_tel{
             margin: auto 3% auto 0;
             .place{
@@ -99,6 +98,7 @@ footer.footer{
                         border: 1px solid #fff;
                         text-align: center;
                         line-height: 30px;
+                        cursor: pointer;
                     }
                 }
             }
@@ -118,6 +118,9 @@ footer.footer{
                         padding-right: 10px;
                         border-right: 1px solid #fff;
                     }
+                }
+                a:visited{
+                    color: #fff;
                 }
             }
         }
@@ -203,12 +206,12 @@ footer.footer{
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            // .sevrves_place-serves_tel{
-            //     height: 110px;
-            // }
-            // .serves_time-serves_email{
-            //     height: 110px;
-            // }
+            .sevrves_place-serves_tel{
+                height: 110px;
+            }
+            .serves_time-serves_email{
+                height: 110px; 
+            }
             .epaper-footer_link{
                 height: auto;
                 width: 100%;

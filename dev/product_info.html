@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/product_info.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <title>商品詳細頁</title>
+</head>
+<body>
+    @@include('header.html')
+    <div class="wrap" id="app">
+        <button class="btnA_LwLA"><p><a href="./product.html">回總覽</a></p><div class="btnArrowL"></div></button>
+        <div class="product_block">
+            <div class="left">
+                <div class="main_pic">
+                    <img src="../img/bag11.png" alt="">
+                </div>
+                <div class="dot">
+                    <div class="pic"></div>
+                    <div class="pic"></div>
+                    <div class="pic"></div>
+                </div>
+                <div class="move">
+                    <div class="pre" @click="preIndex">
+                        <div class="pre_pic"><img src="../img/登山杖.png" alt=""></div>
+                        <button class="btnA_LwLA"><p>PREV</p><div class="btnArrowL"></div></button>
+                    </div>
+                    <div class="next" @click="nextIndex">
+                        <button class="btnA_LwRA"><p>NEXT</p><div class="btnArrowL"></div></button>
+                        <div class="next_pic"><img src="../img/鞋子.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="top">
+                    <h2>{{currentProduct.product_name}}</h2>
+                    <div class="collect">愛心</div>
+                </div>
+                <div class="product_text">
+                    <p>{{currentProduct.product_description}}</p>
+                </div>
+                <div class="money_chart">
+                    <div class="money">${{currentProduct.product_price}}</div>
+                    <div class="chart">購物車</div>
+                </div>
+                <div class="artical">
+                    <h4 class="related_artical">相關討論文章</h4>
+                    <div class="at_dots">
+                        <div class="at_dot"></div>
+                        <div class="at_dot"></div>
+                        <div class="at_dot"></div>
+                    </div>
+                    <!-- <div class="at_title">{{forum_post_title}}</div>
+                    <div class="at_title">{{forum_post_title}}</div>
+                    <div class="at_title">{{forum_post_title}}</div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('footer.html')
+    <script> 
+
+
+        new Vue({
+            el: '#app',
+            data: {
+                products:[{}],
+                currentIndex: 0 ,
+            },
+            methods:{
+
+            },
+            mounted(){
+                // axios.get('../json/Initial_product.json').then(res => this.products = res.data);
+                axios.get('../json/Initial_product.json')
+                
+                    .then(res => this.products = res.data)
+                    .then(res => {console.log(res.data)})
+                    .catch(error => {console.log(error)});
+                
+
+            },
+            computed: {
+                productsCount() {
+                    return this.products.length;
+                },
+                currentProduct() { // use this to show current product
+                    return this.products[this.currentIndex];
+                },
+                nextProduct() {
+                    return this.products[this.nextIndex];
+                },
+                preProduct() {
+                    return this.products[this.preIndex];
+                },
+                nextIndex() {
+                if (this.currentIndex === this.productsCount) { // current product is the last product
+                        return 0;
+                    } else {
+                        return this.currentIndex + 1;
+                    }
+                },
+                preIndex() {
+                    if (this.currentIndex === 0) { // current product is the first product
+                        return this.productsCount - 1;
+                    } else {
+                        return this.currentIndex - 1;
+                    }
+                },
+            },
+        });
+    </script>
+</body>
+</html>

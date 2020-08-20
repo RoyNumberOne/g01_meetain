@@ -1,1 +1,283 @@
-/* No CSS *//*# sourceMappingURL=product.css.map */
+div.wrap {
+  max-width: 1152px;
+  margin: 30px auto;
+  display: flex;
+}
+
+div.wrap .category {
+  width: 50%;
+}
+
+div.wrap .category .show_now {
+  height: 500px;
+  position: relative;
+  color: #fff;
+  background-color: #FFC400;
+}
+
+div.wrap .category .show_now img {
+  display: block;
+  height: 100%;
+  margin: auto;
+  transform: scale(0.8);
+}
+
+div.wrap .category .show_now .show_hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all .5s 0s ease;
+  background-size: 100% 100%;
+}
+
+div.wrap .category .show_now .show_hover:hover {
+  background-color: rgba(150, 150, 150, 0.5);
+  opacity: 1;
+}
+
+div.wrap .category .show_now .show_hover .p_title {
+  height: 100%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.wrap .category .category_list {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  margin-top: -30px;
+}
+
+div.wrap .category .category_list .bag {
+  height: 100px;
+  position: relative;
+}
+
+div.wrap .category .category_list .bag img {
+  height: 100%;
+}
+
+div.wrap .category .category_list .bag .show_hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all .5s 0s ease;
+  background-size: 100% 100%;
+}
+
+div.wrap .category .category_list .bag .show_hover:hover {
+  background-color: rgba(150, 150, 150, 0.5);
+  opacity: 1;
+  cursor: pointer;
+}
+
+div.wrap .category .category_list .bag .show_hover .p_title {
+  height: 100%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.wrap .category .category_list .clothes {
+  height: 100px;
+  position: relative;
+}
+
+div.wrap .category .category_list .clothes img {
+  height: 100%;
+}
+
+div.wrap .category .category_list .clothes .show_hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all .5s 0s ease;
+  background-size: 100% 100%;
+}
+
+div.wrap .category .category_list .clothes .show_hover:hover {
+  background-color: rgba(150, 150, 150, 0.5);
+  opacity: 1;
+  cursor: pointer;
+}
+
+div.wrap .category .category_list .clothes .show_hover .p_title {
+  height: 100%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.wrap .category .category_list .shoes {
+  height: 100px;
+  position: relative;
+}
+
+div.wrap .category .category_list .shoes img {
+  height: 100%;
+}
+
+div.wrap .category .category_list .shoes .show_hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all .5s 0s ease;
+  background-size: 100% 100%;
+}
+
+div.wrap .category .category_list .shoes .show_hover:hover {
+  background-color: rgba(150, 150, 150, 0.5);
+  opacity: 1;
+  cursor: pointer;
+}
+
+div.wrap .category .category_list .shoes .show_hover .p_title {
+  height: 100%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.wrap .category .category_list .tent {
+  height: 100px;
+  position: relative;
+}
+
+div.wrap .category .category_list .tent img {
+  height: 100%;
+}
+
+div.wrap .category .category_list .tent .show_hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all .5s 0s ease;
+  background-size: 100% 100%;
+}
+
+div.wrap .category .category_list .tent .show_hover:hover {
+  background-color: rgba(150, 150, 150, 0.5);
+  opacity: 1;
+  cursor: pointer;
+}
+
+div.wrap .category .category_list .tent .show_hover .p_title {
+  height: 100%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.wrap .category .category_list .others {
+  height: 100px;
+  position: relative;
+}
+
+div.wrap .category .category_list .others img {
+  height: 100%;
+}
+
+div.wrap .category .category_list .others .show_hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all .5s 0s ease;
+  background-size: 100% 100%;
+}
+
+div.wrap .category .category_list .others .show_hover:hover {
+  background-color: rgba(150, 150, 150, 0.5);
+  opacity: 1;
+  cursor: pointer;
+}
+
+div.wrap .category .category_list .others .show_hover .p_title {
+  height: 100%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.wrap .product_block {
+  width: 50%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+div.wrap .product_block .items_block {
+  display: flex;
+  flex-direction: column;
+}
+
+div.wrap .product_block .items_block .item_top {
+  height: 280px;
+  margin: 0 0 10px 10px;
+}
+
+div.wrap .product_block .items_block .item_top img {
+  height: 100%;
+  cursor: pointer;
+  transform: scale(0.8);
+}
+
+div.wrap .product_block .items_block .item_top :hover {
+  transform: scale(1);
+}
+
+div.wrap .product_block .items_block .item_bom {
+  height: 280px;
+  margin: 0 0 10px 10px;
+}
+
+div.wrap .product_block .items_block .item_bom img {
+  height: 100%;
+  cursor: pointer;
+  transform: scale(0.8);
+}
+
+div.wrap .product_block .items_block .item_bom :hover {
+  transform: scale(1);
+}
+
+div.wrap .product_block .items_block .it_bg1 {
+  background-color: #1A95DB;
+}
+
+div.wrap .product_block .items_block .it_bg2 {
+  background-color: #2C5E9E;
+}
+
+div.wrap .product_block .items_block .it_bg3 {
+  background-color: #EAF1F4;
+}
+
+div.wrap .product_block .items_block .it_bg4 {
+  background-color: #FFC400;
+}
+/*# sourceMappingURL=product.css.map */

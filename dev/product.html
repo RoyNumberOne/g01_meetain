@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <title>商品總覽</title>
+</head>
+<body>
+    @@include('header.html')
+    <div class="wrap" id="wrap">
+        <div class="category">
+            <div class="show_now">
+                <img src="../img/衣服.png" alt="">
+                <div class="show_hover">
+                    <div class="p_title">機能服飾</div>
+                </div>
+            </div>
+            <div class="category_list">
+                <div class="bag"><img src="../img/衣服.png" alt="">
+                    <div class="show_hover">
+                        <div class="p_title">機能服飾</div>
+                    </div>
+                </div>
+                <div class="clothes"><img src="../img/bag.png" alt="">
+                    <div class="show_hover">
+                        <div class="p_title">登山背包</div>
+                    </div>
+                </div>
+                <div class="shoes"><img src="../img/鞋子.png" alt="">
+                    <div class="show_hover">
+                        <div class="p_title">登山鞋</div>
+                    </div>
+                </div>
+                <div class="tent"><img src="../img/clothes.png" alt="">
+                    <div class="show_hover">
+                        <div class="p_title">露營裝備</div>
+                    </div>
+                </div>
+                <div class="others"><img src="../img/登山杖.png" alt="">
+                    <div class="show_hover">
+                        <div class="p_title">登山配件</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product_block">
+            <!-- <div class="bt">
+                <div class="left"><<<</div>
+                <div class="right">>>></div>
+            </div> -->
+            <div class="items_block">
+                <a href="./product_info.html"><div class="item_top it_bg1"><img src="../img/衣服.png" alt=""></div></a>
+                <a href="./product_info.html"><div class="item_bom it_bg2"><img src="../img/鞋子.png" alt=""></div></a>
+            </div>
+            <div class="items_block">
+                <a href="./product_info.html"><div class="item_top it_bg3"><img src="../img/衣服.png" alt=""></div></a>
+                <a href="./product_info.html"><div class="item_bom it_bg4"><img src="../img/鞋子.png" alt=""></div></a>
+            </div>
+            <div class="items_block">
+                <a href="./product_info.html"><div class="item_top it_bg1"><img src="../img/衣服.png" alt=""></div></a>
+                <a href="./product_info.html"><div class="item_bom it_bg2"><img src="../img/鞋子.png" alt=""></div></a>
+            </div>
+            <div class="items_block">
+                <a href="./product_info.html"><div class="item_top it_bg3"><img src="../img/衣服.png" alt=""></div></a>
+                <a href="./product_info.html"><div class="item_bom it_bg4"><img src="../img/鞋子.png" alt=""></div></a>
+            </div>
+        </div>
+    </div>
+    @@include('footer.html')
+<script>
+
+$(document).ready(function () {
+    let slideWidth = $('.items_block').width();
+
+    function moveRight () {
+        $('.items_block').animate({
+            right: + slideWidth
+        });
+    };
+
+    $('.right').click(function () {
+        $('.items_block').moveRight();
+    });
+})
+
+
+
+    
+// $(document).ready(function () {
+
+//     $('.right').click(function () {
+//         index = $(this).index();
+
+//         $('.product_block').animate({
+//         left: -divWidth * index,
+//         });
+//     })
+
+//     function leftSlide() {
+//         currentLeft = $('product_block').css('left');
+
+//         if (parseInt(currentLeft) > parseInt(- divWidth * imgCount + divWidth)) {
+//             nextLeft = parseInt(currentLeft) - divWidth;
+//             $('.product_block').animate({
+//                 left: nextLeft,
+//             });
+//         } else {
+//             $('.product_block').animate({
+//                 left: 0,
+//             });
+//         }
+//     }
+//     function calculate() {
+//         imgCount = $('.product_block .items_block').length;
+//         divWidth = $('.product_block').width();
+//         $('.product_block .items_block').width(divWidth);
+//         $('.product_block').width(divWidth * imgCount);
+//     }
+// });
+</script>
+</body>
+</html>
