@@ -1,3 +1,4 @@
+html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -108,6 +109,7 @@ html, body {
 }
 
 button.btnA_XLwRA {
+  position: relative;
   z-index: 2;
   width: 190px;
   height: 45px;
@@ -210,6 +212,7 @@ button.btnA_XLwRA:hover div::after {
 }
 
 button.btnA_XLwLA {
+  position: relative;
   z-index: 2;
   width: 190px;
   height: 45px;
@@ -313,6 +316,7 @@ button.btnA_XLwLA:hover div::after {
 }
 
 button.btnA_LwRA {
+  position: relative;
   z-index: 2;
   width: 95px;
   height: 45px;
@@ -415,6 +419,7 @@ button.btnA_LwRA:hover div::after {
 }
 
 button.btnA_LwLA {
+  position: relative;
   z-index: 2;
   width: 95px;
   height: 45px;
@@ -518,6 +523,7 @@ button.btnA_LwLA:hover div::after {
 }
 
 button.btnA_L {
+  position: relative;
   z-index: 2;
   width: 95px;
   height: 45px;
@@ -572,6 +578,7 @@ button.btnA_L:hover {
 }
 
 button.btnA_MwRA {
+  position: relative;
   z-index: 2;
   width: 45px;
   height: 45px;
@@ -662,6 +669,7 @@ button.btnA_MwRA:hover div::after {
 }
 
 button.btnA_MwLA {
+  position: relative;
   z-index: 2;
   width: 45px;
   height: 45px;
@@ -753,6 +761,7 @@ button.btnA_MwLA:hover div::after {
 }
 
 button.btnA_S {
+  position: relative;
   margin: 3px;
   display: inline-block;
   z-index: 2;
@@ -806,6 +815,7 @@ button.btnA_S.-active p {
 }
 
 button.btnB_XL_blue {
+  position: relative;
   z-index: 2;
   width: 190px;
   height: 45px;
@@ -863,6 +873,7 @@ button.btnB_XL_blue:hover div.bg::after {
 }
 
 button.btnB_XL_yellow {
+  position: relative;
   z-index: 2;
   width: 190px;
   height: 45px;
@@ -920,6 +931,7 @@ button.btnB_XL_yellow:hover div.bg::after {
 }
 
 button.btnB_L_blue {
+  position: relative;
   z-index: 2;
   width: 95px;
   height: 45px;
@@ -977,6 +989,7 @@ button.btnB_L_blue:hover div.bg::after {
 }
 
 button.btnB_L_yellow {
+  position: relative;
   z-index: 2;
   width: 95px;
   height: 45px;
@@ -1031,68 +1044,6 @@ button.btnB_L_yellow:hover p {
 
 button.btnB_L_yellow:hover div.bg::after {
   left: 0%;
-}
-
-* {
-  position: relative;
-}
-
-html, body {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  height: auto;
-  background-color: #eaf1f4;
-}
-
-header {
-  z-index: 25;
-  width: 100%;
-  height: 200px;
-}
-
-header div.logobox {
-  top: 0;
-  left: 0;
-  width: 100%;
-  position: fixed;
-  height: 200px;
-  background-color: #2C5E9E;
-}
-
-header div.logobox img#logo {
-  top: 25px;
-  position: absolute;
-  width: 400px;
-  left: calc(( 100% - 400px ) / 2);
-}
-
-main {
-  padding: 50px;
-}
-
-main div.line {
-  display: inline-block;
-  height: 30px;
-  width: 10px;
-  background-color: #FFC400;
-  margin: auto 5px;
-  transform: translateY(3px);
-}
-
-main h2, main .fp-tooltip.left {
-  display: inline-block;
-}
-
-main div.hr {
-  width: 100%;
-  height: 5px;
-  background-color: #1A95DB;
-  margin: 30px;
-}
-
-main button {
-  margin-bottom: 20px;
 }
 
 @keyframes toolliptextshow {
@@ -1159,8 +1110,7 @@ div.fp-tableCell {
 
 .fp-tooltip.right {
   opacity: 1;
-  color: #F3F3F3 !important;
-  transform: translateY(-2px);
+  color: #ccc !important;
 }
 
 #fp-nav ul li .fp-tooltip, #fp-nav.fp-show-active a.active + .fp-tooltip {
@@ -1172,7 +1122,7 @@ ul li a span {
   background: white !important;
 }
 
-a.active + div.fp-tooltip.left {
+a.active + div.fp-tooltip.right {
   animation: toolliptextshow 2s ease both !important;
 }
 
