@@ -1,4 +1,4 @@
-h1, h2, .fp-tooltip.left, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -67,7 +67,7 @@ a:visited {
   color: #222222;
 }
 
-h2, .fp-tooltip.left {
+h2 {
   font-size: 30px;
   font-weight: 600;
 }
@@ -1106,69 +1106,6 @@ button.btnB_L_yellow:hover div.bg::after {
   left: 0%;
 }
 
-* {
-  position: relative;
-}
-
-html, body {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  height: auto;
-  background-color: #eaf1f4;
-}
-
-header {
-  z-index: 25;
-  width: 100%;
-  height: 200px;
-}
-
-header div.logobox {
-  top: 0;
-  left: 0;
-  width: 100%;
-  position: fixed;
-  height: 200px;
-  background-color: #2C5E9E;
-}
-
-header div.logobox img#logo {
-  top: 25px;
-  position: absolute;
-  width: 400px;
-  left: calc(( 100% - 400px ) / 2);
-}
-
-main {
-  padding: 50px;
-}
-
-main div.line {
-  display: inline-block;
-  height: 30px;
-  width: 10px;
-  background-color: #FFC400;
-  margin: auto 5px;
-  -webkit-transform: translateY(3px);
-          transform: translateY(3px);
-}
-
-main h2, main .fp-tooltip.left {
-  display: inline-block;
-}
-
-main div.hr {
-  width: 100%;
-  height: 5px;
-  background-color: #1A95DB;
-  margin: 30px;
-}
-
-main button {
-  margin-bottom: 20px;
-}
-
 @-webkit-keyframes toolliptextshow {
   0% {
     opacity: 1;
@@ -1259,6 +1196,10 @@ main button {
   }
 }
 
+footer {
+  z-index: 10;
+}
+
 div.fp-tableCell {
   color: whitesmoke !important;
 }
@@ -1271,11 +1212,9 @@ div.fp-tableCell {
   right: 80px !important;
 }
 
-.fp-tooltip.left {
+.fp-tooltip.right {
   opacity: 1;
-  color: #F3F3F3 !important;
-  -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
+  color: #ccc !important;
 }
 
 #fp-nav ul li .fp-tooltip, #fp-nav.fp-show-active a.active + .fp-tooltip {
@@ -1287,13 +1226,9 @@ ul li a span {
   background: white !important;
 }
 
-a.active + div.fp-tooltip.left {
+a.active + div.fp-tooltip.right {
   -webkit-animation: toolliptextshow 2s ease both !important;
           animation: toolliptextshow 2s ease both !important;
-}
-
-.section {
-  text-align: center;
 }
 
 div.bg {
@@ -1306,13 +1241,13 @@ div.bg {
 }
 
 div.bg div.bgbox {
-  width: 120vw;
+  width: 2000px;
 }
 
 div.bg div.bgbox img {
   width: 2000px;
-  left: calc(-10vw);
-  bottom: calc(-23vh);
+  left: calc(-1000px + 50vw);
+  bottom: calc(-3vh);
   position: fixed;
   -webkit-transition: 0.2s all linear;
   transition: 0.2s all linear;
@@ -1325,8 +1260,14 @@ div#section2 div.weatherdescbox {
 }
 
 div#section2 div.weatherdescbox h3, div#section2 div.weatherdescbox p {
+  color: initial;
+  font-size: initial;
   text-align: left;
   width: 400px;
+}
+
+div#section2 div.weatherdescbox h3 {
+  font-size: 1.5em;
 }
 
 div#section4 div.meteor {

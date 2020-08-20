@@ -1,5 +1,4 @@
-// @import 'common' ;
-@import 'StyleGuild' ;
+@import 'common';
 
 @mixin center {
     left: 50%;
@@ -46,6 +45,14 @@
 
 
 
+
+
+
+footer{
+    z-index: 10;
+}
+
+
 div.fp-tableCell {
     color: whitesmoke !important;
 }
@@ -56,11 +63,9 @@ div.fp-tableCell {
 .fp-controlArrow.fp-next {
     right: 80px !important;
 }
-.fp-tooltip.left{
+.fp-tooltip.right{
     opacity: 1;
-    color: $mt_grey1 !important;
-    @extend h2;
-    transform: translateY(-2px);
+    color: #ccc !important;
 }
 // #fp-nav ul li:hover .fp-tooltip, #fp-nav.fp-show-active a.active + .fp-tooltip {
 //     opacity: 1 !important;
@@ -74,14 +79,10 @@ div.fp-tableCell {
 ul li a span {
     background: white !important;
 }
-a.active + div.fp-tooltip.left{
+a.active + div.fp-tooltip.right{
     // opacity: 1 !important;
     animation: toolliptextshow 2s ease both !important;
 }
-
-.section {
-    text-align:center;
-    }
 
 div.bg{
     z-index: -1 !important;
@@ -91,15 +92,33 @@ div.bg{
     height: 100vh;
     overflow: hidden;
     & div.bgbox{
-        width: 120vw;
+        width: 2000px;
         & img{
             width: 2000px;
-            left: calc(-10vw);
-            bottom: calc(-23vh);
+            left: calc(-1000px + 50vw);
+            bottom: calc(-3vh);
             position: fixed; 
             transition: 0.2s all linear;    
         }
-    } 
+    }
+    // & div.scene{
+    //     // position: absolute;
+    //     & img{
+
+    //     }
+    // }
+    // & div.mountainmiddle{
+    //     // position: absolute;
+    //     & img{
+            
+    //     }
+    // }
+    // & div.mountainfirst{
+    //     // position: absolute;
+    //     & img{
+            
+    //     }
+    // }
 }
 
 div#section2 {
@@ -108,8 +127,13 @@ div#section2 {
         left: 10vw;
         top: 30vh;
         & h3, p {
+            color: initial;
+            font-size: initial;
             text-align: left;
             width: 400px;
+        }
+        & h3 {
+            font-size: 1.5em;
         }
     } 
 }
