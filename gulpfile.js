@@ -56,6 +56,11 @@ gulp.task('concat', ['sass'], function(){
 })
 
 
+gulp.task('html', function(){
+  return gulp.src(['dev/*.html']) //來源
+  .pipe(gulp.dest('./dist')); //目的地
+});
+
 gulp.task('fileinclude', function(){
     return gulp.src(['dev/*.html']) //來源
     .pipe(fileinclude({
@@ -85,6 +90,7 @@ gulp.task('default',  function () {
     gulp.watch(['./dev/*.html' , './dev/**/*.html'] , ['fileinclude']).on('change' , reload)
     gulp.watch('./dev/js/*.js' , ['babels']).on('change' , reload)
     gulp.watch('./dev/json' , ['copyJSON']).on('change' , reload)
+    gulp.watch('./dev/*.html' , ['html']).on('change' , reload)
     gulp.watch('./dev/images' , ['copyImages']).on('change' , reload)
   });
 
