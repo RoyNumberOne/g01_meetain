@@ -7,7 +7,7 @@ $(document).ready(function() {
     anchors:['Page1', 'Page2', 'Page3', 'Page4'],//锚链接，数组中元素对应各个页面的锚链接
     navigation: true,//有无导航栏
     navigationPosition: 'left',//导航栏位置
-    navigationTooltips: ['首頁', '揪團', '討論', '商品'],//导航栏提示文字，与页面一一对应
+    navigationTooltips: ['首頁', '揪團區', '討論區', '商品區'],//导航栏提示文字，与页面一一对应
     showActiveTooltip: false,//是否显示当前页面提示文字
     slidesNavigation: true,//有无幻灯片（横向）导航栏
     slidesNavPosition: 'bottom',//幻灯片（横向）导航栏位置
@@ -55,9 +55,9 @@ $(window).mousemove(function(evt){
 var pagex =evt.pageX;
 var pagey =evt.pageY;
 
-$(".scene img").css("left",`calc(-10vw + ${pagex/30}px)`)
-$(".mountainmiddle img").css("left",`calc(-10vw + ${pagex/55}px)`)
-$(".mountainfirst img").css("left",`calc(-10vw + ${pagex/80}px)`)
+$(".scene img").css("left",`calc(50vw - 1000px + ${pagex/30}px)`)
+$(".mountainmiddle img").css("left",`calc(50vw - 1000px + ${pagex/55}px)`)
+$(".mountainfirst img").css("left",`calc(50vw - 1000px + ${pagex/80}px)`)
 
 checkbg();
 })

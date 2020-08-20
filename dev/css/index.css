@@ -1225,7 +1225,7 @@ div.fp-tableCell {
   right: 80px !important;
 }
 
-.fp-tooltip.right {
+.fp-tooltip.left {
   opacity: 1;
   color: #ccc !important;
 }
@@ -1239,7 +1239,7 @@ ul li a span {
   background: white !important;
 }
 
-a.active + div.fp-tooltip.right {
+a.active + div.fp-tooltip.left {
   -webkit-animation: toolliptextshow 2s ease both !important;
           animation: toolliptextshow 2s ease both !important;
 }
@@ -1253,13 +1253,9 @@ div.bg {
   overflow: hidden;
 }
 
-div.bg div.bgbox {
-  width: 2000px;
-}
-
 div.bg div.bgbox img {
   width: 2000px;
-  left: calc(-1000px + 50vw);
+  left: calc(50vw - 1000px);
   bottom: calc(-3vh);
   position: fixed;
   -webkit-transition: 0.2s all linear;
