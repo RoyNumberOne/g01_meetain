@@ -7,8 +7,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <link rel=“stylesheet” href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel=“stylesheet” href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/v4-shims.min.css">
-    <link rel="stylesheet" href="./css/reset.css">
-	<link rel="stylesheet" href="./css/login_v2.css">
+    <link rel="stylesheet" href="../../sass/common.scss">
+	<link rel="stylesheet" href="../../../css/login_v2.css">
 </head>
 <body>
     <header>
@@ -113,19 +113,20 @@
 			</div>
 			<div class="mobile_login">
 				<form>
-					<h3>會員登入</h3>
+					<h3 class="title">會員登入</h3>
 					<p>帳號</p>
 					<input type="text" name="mobileLogin_acc" id="mobileLogin_acc"/>
 					<p>密碼</p>
 					<input type="password" name="mobileLogin_psw" id="mobileLogin_psw"/>
 					<p class="forApply">暱稱</p>
-					<input type="text" name="mobileLogin_id" id="mobileLogin_id"/>
+					<input type="text" name="mobileLogin_id" id="mobileLogin_id" class="forApply"/>
 					<p class="forApply">姓名</p>
-					<input type="password" name="mobileLogin_name" id="mobileLogin_name"/>
+					<input type="password" name="mobileLogin_name" id="mobileLogin_name" class="forApply"/>
 					<p class="forApply">信箱</p>
-					<input type="email" name="mobileLogin_mail" id="mobileLogin_mail"/>
-					<input type="submit" value="登入">
+					<input type="email" name="mobileLogin_mail" id="mobileLogin_mail" class="forApply"/>
+					<input type="submit" id="mobileLogin_submit" value="登入">
 					<a href="#" class="clickMe_app">沒有帳號?點我註冊</a>
+					<a href="#" class="clickMe_log">已有帳號?點我登入</a>
 				</form>
 			</div>
 		</div>
@@ -155,8 +156,19 @@
 	
 	<script>
 		$(document).ready(function(){
-			$('clickMe_app').click(function(){
-				
+			$('.clickMe_app').click(function(){
+				$(".forApply").toggle();
+				$('.title').html('註冊帳號');
+				$('#mobileLogin_submit').val('註冊');
+				$('.clickMe_app').css('display','none');
+				$('.clickMe_log').css('display','block');
+			});
+			$('.clickMe_log').click(function(){
+				$('.forApply').toggle();
+				$('.title').html('會員登入');
+				$('.clickMe_app').css('display','block');
+				$('.clickMe_log').css('display','none');
+				$('#mobileLogin_submit').val('登入');
 			});
 		});
 	</script>

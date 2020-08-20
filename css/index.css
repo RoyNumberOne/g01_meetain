@@ -1,0 +1,591 @@
+h1, h2, .fp-tooltip.left, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  border: 0;
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: currentColor;
+}
+
+* {
+  font-family: 'Noto Sans TC' !important;
+  color: #222222;
+}
+
+h2, .fp-tooltip.left {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  line-height: 1.6;
+  font-weight: 800;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+}
+
+header nav p {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* {
+  position: relative;
+}
+
+html, body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+
+header {
+  z-index: 1;
+  width: 100%;
+  height: 400px;
+}
+
+header div.logobox {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  height: 400px;
+  background-color: #2C5E9E;
+}
+
+header div.logobox img#logo {
+  top: 100px;
+  position: absolute;
+  width: 500px;
+  left: calc(( 100% - 500px ) / 2);
+}
+
+main {
+  padding: 50px;
+}
+
+main div.line {
+  display: inline-block;
+  height: 30px;
+  width: 10px;
+  background-color: #FFC400;
+  margin: auto 5px;
+  transform: translateY(3px);
+}
+
+main h2, main .fp-tooltip.left {
+  display: inline-block;
+}
+
+main div.hr {
+  width: 100%;
+  height: 5px;
+  background-color: #1A95DB;
+  margin: 30px;
+}
+
+main button.btnA_XLwA {
+  width: 190px;
+  height: 45px;
+  border: 1px solid #222222;
+  background-color: white;
+  outline: 0px !important;
+}
+
+main button.btnA_XLwA::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid #222222;
+  border-bottom: 1px solid #222222;
+  left: 8px;
+  top: 8px;
+}
+
+main button.btnA_XLwA p {
+  position: absolute;
+  top: 7px;
+  left: 20px;
+}
+
+main button.btnA_XLwA div.btnArrowXL {
+  position: absolute;
+  left: 150px;
+  top: 13px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px 0 0 9px;
+  border-color: transparent transparent transparent #222222;
+}
+
+main button.btnA_XLwA div.btnArrowXL::before {
+  position: absolute;
+  content: "";
+  left: -11px;
+  top: -8px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px 0 0 9px;
+  border-color: transparent transparent transparent white;
+}
+
+main button.btnA_XLwA div.btnArrowXL::after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 2px;
+  left: -40px;
+  background-color: #222222;
+}
+
+main button.btnA_LwA {
+  width: 95px;
+  height: 45px;
+  border: 1px solid #222222;
+  background-color: white;
+  outline: 0px !important;
+}
+
+main button.btnA_LwA::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid #222222;
+  border-bottom: 1px solid #222222;
+  left: 8px;
+  top: 8px;
+}
+
+main button.btnA_LwA p {
+  position: absolute;
+  top: 7px;
+  left: 3px;
+}
+
+main button.btnA_LwA div.btnArrowL {
+  position: absolute;
+  left: 76px;
+  top: 13px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px 0 0 9px;
+  border-color: transparent transparent transparent #222222;
+}
+
+main button.btnA_LwA div.btnArrowL::before {
+  position: absolute;
+  content: "";
+  left: -11px;
+  top: -8px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px 0 0 9px;
+  border-color: transparent transparent transparent white;
+}
+
+main button.btnA_LwA div.btnArrowL::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 2px;
+  left: -20px;
+  background-color: #222222;
+}
+
+main button.btnA_L {
+  width: 95px;
+  height: 45px;
+  border: 1px solid #222222;
+  background-color: white;
+  outline: 0px !important;
+}
+
+main button.btnA_L::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid #222222;
+  border-bottom: 1px solid #222222;
+  left: 8px;
+  top: 8px;
+}
+
+main button.btnA_L p {
+  position: absolute;
+  top: 7px;
+  left: 8px;
+}
+
+main button.btnA_M {
+  width: 47px;
+  height: 45px;
+  border: 1px solid #222222;
+  background-color: white;
+  outline: 0px !important;
+}
+
+main button.btnA_M::after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid #222222;
+  border-bottom: 1px solid #222222;
+  left: 8px;
+  top: 8px;
+}
+
+main button.btnA_M div.btnArrowM {
+  position: absolute;
+  left: 22px;
+  top: 13px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px 0 0 9px;
+  border-color: transparent transparent transparent #222222;
+}
+
+main button.btnA_M div.btnArrowM::before {
+  position: absolute;
+  content: "";
+  left: -11px;
+  top: -8px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px 0 0 9px;
+  border-color: transparent transparent transparent white;
+}
+
+main button.btnA_M div.btnArrowM::after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 2px;
+  left: -20px;
+  background-color: #222222;
+}
+
+main button.btnA_S {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #222222;
+  background-color: white;
+  outline: 0px !important;
+}
+
+main button.btnA_S p {
+  position: absolute;
+  top: -3px;
+  left: 0px;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+main button.btnB_XL_blue {
+  width: 190px;
+  height: 45px;
+  background-color: #2C5E9E;
+  border-radius: 15px;
+  outline: 0px !important;
+  color: white;
+}
+
+main button.btnB_XL_yellow {
+  width: 190px;
+  height: 45px;
+  background-color: #FFC400;
+  border-radius: 15px;
+  outline: 0px !important;
+  color: white;
+}
+
+main button.btnB_L_blue {
+  width: 95px;
+  height: 45px;
+  background-color: #2C5E9E;
+  border-radius: 15px;
+  outline: 0px !important;
+  color: white;
+}
+
+main button.btnB_L_yellow {
+  width: 95px;
+  height: 45px;
+  background-color: #FFC400;
+  border-radius: 15px;
+  outline: 0px !important;
+  color: white;
+}
+
+@keyframes toolliptextshow {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes meteorfalls {
+  0% {
+    opacity: 0;
+    height: 11px;
+    transform: skewX(-15deg) translateY(0px);
+  }
+  15% {
+    opacity: 0.5;
+    height: 20px;
+  }
+  50% {
+    height: 100px;
+    opacity: 0.85;
+  }
+  80% {
+    opacity: 0.5;
+    height: 150px;
+  }
+  90% {
+    opacity: 0;
+    height: 11px;
+    transform: skewX(-15deg) translateY(220px);
+  }
+  100% {
+    opacity: 0;
+    height: 11px;
+    transform: skewX(-15deg) translateY(0px);
+  }
+}
+
+div.fp-tableCell {
+  color: whitesmoke !important;
+}
+
+.fp-controlArrow.fp-prev {
+  left: 80px !important;
+}
+
+.fp-controlArrow.fp-next {
+  right: 80px !important;
+}
+
+.fp-tooltip.left {
+  opacity: 1;
+  color: #F3F3F3 !important;
+  transform: translateY(-2px);
+}
+
+#fp-nav ul li .fp-tooltip, #fp-nav.fp-show-active a.active + .fp-tooltip {
+  width: auto;
+  top: -3px !important;
+}
+
+ul li a span {
+  background: white !important;
+}
+
+a.active + div.fp-tooltip.left {
+  animation: toolliptextshow 2s ease both !important;
+}
+
+.section {
+  text-align: center;
+}
+
+div.bg {
+  z-index: -1 !important;
+  position: fixed;
+  opacity: 0.8;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+div.bg div.bgbox {
+  width: 120vw;
+}
+
+div.bg div.bgbox img {
+  width: 2000px;
+  left: calc(-10vw);
+  bottom: calc(-23vh);
+  position: fixed;
+  transition: 0.2s all linear;
+}
+
+div#section2 div.weatherdescbox {
+  position: absolute;
+  left: 10vw;
+  top: 30vh;
+}
+
+div#section2 div.weatherdescbox h3, div#section2 div.weatherdescbox p {
+  text-align: left;
+  width: 400px;
+}
+
+div#section4 div.meteor {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+div#section4 div.meteor .dot {
+  position: absolute;
+  background-color: whitesmoke;
+  width: 3px;
+  height: 11px;
+  border-radius: 50%;
+}
+
+div#section4 div.meteor .dot1 {
+  left: 15vw;
+  animation: meteorfalls 2s both ease infinite 0.5s;
+  bottom: 90vh;
+}
+
+div#section4 div.meteor .dot2 {
+  left: 22vw;
+  animation: meteorfalls 2.5s both linear infinite -1.5s;
+  bottom: 87vh;
+}
+
+div#section4 div.meteor .dot3 {
+  left: 33vw;
+  animation: meteorfalls 1.6s both linear infinite 1s;
+  bottom: 92vh;
+}
+
+div#section4 div.meteor .dot4 {
+  left: 40vw;
+  animation: meteorfalls 2.1s both ease-out infinite 1.1s;
+  bottom: 79vh;
+}
+
+div#section4 div.meteor .dot5 {
+  left: 43vw;
+  animation: meteorfalls 1.1s both ease infinite 0.2s;
+  bottom: 82vh;
+}
+
+div#section4 div.meteor .dot6 {
+  left: 51vw;
+  animation: meteorfalls 0.7s both linear infinite 0.1s;
+  bottom: 93vh;
+}
+
+div#section4 div.meteor .dot7 {
+  left: 66vw;
+  animation: meteorfalls 2s both ease-in infinite 0.3s;
+  bottom: 82vh;
+}
+
+div#section4 div.meteor .dot8 {
+  left: 80vw;
+  animation: meteorfalls 2.4s both linear infinite 2s;
+  bottom: 90vh;
+}
+
+div#section4 div.meteor .dot9 {
+  left: 89vw;
+  animation: meteorfalls 1.7s both linear infinite 0.7s;
+  bottom: 91vh;
+}
+/*# sourceMappingURL=index.css.map */

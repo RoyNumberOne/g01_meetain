@@ -1,0 +1,311 @@
+@charset "UTF-8";
+* {
+  position: relative;
+  font-family: 'Hind Vadodara','微軟正黑體';
+}
+
+.daybox {
+  right: 10vw;
+  top: 30vh;
+  width: 50%;
+  max-width: 400px;
+  position: absolute;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2), 0px 25px 60px -10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  overflow: hidden;
+  transition-duration: 2s;
+  cursor: pointer;
+}
+
+.daybox:hover .daybox_bottom {
+  height: 100px;
+}
+
+.daybox:hover .dayweather {
+  opacity: 1;
+  top: 0px;
+}
+
+.top {
+  background: linear-gradient(20deg, #19283D 0%, #1D678F 95%);
+  background-size: 100% 300%;
+  height: 330px;
+  animation: daylight 5s linear both;
+  transition-duration: 0.5s;
+}
+
+.top .text_area {
+  color: #f3f3f3;
+  position: absolute;
+  bottom: 25px;
+  left: 27px;
+}
+
+.top .text_area .temperature {
+  display: block;
+  font-size: 75px;
+  margin-bottom: 0px;
+  font-weight: 100;
+  transition-duration: 0.5s;
+}
+
+.top .text_area .infos {
+  margin-top: -10px;
+  display: block;
+  letter-spacing: 1px;
+  font-size: 13px;
+  opacity: 0.7;
+  transition-duration: 0.5s;
+}
+
+@keyframes daylight {
+  0% {
+    background-position: 100% 30%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.daybox_bottom {
+  height: 10px;
+  background-color: #f3f3f3;
+  transition-duration: 1s;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+}
+
+.dayweather {
+  padding: 2px;
+  margin-top: 10px;
+  width: calc(100% / 7 - 5px);
+  box-sizing: border-box;
+  text-align: center;
+  opacity: 0;
+  top: 20px;
+  transition: 0.5s;
+}
+
+.dayweather svg {
+  width: 100%;
+  max-width: 30px;
+  top: -20px;
+}
+
+.dayweather svg .sun {
+  fill: #FFD633;
+  stroke-width: 30px;
+  stroke: rgba(255, 214, 51, 0.5);
+  stroke-dasharray: 5px;
+}
+
+.dayweather svg .rain {
+  stroke: #4DACFF;
+  stroke-width: 5px;
+}
+
+.dayweather svg .cloud {
+  fill: #ccc;
+}
+
+.dayweather h3 {
+  text-align: center;
+  font-size: 8px;
+  font-weight: 400;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+.dayweather:nth-child(1) {
+  transition-delay: 0.2s;
+}
+
+.dayweather:nth-child(2) {
+  transition-delay: 0.3s;
+}
+
+.dayweather:nth-child(3) {
+  transition-delay: 0.4s;
+}
+
+.dayweather:nth-child(4) {
+  transition-delay: 0.5s;
+}
+
+.dayweather:nth-child(5) {
+  transition-delay: 0.6s;
+}
+
+.dayweather:nth-child(6) {
+  transition-delay: 0.7s;
+}
+
+.dayweather:nth-child(7) {
+  transition-delay: 0.8s;
+}
+
+.moon {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 50px;
+  top: 100px;
+  transform: translateX(-12px) translateY(-12px);
+  border-radius: 100%;
+  box-shadow: 12px 12px 0 0 #FFD633;
+  animation: moon 50s both;
+  transition-duration: 0.5s;
+}
+
+@keyframes moon {
+  0% {
+    transform: translateX(-15px) translateY(15px);
+    box-shadow: 15px -15px 0 0 #FFD633;
+  }
+  100% {
+    transform: translateX(30px) translateY(-30px);
+    box-shadow: -30px 30px 0 0 #FFD633;
+  }
+}
+
+.cloud {
+  width: 100px;
+  height: 36px;
+  background-color: #f2f9fe;
+  border-radius: 20px;
+  position: absolute;
+  left: 200px;
+  bottom: 50px;
+  z-index: 50;
+  animation: floating 3s infinite;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.5s;
+}
+
+.cloud::before, .cloud::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -28px;
+  left: 16px;
+  background-color: #f2f9fe;
+  border-radius: 25px;
+  z-index: 1;
+}
+
+.cloud::after {
+  top: -20px;
+  left: 35px;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.rain {
+  width: 2px;
+  height: 10px;
+  background-color: #f3f3f3;
+  animation: rain 1s infinite linear;
+  left: 45px;
+  bottom: 15px;
+  transition-duration: 0.5s;
+}
+
+.rain2 {
+  animation-delay: -0.4s;
+  left: 70px;
+  bottom: 20px;
+}
+
+.rain3 {
+  animation-delay: -0.7s;
+  left: 30px;
+  bottom: 20px;
+}
+
+@keyframes rain {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+}
+
+.temsvg {
+  width: 100%;
+  transition-duration: 0.5s;
+}
+
+.temsvg circle {
+  fill: white;
+  opacity: 0.05;
+  transition: 0.5s 0s;
+}
+
+.temsvg polyline {
+  fill: none;
+  stroke: white;
+  stroke-width: 1px;
+  opacity: 0.05;
+  transition: 0.5s 0.2s;
+}
+
+.temsvg text {
+  fill: #f3f3f3;
+  opacity: 0;
+  transition: 0.5s 0.5s;
+  transform: translateX(-8px) translateY(25px);
+  font-size: 10px;
+}
+
+label {
+  cursor: pointer;
+}
+
+#switch_night {
+  display: none;
+}
+
+#switch_night:checked + .top {
+  background-color: #f3f3f3;
+}
+
+#switch_night:checked + .top .temsvg text, #switch_night:checked + .top .temsvg circle {
+  opacity: 0.9;
+}
+
+#switch_night:checked + .top .temsvg polyline {
+  opacity: 0.7;
+}
+
+#switch_night:checked + .top .temsvg text {
+  transform: translateX(-8px) translateY(20px);
+}
+
+#switch_night:checked + .top .cloud {
+  opacity: 0.1;
+}
+
+#switch_night:checked + .top .moon {
+  opacity: 0.1;
+}
+/*# sourceMappingURL=daybox.css.map */

@@ -19,7 +19,7 @@
 
 header{
     background-color: #153A64;
-    height: 100px;
+    height: 70px;
 }
 
 main {
@@ -230,6 +230,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 300px;
+    padding: 20px;
     .mobile_logo{
         width: 200px;
         margin: 20px auto;
@@ -240,6 +241,29 @@ main {
     form{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        h3{
+            margin-bottom: 15px;
+        }
+        p{
+            margin: 5px;
+            font-size: 12px;
+        }
+        p.forApply{
+            display: none;
+        }
+        input.forApply{
+            display: none;
+        }
+        input#mobileLogin_submit{
+            margin: 15px;
+        }
+        a{
+            font-size: 12px;
+        }
+        a.clickMe_log{
+            display: none;
+        }
     }
     
 }
