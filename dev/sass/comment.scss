@@ -1,0 +1,286 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    a:visited{
+        color: #fff;
+        
+    }
+    font-family: 'Roboto', Helvetica , "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei",Arial,sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    border: 2px solid brown;
+    text-align: center;
+}
+
+#banner{
+    width: 100%;
+    text-align: center;
+    border: 3px solid hotpink;
+    margin-bottom: 2%;;
+}
+
+#comment{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    // border: 1px solid black;
+}
+
+#comment-block{
+    width: 1140px;
+    margin: 0 auto;
+    // border: 2px solid rgb(226, 31, 216);
+}
+
+    //------------討論區用統一標題
+    .ntittle{
+        padding: 8px 30px;
+        background-color: #153A64;
+
+        h2{
+            color: white;
+        }
+    }
+
+    .original-poster-block{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-top: 2%;
+        .poster{
+            width: 30%;
+            display: flex;
+            .original{
+                padding: 5px 50px;
+                border-radius: 10px;
+                border: 1px solid black;
+                margin: auto;
+            }
+        }
+        .poster-name{
+            line-height: 20px;
+            margin-left: 8px;
+        }
+        .poster-time{
+            width: 50%;
+            margin: auto;
+        }
+        .poster-report{
+            margin: auto;
+            display: flex;
+        }
+        .report{
+            margin: auto 10px;
+        }
+        .likes{
+            margin: auto 5px;
+        }
+    }
+
+    #innertext-block{
+        width: 1040px;
+        max-width: 100%;
+        margin: 0 auto;
+
+        .write-top{
+            text-align: center;
+            line-height: 50px;
+        }
+        p{
+            line-height: 40px;
+        }
+
+        .post-image{
+            margin-top: 3%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .post-poster-block01{
+        display: flex;
+        margin: 3% auto;
+        width: 1040px;
+        max-width: 100%;
+
+        .poster-infor{
+            margin: 1% 1.5%;
+            .userpic{
+                max-width: 100%;
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+            }
+            .poster-name{ text-align: center;}
+            
+        }
+    }
+    .post-text{
+        width: 100%;
+        margin: 0 2%;
+
+        .triangle1-text{padding:20px;}
+
+            .poster-say{
+                display: flex;
+                justify-content: space-between;
+                line-height: 30px;
+            }
+            .innertext{line-height: 42px;}
+    }
+    .grid{height: 10px;}
+
+    .triangle1{
+        width: 100%;
+        background-color: #F0F0F0;
+        border-radius: 10px;
+        position: relative;
+        margin: 3% 0;
+    }
+
+    .triangle1::after{
+        content: "";
+        position: absolute;
+        top: 30px;
+        border-color: transparent;
+        border-width: 25px;
+        border-style: solid;
+        border-right-color: #F0F0F0;
+        left:-50px;
+        //三角形的另一種寫法
+        // border: 1px solid #000;
+        // width: 30px;
+        // padding-top: 30px;
+        // background: linear-gradient(-45deg,transparent 50%, rgb(241, 24, 24) 50%);
+    }
+    //這區是回覆者的留言flex-row-reverse
+    .post-poster-block02{
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 3% auto;
+        width: 1040px;
+        max-width: 100%;
+    }
+        .poster-infor2{
+            margin: 1% 1.5%;
+            .userpic2{
+                max-width: 100%;
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+            }
+            .poster-name2{ text-align: center;}
+    }
+
+    .triangle2{
+        width: 100%;
+        background-color: #F0F0F0;
+        border-radius: 10px;
+        position: relative;
+        margin: 3% 0;
+
+        .triangle-text{
+            padding: 20px;
+        }
+    }
+
+    .triangle2::after{
+        content: "";
+        position: absolute;
+        top: 30px;
+        border-color: transparent;
+        border-width: 25px;
+        border-style: solid;
+        border-left-color: #F0F0F0;
+        right:-50px;
+    }
+
+    //textarea
+    .text-arera-block{display: flex;}
+    .area-tittle{
+        width: 20%;
+        margin-left: auto;
+         p{
+            text-align: end;
+            padding: 0 30px;
+         }
+    }
+    .area{
+        width: 80%;
+            textarea{resize: none;}
+    }
+    //product block
+    .product-block{
+        // border: 1px solid green;
+        display: flex;
+        margin: auto;
+        width: 100%;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .product-img{
+        width: 20%;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        img{
+            width: 100%;
+        }
+    }
+
+    //我要留言btn
+    
+
+    //<!-- --------------------aside link------------------ -->
+    #aside-link{
+        display:block;
+        position: fixed;
+        right: 1px;
+        bottom: 300px;
+        height: auto;
+        z-index: 4;
+    }
+
+    .aside-com-btn{
+        display: block;
+        position: absolute;
+        right: 0px;
+        bottom: 20px;
+        height: auto;
+        width: 100px;
+
+        img{
+            width: 100%;
+            margin: 3px 0px;
+        }
+    }
+
+    /* ----------------------GO TOP---------------------- */
+    #gotop a{
+        text-decoration: none;
+    }
+
+    #gotop {
+        position:fixed;
+        z-index:90;
+        right:20px;
+        bottom:31px;
+        display:none;
+        width:50px;
+        height:50px;
+        color:#fff;
+        background-color: #153a64;
+        // background-image: linear-gradient(to top, #86baff, #956bda);
+        line-height:50px;
+        // border-radius:50%;
+        transition:all 0.5s;
+        text-align: center;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    }
