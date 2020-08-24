@@ -124,6 +124,35 @@ html , body {
 // ============components============
 
 
+
+// ===============media===============
+@media screen and (min-width: 1440px) {
+    // 請用1366
+        // max-width: 1366px
+      }
+@media screen and (min-width: 1200px) and (max-width: 1439px){
+    // 請用1152
+        // max-width: 1152px
+      }
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    // 請用960
+        // max-width: 960px
+      }
+@media screen and (min-width: 768px) and (max-width: 991px){
+    // 請用720
+        // max-width: 720px
+      }
+@media screen and (min-width: 576px) and (max-width: 767px){
+  // 請用540
+      // max-width: 540px
+}
+@media screen and (max-width: 575px){
+    // 請用100%
+        // max-width: 100%
+      }
+
+
+
 // ==============button==============
 button.btnA_XLwRA{
     position: relative;
@@ -815,7 +844,7 @@ button.btnB_XL_blue{
       transition: 0.4s all ease-in-out;
   }
   & div.bg{
-      z-index: 0;
+      z-index: -1;
       position: absolute;
       top: 0;
       left: 0;
@@ -872,7 +901,7 @@ button.btnB_XL_yellow{
       transition: 0.4s all ease-in-out;
   }
   & div.bg{
-      z-index: 0;
+      z-index: -1;
       position: absolute;
       top: 0;
       left: 0;
@@ -925,7 +954,7 @@ button.btnB_L_blue{
       transition: 0.3s all ease-in-out;
   }
   & div.bg{
-      z-index: 0;
+      z-index: -1;
       position: absolute;
       top: 0;
       left: 0;
@@ -980,7 +1009,7 @@ button.btnB_L_yellow{
       transition: 0.3s2all ease-in-out;
   }
   & div.bg{
-      z-index: 0;
+      z-index: -1;
       position: absolute;
       top: 0;
       left: 0;
