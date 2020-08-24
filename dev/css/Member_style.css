@@ -1319,9 +1319,13 @@ footer.footer .footer_info .epaper-footer_link .epaper .etitle {
 }
 
 footer.footer .footer_info .epaper-footer_link .epaper .einput {
+<<<<<<< HEAD
   margin: 15px 0;
   display: -webkit-box;
   display: -ms-flexbox;
+=======
+  margin: 15px auto;
+>>>>>>> 9ef20454f329f8b70260a6dd96741d84fd5f00b0
   display: flex;
   height: 30px;
   width: 100%;
@@ -1370,7 +1374,7 @@ footer.footer .footer_info .epaper-footer_link .link a:visited {
   color: #fff;
 }
 
-@media (max-width: 1439px) {
+@media screen and (min-width: 1440px) {
   footer.footer .footer_logo_block {
     width: 45%;
     padding-left: 5%;
@@ -1380,7 +1384,7 @@ footer.footer .footer_info .epaper-footer_link .link a:visited {
   }
 }
 
-@media (max-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1439px) {
   footer.footer .footer_logo_block {
     width: 35%;
     padding-left: 4%;
@@ -1390,7 +1394,7 @@ footer.footer .footer_info .epaper-footer_link .link a:visited {
   }
 }
 
-@media (max-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   footer.footer .footer_logo_block {
     width: 30%;
     padding-left: 3%;
@@ -1400,7 +1404,7 @@ footer.footer .footer_info .epaper-footer_link .link a:visited {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   footer.footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1448,11 +1452,13 @@ footer.footer .footer_info .epaper-footer_link .link a:visited {
   }
 }
 
-@media (max-width: 575px) {
+@media screen and (min-width: 576px) and (max-width: 767px) {
   footer.footer {
     height: auto;
+    padding: 15px 0;
   }
   footer.footer .footer_info {
+<<<<<<< HEAD
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1461,6 +1467,10 @@ footer.footer .footer_info .epaper-footer_link .link a:visited {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+=======
+    flex-wrap: wrap;
+    width: 100%;
+>>>>>>> 9ef20454f329f8b70260a6dd96741d84fd5f00b0
   }
   footer.footer .footer_info .sevrves_place-serves_tel {
     height: 110px;
@@ -1471,13 +1481,23 @@ footer.footer .footer_info .epaper-footer_link .link a:visited {
   footer.footer .footer_info .epaper-footer_link {
     height: auto;
     width: 100%;
-    margin: auto 20px;
+    margin: auto;
     text-align: center;
+  }
+  footer.footer .footer_info .epaper-footer_link .epaper {
+    width: 100%;
+  }
+  footer.footer .footer_info .epaper-footer_link .epaper .etitle {
+    margin: 15px 0 5px;
+  }
+  footer.footer .footer_info .epaper-footer_link .epaper .einput {
+    width: 60%;
   }
   footer.footer .footer_info .epaper-footer_link .link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    justify-content: center;
   }
   footer.footer .footer_info .epaper-footer_link .link .linkup div {
     margin: 2px;
@@ -1486,6 +1506,15 @@ footer.footer .footer_info .epaper-footer_link .link a:visited {
   footer.footer .footer_info .epaper-footer_link .link .linkdown div {
     margin: 2px;
     padding-right: 4px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  footer.footer .footer_info {
+    width: 100%;
+  }
+  footer.footer .epaper-footer_link .epaper .einput {
+    width: 80% !important;
   }
 }
 /*# sourceMappingURL=Member_style.css.map */
